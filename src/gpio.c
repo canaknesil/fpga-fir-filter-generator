@@ -6,6 +6,8 @@
 #include <sys/mman.h>
 #include <unistd.h>
 
+#include "gpio.h"
+
 
 #define BCM2708_PERI_BASE        0x3F000000
 #define GPIO_BASE                (BCM2708_PERI_BASE + 0x200000) // GPIO controller 
@@ -84,7 +86,7 @@ int initialize() {
 
     
 int finalize() {
-    if (munmap(gpio, BLOCK_SIZE)) < 0) {
+    if (munmap((void *) gpio, BLOCK_SIZE) < 0) {
         printf("GPIO memory unmap failed.\n");
         return 0;
     }
@@ -95,11 +97,11 @@ int finalize() {
 
 void setDirection(int pin, int direction) {
     if (direction == GPIO_IN) {
-        INP_GPIO(g);
+        INP_GPIO(pin);
     }
     else {
-        INP_GPIO(g); // must use INP_GPIO before we can use OUT_GPIO
-        OUT_GPIO(g);
+        INP_GPIO(pin); // must use INP_GPIO before we can use OUT_GPIO
+        OUT_GPIO(pin);
     }
 }
 

@@ -6,5 +6,6 @@ bin/*
 
 # Ignore Mac specific files
 .DS_Store
+._.DS_Store
 
 Vagrantfile
