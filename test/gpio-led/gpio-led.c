@@ -15,7 +15,7 @@ int main() {
     unsigned int *gpio = (unsigned int *) mmap(0, 4096, PROT_READ+PROT_WRITE, MAP_SHARED, fdgpio, 0);
 
 	
-	gpio[0] = 0b001001001001001001001001001001;
+	gpio[0] = 0b001000000;
     gpio[7] = 0;
 	
 	while (1) {
