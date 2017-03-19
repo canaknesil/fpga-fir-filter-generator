@@ -1,5 +1,7 @@
 PROJDIR := ../../
-SRCDIR := $(PROJDIR)src/fpga-comm/gpio/
+SRCDIR := $(PROJDIR)src/fpga-comm
+
+————TODO————
 
 SRC := $(SRCDIR)cgpio.c test.cpp
 INC := $(SRCDIR)gpio.h $(SRCDIR)cgpio.h
