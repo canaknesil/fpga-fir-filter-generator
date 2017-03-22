@@ -1,7 +1,7 @@
 #include "fpga-comm.h"
 
 #include "gpio/gpio.h"
-#include "fpga-map.h"
+#include "gpio-map.h"
 
 
 
@@ -35,7 +35,7 @@ void writeChar(char ch) {
 	
 	for (int i=0; i<8; i++) {
 		if (ch % 2 == 0) GPIO::set(OUT_BIT(i), LOW);
-		elseGPIO::set(OUT_BIT(i), HIGH);
+		else GPIO::set(OUT_BIT(i), HIGH);
 		
 		ch <<= 1;
 	}

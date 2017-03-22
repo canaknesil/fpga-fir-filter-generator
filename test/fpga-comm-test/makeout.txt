@@ -1,0 +1,2 @@
+g++ ../../src/fpga-comm/gpio/cgpio.c ../../src/fpga-comm/fpga-comm.cpp test.cpp -o test -I ../../src/fpga-comm/ ../../src/fpga-comm/gpio/
+Makefile:8: recipe for target 'test' failed
