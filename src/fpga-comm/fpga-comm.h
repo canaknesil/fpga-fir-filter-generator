@@ -1,5 +1,5 @@
 
-namespace FPGA-Comm {
+namespace FPGA_Comm {
 	
 	int initialize();
 	int finalize();

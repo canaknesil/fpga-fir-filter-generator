@@ -5,8 +5,23 @@
 
 
 
-#define IN_BIT(n) IN_PIN##n
-#define OUT_BIT(n) OUT_PIN##n
+int in_bits[] = { IN_BIT0,
+				 IN_BIT1,
+				 IN_BIT2,
+				 IN_BIT3,
+				 IN_BIT4,
+				 IN_BIT5,
+				 IN_BIT6,
+				 IN_BIT7 };
+
+int out_bits[] = { OUT_BIT0,
+				  OUT_BIT1,
+				  OUT_BIT2,
+				  OUT_BIT3,
+				  OUT_BIT4,
+				  OUT_BIT5,
+				  OUT_BIT6,
+				  OUT_BIT7 };
 
 
 
@@ -15,14 +30,13 @@ int initialize() {
 	if (GPIO::initialize() < 0) {
 		return -1;
 	}
-	
+
 	for (int i=0; i<8; i++) {
-		GPIO::setDirection(IN_BIT(i), GPIO_IN);
-		GPIO::setDirection(OUT_BIT(i), GPIO_OUT);
+		GPIO::setDirection(in_bits[i], GPIO_IN);
+		GPIO::setDirection(out_bits[i], GPIO_OUT);
 	}
 	
 	return 0;
-	
 }
 
 int finalize() {
@@ -32,12 +46,12 @@ int finalize() {
 
 
 void writeChar(char ch) {
-	
+
 	for (int i=0; i<8; i++) {
-		if (ch % 2 == 0) GPIO::set(OUT_BIT(i), LOW);
-		else GPIO::set(OUT_BIT(i), HIGH);
-		
+
+		GPIO::set(out_bits[i], (ch%2 == 0 ? LOW : HIGH) );
 		ch <<= 1;
+
 	}
 	
 }
@@ -48,7 +62,7 @@ char readChar() {
 	
 	for (int i=0; i<8; i++) {
 		ch <<= 1;
-		if (GPIO::get(IN_BIT(i)) == HIGH) ch += 1;
+		if (GPIO::get(in_bits[i]) == HIGH) ch += 1;
 	}
 	
 	return ch;
@@ -59,7 +73,7 @@ unsigned int writeReadInt(unsigned int n) {
 	
 	unsigned int output = 0;
 	
-	for (int i=3 i>=0; i--) {
+	for (int i=3; i>=0; i--) {
 		
 		writeChar((n >> i*8) & 0xFF);
 		

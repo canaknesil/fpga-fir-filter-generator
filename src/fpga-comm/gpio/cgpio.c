@@ -26,7 +26,7 @@ int CGPIO_initialize() {
 	
 	gpio = (unsigned int *) mmap(0, BLOCK_SIZE, PROT_READ+PROT_WRITE, MAP_SHARED, fdgpio, 0);
 	if (gpio == MAP_FAILED) {
-		printf("mmap error %d\n", (int)gpio);
+		printf("mmap error %p\n", gpio);
 		return -1;
 	}
 	
