@@ -6,6 +6,8 @@
 
 using namespace std;
 
+#define MYPIN 14
+
 int main() {
 
 	if (GPIO::initialize() < 0) {
@@ -14,14 +16,14 @@ int main() {
 	}
 
 	cout << "Debug: initialized" <<endl;
-	GPIO::setDirection(2, GPIO_OUT);
+	GPIO::setDirection(MYPIN, GPIO_OUT);
 	cout << "Debug: set direction" <<endl;
 	while (1) {
 		sleep(1);
-		GPIO::set(2, LOW);
+		GPIO::set(MYPIN, LOW);
 		cout << "Debug: set low" <<endl;
 		sleep(1);
-		GPIO::set(2, HIGH);
+		GPIO::set(MYPIN, HIGH);
 		cout << "Debug: set high" <<endl;
 	}
 

@@ -55,8 +55,16 @@ void CGPIO_setDirection(int pin, int direction) {
 	if (pin < 2 || pin > 27) return;
 	
 	unsigned int *gpio_config;
-	if (pin < 10) gpio_config = &gpio[0];
-	else gpio_config = &gpio[1];
+	if (pin < 10) {
+		gpio_config = &gpio[0];
+	} 
+	else if (pin < 20) {
+		gpio_config = &gpio[1];
+		pin -= 10;
+	} else {
+		gpio_config = &gpio[2];
+		pin -= 20;
+	}
 	
 	*gpio_config &= (~(0b111)) << (3 * pin); //set the pin to 000 configuration which is also input cinfiguration.
 	if (direction == GPIO_OUT) {

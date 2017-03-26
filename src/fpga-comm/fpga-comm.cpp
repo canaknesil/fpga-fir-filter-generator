@@ -25,7 +25,7 @@ int out_bits[] = { OUT_BIT0,
 
 
 
-int initialize() {
+int FPGA_Comm::initialize() {
 	
 	if (GPIO::initialize() < 0) {
 		return -1;
@@ -39,28 +39,28 @@ int initialize() {
 	return 0;
 }
 
-int finalize() {
+int FPGA_Comm::finalize() {
 	return GPIO::finalize();
 }
 
 
 
-void writeChar(char ch) {
+void FPGA_Comm::writeChar(char ch) {
 
 	for (int i=0; i<8; i++) {
 
 		GPIO::set(out_bits[i], (ch%2 == 0 ? LOW : HIGH) );
-		ch <<= 1;
+		ch >>= 1;
 
 	}
 	
 }
 
-char readChar() {
+char FPGA_Comm::readChar() {
 	
 	char ch = 0;
 	
-	for (int i=0; i<8; i++) {
+	for (int i=7; i>=0; i--) {
 		ch <<= 1;
 		if (GPIO::get(in_bits[i]) == HIGH) ch += 1;
 	}
@@ -69,7 +69,7 @@ char readChar() {
 }
 
 //works for linear systems only
-unsigned int writeReadInt(unsigned int n) {
+unsigned int FPGA_Comm::writeReadInt(unsigned int n) {
 	
 	unsigned int output = 0;
 	
@@ -86,7 +86,13 @@ unsigned int writeReadInt(unsigned int n) {
 
 }
 
+void FPGA_Comm::writeOnes() {
 
+	for (int i=0; i<8; i++) {
+		GPIO::set(out_bits[i], HIGH);
+	}
+
+}
 
 
 
