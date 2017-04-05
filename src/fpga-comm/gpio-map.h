@@ -13,7 +13,7 @@
 #define OUT_BIT0 23
 #define OUT_BIT1 22
 #define OUT_BIT2 27
-#define OUT_BIT3 17
+#define OUT_BIT3 15
 #define OUT_BIT4 14
 #define OUT_BIT5 4
 #define OUT_BIT6 3
