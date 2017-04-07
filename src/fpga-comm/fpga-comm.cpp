@@ -1,7 +1,6 @@
 #include "fpga-comm.h"
-
-#include "gpio/gpio.h"
 #include "gpio-map.h"
+#include <wiringPi.h>
 
 
 
@@ -27,20 +26,20 @@ int out_bits[] = { OUT_BIT0,
 
 int FPGA_Comm::initialize() {
 	
-	if (GPIO::initialize() < 0) {
+	if (wiringPiSetup () == -1) {
 		return -1;
 	}
 
 	for (int i=0; i<8; i++) {
-		GPIO::setDirection(in_bits[i], GPIO_IN);
-		GPIO::setDirection(out_bits[i], GPIO_OUT);
+		pinMode(out_bits[i], OUTPUT);
+		pinMode(in_bits[i], INPUT);
 	}
 	
 	return 0;
 }
 
 int FPGA_Comm::finalize() {
-	return GPIO::finalize();
+	return 0;
 }
 
 
@@ -49,7 +48,7 @@ void FPGA_Comm::writeChar(char ch) {
 
 	for (int i=0; i<8; i++) {
 
-		GPIO::set(out_bits[i], (ch%2 == 0 ? LOW : HIGH) );
+		digitalWrite(out_bits[i], (ch%2 == 0 ? LOW : HIGH));
 		ch >>= 1;
 
 	}
@@ -62,7 +61,7 @@ char FPGA_Comm::readChar() {
 	
 	for (int i=7; i>=0; i--) {
 		ch <<= 1;
-		if (GPIO::get(in_bits[i]) == HIGH) ch += 1;
+		if (digitalRead(in_bits[i]) == HIGH) ch += 1;
 	}
 	
 	return ch;
@@ -85,15 +84,6 @@ unsigned int FPGA_Comm::writeReadInt(unsigned int n) {
 	return output;
 
 }
-
-void FPGA_Comm::writeOnes() {
-
-	for (int i=0; i<8; i++) {
-		GPIO::set(out_bits[i], HIGH);
-	}
-
-}
-
 
 
 

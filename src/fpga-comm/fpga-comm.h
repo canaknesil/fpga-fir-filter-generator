@@ -6,8 +6,6 @@ namespace FPGA_Comm {
 	
 	void writeChar(char ch);
 	char readChar();
-
-	void writeOnes();
 	
 	unsigned int writeReadInt(unsigned int n); //works for linear systems only
 	
