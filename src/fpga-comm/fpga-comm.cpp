@@ -26,7 +26,7 @@ int out_bits[] = { OUT_BIT0,
 
 int FPGA_Comm::initialize() {
 	
-	if (wiringPiSetup () == -1) {
+	if (wiringPiSetupGpio () == -1) {
 		return -1;
 	}
 

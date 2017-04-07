@@ -6,7 +6,7 @@ using namespace FPGA_Comm;
 int main() {
 	
 	initialize();
-	writeChar(-1);
+	writeChar(0);
 	while (true);
 	
 	return 0;

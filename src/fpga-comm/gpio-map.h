@@ -1,23 +1,26 @@
 
 //map input and output bytes to gpio pins
 
-#define IN_BIT0 19
-#define IN_BIT1 13
-#define IN_BIT2 6
-#define IN_BIT3 5
-#define IN_BIT4 8
-#define IN_BIT5 11
-#define IN_BIT6 9
-#define IN_BIT7 10
+#define IN_BIT0 17
+#define IN_BIT1 27
+#define IN_BIT2 22
+#define IN_BIT3 23
 
-#define OUT_BIT0 23
-#define OUT_BIT1 22
-#define OUT_BIT2 27
-#define OUT_BIT3 15
-#define OUT_BIT4 14
-#define OUT_BIT5 4
-#define OUT_BIT6 3
-#define OUT_BIT7 2
+#define IN_BIT4 13
+#define IN_BIT5 19
+#define IN_BIT6 26
+#define IN_BIT7 20
+
+
+#define OUT_BIT0 2
+#define OUT_BIT1 3
+#define OUT_BIT2 4
+#define OUT_BIT3 14
+
+#define OUT_BIT4 10
+#define OUT_BIT5 9
+#define OUT_BIT6 11
+#define OUT_BIT7 8
 
 /*
  
