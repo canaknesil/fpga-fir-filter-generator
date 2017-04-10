@@ -1,8 +1,13 @@
 
-class FPGA_Program {
+class FpgaProgram {
 
-};
+public:
+    int load();
 
-class FPGA_FIR _Filter : public FPGA_Program {
+protected:
+    int generateVhdl() = 0;
+
+private:
+    int loadVhdl();
 
 };

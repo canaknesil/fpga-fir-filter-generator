@@ -1,6 +1,7 @@
 #include "fpga-comm.h"
 #include "gpio-map.h"
 #include <wiringPi.h>
+#include <iostream>
 
 
 
@@ -27,6 +28,7 @@ int out_bits[] = { OUT_BIT0,
 int FPGA_Comm::initialize() {
 	
 	if (wiringPiSetupGpio () == -1) {
+		cout << "FPGA_Comm::initialize(): wiringPi setup failed." << endl;
 		return -1;
 	}
 

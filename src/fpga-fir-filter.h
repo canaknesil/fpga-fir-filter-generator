@@ -1,8 +1,12 @@
+#include "fpga-program.h"
 
-class FPGA_Program {
+class FpgaFirFilter : public FpgaProgram {
 
-};
+public:
 
-class FPGA_FIR _Filter : public FPGA_Program {
+protected:
+
+private:
+    
 
 };
