@@ -69,26 +69,6 @@ char FPGA_Comm::readChar() {
 	return ch;
 }
 
-//works for linear systems only
-unsigned int FPGA_Comm::writeReadInt(unsigned int n) {
-	
-	unsigned int output = 0;
-	
-	for (int i=3; i>=0; i--) {
-		
-		writeChar((n >> i*8) & 0xFF);
-		
-		output <<= 8;
-		output += readChar();
-		
-	}
-	
-	return output;
-
-}
-
-
-
 
 
 
