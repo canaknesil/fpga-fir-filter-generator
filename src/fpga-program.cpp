@@ -1,3 +1,4 @@
+#include "fpga-program.h"
 #include "fpga-loader/fpga-loader.h"
 #include <iostream>
 
@@ -21,7 +22,7 @@ int FpgaProgram::load() {
 
 int FpgaProgram::loadVhdl() {
 
-    if (FpgaLoader.getInstance()->load() != 0) {
+    if (FpgaLoader::getInstance()->load() != 0) {
         cout << "FpgaProgram::loadVhdl(): Loading VHDL to board failed." << endl;
         return -1;
     }

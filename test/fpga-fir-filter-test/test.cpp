@@ -1,11 +1,18 @@
 #include <iostream>
-#include "fpga-comm.h"
+#include "fpga-causal-fir-filter.h"
 
-using namespace FPGA_Comm;
+using namespace std;
 
 int main() {
 	
-	//TODO
+	FpgaCausalFirFilter f;
+	vector<char> fs = f.getFilter();
+
+	for (int i=0; i<fs.size(); i++) {
+		cout << (int) fs.at(i) << endl;
+	}
+
+	f.load();
 	
 	return 0;
 }

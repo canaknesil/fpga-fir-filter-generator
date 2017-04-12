@@ -1,19 +1,27 @@
 #include "fpga-program.h"
+#include <vector>
+#include <string>
+
+using namespace std;
 
 class FpgaCausalFirFilter : public FpgaProgram {
 
 public:
     FpgaCausalFirFilter(); //initializes with kronecker delta as the filter. Filter can be set afterwords.
-    FpgaCausalFirFilter(char *filterSignal, int filterLength);
+    FpgaCausalFirFilter(vector<char> filterSignal);
 
-    void setFilter(char *filterSignal, int filterLength);
-    void getFilter(char *filterSignal, int *filterLength);
+    void setFilter(vector<char> filterSignal);
+    vector<char> getFilter();
+    int getFilterLength();
 
-    void filter(char *input, int inputLength, char *output);
+    vector<char> filter(const vector<char> &input);
+
+protected:
+    int generateVhdl();
 
 private:
-    char *8BitFilterSignal; //to be hardcoded to the FPGA board.
-    int filterLength;
-    
+    vector<char> FilterSignal8Bit; //to be hardcoded to the FPGA board.
 
+    string generateVhdlCode();
+    
 };

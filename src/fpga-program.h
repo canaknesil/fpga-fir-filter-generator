@@ -5,7 +5,7 @@ public:
     int load();
 
 protected:
-    int generateVhdl() = 0;
+    virtual int generateVhdl() = 0;
 
 private:
     int loadVhdl();
