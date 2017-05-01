@@ -51,7 +51,7 @@ begin
 
 D_FF8op: D_FF8 PORT MAP(input, clock, multin);
 multoutext <= std_logic_vector(signed(multin) * signed(hardcoded));
-output <= multoutext(7 downto 0);
+output <= multoutext(14 downto 7);
 
 end Behavioral;
 

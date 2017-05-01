@@ -51,7 +51,7 @@ signal multout: std_logic_vector(7 downto 0);
 begin
 
 multoutext <= std_logic_vector(signed(input) * signed(hardcoded));
-multout <= multoutext(7 downto 0);
+multout <= multoutext(14 downto 7);
 adder: adder8 PORT MAP(multout, term, output);
 
 end Behavioral;

@@ -58,7 +58,7 @@ begin
 
 D_FF8op: D_FF8 PORT MAP(input, clock, multin);
 multoutext <= std_logic_vector(signed(multin) * signed(hardcoded));
-multout <= multoutext(7 downto 0);
+multout <= multoutext(14 downto 7);
 adder: adder8 PORT MAP(multout, term, output);
 
 
