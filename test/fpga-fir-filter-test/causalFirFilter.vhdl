@@ -33,11 +33,11 @@ component module3 is
 		output : out  STD_LOGIC_VECTOR (7 downto 0)); 
 end component; 
 
-signal hardcoded_0: std_logic_vector(7 downto 0) := "00000010"; 
-signal hardcoded_1: std_logic_vector(7 downto 0) := "00000010"; 
-signal hardcoded_2: std_logic_vector(7 downto 0) := "00000010"; 
-signal hardcoded_3: std_logic_vector(7 downto 0) := "00000010"; 
-signal hardcoded_4: std_logic_vector(7 downto 0) := "00000010"; 
+signal hardcoded_0: std_logic_vector(7 downto 0) := "00011010"; 
+signal hardcoded_1: std_logic_vector(7 downto 0) := "00011010"; 
+signal hardcoded_2: std_logic_vector(7 downto 0) := "00011010"; 
+signal hardcoded_3: std_logic_vector(7 downto 0) := "00011010"; 
+signal hardcoded_4: std_logic_vector(7 downto 0) := "00011010"; 
 
 signal module1_term: std_logic_vector(7 downto 0); 
 

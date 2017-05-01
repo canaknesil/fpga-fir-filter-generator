@@ -8,10 +8,10 @@ class FpgaCausalFirFilter : public FpgaProgram {
 
 public:
     FpgaCausalFirFilter(); //initializes with kronecker delta as the filter. Filter can be set afterwords.
-    FpgaCausalFirFilter(vector<char> filterSignal);
+    FpgaCausalFirFilter(vector<float> filterSignal);
 
-    void setFilter(vector<char> filterSignal);
-    vector<char> getFilter();
+    void setFilter(vector<float> filterSignal);
+    vector<float> getFilter();
     int getFilterLength();
 
     vector<char> filter(const vector<char> &input);
@@ -20,8 +20,14 @@ protected:
     int generateVhdl();
 
 private:
-    vector<char> FilterSignal8Bit; //to be hardcoded to the FPGA board.
+    vector<char> filterSignal8Bit; //to be hardcoded to the FPGA board.
+    
+    void setFilter(vector<char> filterSignal);
+    vector<char> getFilter8Bit();
 
     string generateVhdlCode();
+
+    char convertToFixed(float f);
+    float convertFromFixed(char ch);
     
 };
