@@ -1,0 +1,12 @@
+NET "MCLK"  LOC = "P40"  ;
+
+NET "LEDS<9>"  LOC = "P77"  ;
+NET "LEDS<8>"  LOC = "P83"  ;
+NET "LEDS<7>"  LOC = "P84"  ;
+NET "LEDS<6>"  LOC = "P86"  ;
+NET "LEDS<5>"  LOC = "P89"  ;
+NET "LEDS<4>"  LOC = "P93"  ;
+NET "LEDS<3>"  LOC = "P3"  ;
+NET "LEDS<2>"  LOC = "P6"  ;
+NET "LEDS<1>"  LOC = "P13"  ;
+NET "LEDS<0>"  LOC = "P16"  ;
