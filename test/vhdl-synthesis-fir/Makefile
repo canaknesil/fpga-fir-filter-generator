@@ -110,7 +110,7 @@ junk += $(project).mcs $(project).cfi $(project).prm
 
 $(project).bit: $(project).ncd
 	$(xil_env); \
-	bitgen $(intstyle) -g $(bitgen_opts) -g DriveDone:yes -g StartupClk:Cclk -w $(project).ncd $(project).bit
+	bitgen $(intstyle) -g $(bitgen_opts) -g DriveDone:yes -g StartupClk:jtagclk -w $(project).ncd $(project).bit
 junk += $(project).bgn $(project).bit $(project).drc $(project)_bd.bmm
 
 

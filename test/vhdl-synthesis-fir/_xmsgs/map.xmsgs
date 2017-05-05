@@ -8,16 +8,28 @@
 <msg type="warning" file="Map" num="34" delta="old" >Speed grade not specified.  Using default &quot;<arg fmt="%s" index="1">-5</arg>&quot;.
 </msg>
 
-<msg type="info" file="MapLib" num="562" delta="old" >No environment variables are currently set.
+<msg type="warning" file="Map" num="267" delta="old" >There will be a smaller percentage of guiding when using SmartGuide with the some of the physical synthesis options. These options include:
+&quot;Combinatorial Logic Optimization&quot;(-logic_opt),&quot;Global Optimization&quot;(-global_opt), and &quot;Register Duplication&quot;(-register_duplication).
+
+The command line used to create the guide file is:
+<arg fmt="%s" index="1">-timing -ol high -detail -pr b -register_duplication -w -o causalFirFilter_tmp.ncd causalFirFilter.ngd </arg>
+
+The command line used for this run is:
+<arg fmt="%s" index="2">-timing -ol high -detail -pr b -register_duplication -w -o causalFirFilter_tmp.ncd -smartguide smartguide.ncd causalFirFilter.ngd </arg>
+
+If one or more of the above physical synthesis options is being used, SmartGuide will have a lower guide percentage, possibly longer runtimes and possibly worse timing scores. If the physical synthesis option is required to meet timing, it is suggested that SmartGuide is not used. If the physical synthesis option is not required, it is suggested to re-create the guide without the physical synthesis option and re-run SmartGuide
+</msg>
+
+<msg type="info" file="MapLib" num="562" delta="new" >No environment variables are currently set.
+</msg>
+
+<msg type="info" file="MapLib" num="980" delta="new" >The following NGM file is used during SmartGuide: &quot;<arg fmt="%s" index="1">causalFirFilter_tmp.ngm</arg>&quot;. The NGM file contains information on how the guide file was originally mapped. It is required for the best SmartGuide results.
 </msg>
 
 <msg type="info" file="LIT" num="244" delta="new" >All of the single ended outputs in this design are using slew rate limited output drivers. The delay on speed critical single ended outputs can be dramatically reduced by designating them as fast outputs.
 </msg>
 
-<msg type="info" file="Pack" num="1716" delta="new" >Initializing temperature to <arg fmt="%0.3f" index="1">85.000</arg> Celsius. (default - Range: <arg fmt="%0.3f" index="2">-40.000</arg> to <arg fmt="%0.3f" index="3">100.000</arg> Celsius)
-</msg>
-
-<msg type="info" file="Pack" num="1720" delta="new" >Initializing voltage to <arg fmt="%0.3f" index="1">1.140</arg> Volts. (default - Range: <arg fmt="%0.3f" index="2">1.140</arg> to <arg fmt="%0.3f" index="3">1.320</arg> Volts)
+<msg type="warning" file="Pack" num="2609" delta="new" >SmartGuide is more efficient (better guiding and runtime) when used with explicit timing constraints. If you want the full benefit of the SmartGuide flow, please add timing constraints to your design, then re-create your guide file.
 </msg>
 
 <msg type="info" file="Pack" num="1650" delta="new" >Map created a placed design.

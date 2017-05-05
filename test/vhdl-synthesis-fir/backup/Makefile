@@ -36,7 +36,7 @@
 project = causalFirFilter
 vendor = xilinx
 family = spartan3e
-part =  XC3S100E-VQ100
+part =  XC3S100E-CP132
 top_module = threesamplefilter
 
 vfiles = causalFirFilter.vhd adder8.vhd and_gate.vhd d_ff.vhd d_ff8.vhd FullAdder.vhd module1.vhd module2.vhd module3.vhd multiplier8.vhd or_gate.vhd xor_gate.vhd
@@ -110,7 +110,7 @@ junk += $(project).mcs $(project).cfi $(project).prm
 
 $(project).bit: $(project).ncd
 	$(xil_env); \
-	bitgen $(intstyle) -g $(bitgen_opts) -g DriveDone:yes -g StartupClk:Cclk -w $(project).ncd $(project).bit
+	bitgen $(intstyle) -g $(bitgen_opts) -g DriveDone:yes -g StartupClk:jtagclk -w $(project).ncd $(project).bit
 junk += $(project).bgn $(project).bit $(project).drc $(project)_bd.bmm
 
 

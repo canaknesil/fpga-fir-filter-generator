@@ -5,8 +5,8 @@ Command Line: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/ngdbuild
 causalFirFilter.ngc
 
 Reading NGO file
-"/home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/caus
-alFirFilter.ngc" ...
+"/home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/causalFirFi
+lter.ngc" ...
 Gathering constraint information from source properties...
 Done.
 

@@ -1,86 +1,98 @@
-V3 46
+V3 58
 FL /home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/adder8.vhd 2017/04/18.13:24:50 P.20131013
-EN work/adder8 1494011538 \
-      FL /home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/adder8.vhd \
-      PB ieee/std_logic_1164 1381692176
-AR work/adder8/Behavioral 1494011539 \
-      FL /home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/adder8.vhd \
-      EN work/adder8 1494011538 CP FullAdder
 FL /home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/and_gate.vhd 2017/04/18.13:24:50 P.20131013
-EN work/and_gate 1494011528 \
-      FL /home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/and_gate.vhd \
-      PB ieee/std_logic_1164 1381692176
-AR work/and_gate/dataflow 1494011529 \
-      FL /home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/and_gate.vhd \
-      EN work/and_gate 1494011528
 FL /home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/causalFirFilter.vhd 2017/05/01.16:21:34 P.20131013
-EN work/threesamplefilter 1494011548 \
-      FL /home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/causalFirFilter.vhd \
-      PB ieee/std_logic_1164 1381692176
-AR work/threesamplefilter/Behavioral 1494011549 \
-      FL /home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/causalFirFilter.vhd \
-      EN work/threesamplefilter 1494011548 CP module1 CP module2 CP module3
 FL /home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/d_ff.vhd 2017/04/18.13:24:50 P.20131013
-EN work/D_FF 1494011532 \
-      FL /home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/d_ff.vhd \
+FL /home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/d_ff8.vhd 2017/04/18.13:24:50 P.20131013
+FL /home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/FullAdder.vhd 2017/04/18.13:24:50 P.20131013
+FL /home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/module1.vhd 2017/05/01.18:53:05 P.20131013
+FL /home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/module2.vhd 2017/05/01.18:53:06 P.20131013
+FL /home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/module3.vhd 2017/05/01.18:53:08 P.20131013
+FL /home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/multiplier8.vhd 2017/04/18.13:24:52 P.20131013
+FL /home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/or_gate.vhd 2017/04/18.13:24:50 P.20131013
+FL /home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/xor_gate.vhd 2017/04/18.13:24:50 P.20131013
+FL /home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/adder8.vhd 2017/05/06.00:21:53 P.20131013
+EN work/adder8 1494022273 \
+      FL /home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/adder8.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/adder8/Behavioral 1494022274 \
+      FL /home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/adder8.vhd \
+      EN work/adder8 1494022273 CP FullAdder
+FL /home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/and_gate.vhd 2017/05/06.00:21:53 P.20131013
+EN work/and_gate 1494022263 \
+      FL /home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/and_gate.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/and_gate/dataflow 1494022264 \
+      FL /home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/and_gate.vhd \
+      EN work/and_gate 1494022263
+FL /home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/causalFirFilter.vhd 2017/05/06.00:21:53 P.20131013
+EN work/threesamplefilter 1494022283 \
+      FL /home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/causalFirFilter.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/threesamplefilter/Behavioral 1494022284 \
+      FL /home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/causalFirFilter.vhd \
+      EN work/threesamplefilter 1494022283 CP module1 CP module2 CP module3
+FL /home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/d_ff.vhd 2017/05/06.00:21:53 P.20131013
+EN work/D_FF 1494022267 \
+      FL /home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/d_ff.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/D_FF/Behavioral 1494011533 \
-      FL /home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/d_ff.vhd \
-      EN work/D_FF 1494011532
-FL /home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/d_ff8.vhd 2017/04/18.13:24:50 P.20131013
-EN work/D_FF8 1494011536 \
-      FL /home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/d_ff8.vhd \
+AR work/D_FF/Behavioral 1494022268 \
+      FL /home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/d_ff.vhd \
+      EN work/D_FF 1494022267
+FL /home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/d_ff8.vhd 2017/05/06.00:21:53 P.20131013
+EN work/D_FF8 1494022271 \
+      FL /home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/d_ff8.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/D_FF8/Behavioral 1494011537 \
-      FL /home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/d_ff8.vhd \
-      EN work/D_FF8 1494011536 CP D_FF
-FL /home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/FullAdder.vhd 2017/04/18.13:24:50 P.20131013
-EN work/FullAdder 1494011534 \
-      FL /home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/FullAdder.vhd \
+AR work/D_FF8/Behavioral 1494022272 \
+      FL /home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/d_ff8.vhd \
+      EN work/D_FF8 1494022271 CP D_FF
+FL /home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/FullAdder.vhd 2017/05/06.00:21:53 P.20131013
+EN work/FullAdder 1494022269 \
+      FL /home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/FullAdder.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/FullAdder/FullAdder_struct 1494011535 \
-      FL /home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/FullAdder.vhd \
-      EN work/FullAdder 1494011534 CP xor_gate CP and_gate CP or_gate
-FL /home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/module1.vhd 2017/05/01.18:53:05 P.20131013
-EN work/module1 1494011540 \
-      FL /home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/module1.vhd \
+AR work/FullAdder/FullAdder_struct 1494022270 \
+      FL /home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/FullAdder.vhd \
+      EN work/FullAdder 1494022269 CP xor_gate CP and_gate CP or_gate
+FL /home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/module1.vhd 2017/05/06.00:21:53 P.20131013
+EN work/module1 1494022275 \
+      FL /home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/module1.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/module1/Behavioral 1494011541 \
-      FL /home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/module1.vhd \
-      EN work/module1 1494011540 CP adder8
-FL /home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/module2.vhd 2017/05/01.18:53:06 P.20131013
-EN work/module2 1494011542 \
-      FL /home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/module2.vhd \
+AR work/module1/Behavioral 1494022276 \
+      FL /home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/module1.vhd \
+      EN work/module1 1494022275 CP adder8
+FL /home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/module2.vhd 2017/05/06.00:21:53 P.20131013
+EN work/module2 1494022277 \
+      FL /home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/module2.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/module2/Behavioral 1494011543 \
-      FL /home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/module2.vhd \
-      EN work/module2 1494011542 CP D_FF8 CP adder8
-FL /home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/module3.vhd 2017/05/01.18:53:08 P.20131013
-EN work/module3 1494011544 \
-      FL /home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/module3.vhd \
+AR work/module2/Behavioral 1494022278 \
+      FL /home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/module2.vhd \
+      EN work/module2 1494022277 CP D_FF8 CP adder8
+FL /home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/module3.vhd 2017/05/06.00:21:53 P.20131013
+EN work/module3 1494022279 \
+      FL /home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/module3.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/module3/Behavioral 1494011545 \
-      FL /home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/module3.vhd \
-      EN work/module3 1494011544 CP D_FF8
-FL /home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/multiplier8.vhd 2017/04/18.13:24:52 P.20131013
-EN work/multiplier8 1494011546 \
-      FL /home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/multiplier8.vhd \
+AR work/module3/Behavioral 1494022280 \
+      FL /home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/module3.vhd \
+      EN work/module3 1494022279 CP D_FF8
+FL /home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/multiplier8.vhd 2017/05/06.00:21:53 P.20131013
+EN work/multiplier8 1494022281 \
+      FL /home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/multiplier8.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/multiplier8/Behavioral 1494011547 \
-      FL /home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/multiplier8.vhd \
-      EN work/multiplier8 1494011546
-FL /home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/or_gate.vhd 2017/04/18.13:24:50 P.20131013
-EN work/or_gate 1494011530 \
-      FL /home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/or_gate.vhd \
+AR work/multiplier8/Behavioral 1494022282 \
+      FL /home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/multiplier8.vhd \
+      EN work/multiplier8 1494022281
+FL /home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/or_gate.vhd 2017/05/06.00:21:53 P.20131013
+EN work/or_gate 1494022265 \
+      FL /home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/or_gate.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/or_gate/dataflow 1494011531 \
-      FL /home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/or_gate.vhd \
-      EN work/or_gate 1494011530
-FL /home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/xor_gate.vhd 2017/04/18.13:24:50 P.20131013
-EN work/xor_gate 1494011526 \
-      FL /home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/xor_gate.vhd \
+AR work/or_gate/dataflow 1494022266 \
+      FL /home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/or_gate.vhd \
+      EN work/or_gate 1494022265
+FL /home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/xor_gate.vhd 2017/05/06.00:21:53 P.20131013
+EN work/xor_gate 1494022261 \
+      FL /home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/xor_gate.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/xor_gate/dataflow 1494011527 \
-      FL /home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/xor_gate.vhd \
-      EN work/xor_gate 1494011526
+AR work/xor_gate/dataflow 1494022262 \
+      FL /home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/xor_gate.vhd \
+      EN work/xor_gate 1494022261

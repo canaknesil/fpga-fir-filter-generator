@@ -1,7 +1,7 @@
-INFILE=/home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/causalFirFilter.ncd
-OUTFILE=/home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/causalFirFilter.bit
+INFILE=/home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/causalFirFilter.ncd
+OUTFILE=/home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/causalFirFilter.bit
 FAMILY=Spartan3E
 PART=xc3s100e-5cp132
-WORKINGDIR=/home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir
+WORKINGDIR=/home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir
 LICENSE=WebPack
-USER_INFO=210963098_0_0_535
+USER_INFO=211325461_0_0_634

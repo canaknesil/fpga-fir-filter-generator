@@ -82,29 +82,53 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "/home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/xor_gate.vhd" in Library work.
+WARNING:HDLParsers:3607 - Unit work/xor_gate is now defined in a different file.  It was defined in "/home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/xor_gate.vhd", and is now defined in "/home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/xor_gate.vhd".
+WARNING:HDLParsers:3607 - Unit work/xor_gate/dataflow is now defined in a different file.  It was defined in "/home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/xor_gate.vhd", and is now defined in "/home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/xor_gate.vhd".
+WARNING:HDLParsers:3607 - Unit work/or_gate is now defined in a different file.  It was defined in "/home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/or_gate.vhd", and is now defined in "/home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/or_gate.vhd".
+WARNING:HDLParsers:3607 - Unit work/or_gate/dataflow is now defined in a different file.  It was defined in "/home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/or_gate.vhd", and is now defined in "/home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/or_gate.vhd".
+WARNING:HDLParsers:3607 - Unit work/multiplier8 is now defined in a different file.  It was defined in "/home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/multiplier8.vhd", and is now defined in "/home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/multiplier8.vhd".
+WARNING:HDLParsers:3607 - Unit work/multiplier8/Behavioral is now defined in a different file.  It was defined in "/home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/multiplier8.vhd", and is now defined in "/home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/multiplier8.vhd".
+WARNING:HDLParsers:3607 - Unit work/module3 is now defined in a different file.  It was defined in "/home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/module3.vhd", and is now defined in "/home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/module3.vhd".
+WARNING:HDLParsers:3607 - Unit work/module3/Behavioral is now defined in a different file.  It was defined in "/home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/module3.vhd", and is now defined in "/home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/module3.vhd".
+WARNING:HDLParsers:3607 - Unit work/module2 is now defined in a different file.  It was defined in "/home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/module2.vhd", and is now defined in "/home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/module2.vhd".
+WARNING:HDLParsers:3607 - Unit work/module2/Behavioral is now defined in a different file.  It was defined in "/home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/module2.vhd", and is now defined in "/home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/module2.vhd".
+WARNING:HDLParsers:3607 - Unit work/module1 is now defined in a different file.  It was defined in "/home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/module1.vhd", and is now defined in "/home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/module1.vhd".
+WARNING:HDLParsers:3607 - Unit work/module1/Behavioral is now defined in a different file.  It was defined in "/home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/module1.vhd", and is now defined in "/home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/module1.vhd".
+WARNING:HDLParsers:3607 - Unit work/D_FF8 is now defined in a different file.  It was defined in "/home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/d_ff8.vhd", and is now defined in "/home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/d_ff8.vhd".
+WARNING:HDLParsers:3607 - Unit work/D_FF8/Behavioral is now defined in a different file.  It was defined in "/home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/d_ff8.vhd", and is now defined in "/home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/d_ff8.vhd".
+WARNING:HDLParsers:3607 - Unit work/D_FF is now defined in a different file.  It was defined in "/home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/d_ff.vhd", and is now defined in "/home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/d_ff.vhd".
+WARNING:HDLParsers:3607 - Unit work/D_FF/Behavioral is now defined in a different file.  It was defined in "/home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/d_ff.vhd", and is now defined in "/home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/d_ff.vhd".
+WARNING:HDLParsers:3607 - Unit work/threesamplefilter is now defined in a different file.  It was defined in "/home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/causalFirFilter.vhd", and is now defined in "/home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/causalFirFilter.vhd".
+WARNING:HDLParsers:3607 - Unit work/threesamplefilter/Behavioral is now defined in a different file.  It was defined in "/home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/causalFirFilter.vhd", and is now defined in "/home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/causalFirFilter.vhd".
+WARNING:HDLParsers:3607 - Unit work/and_gate is now defined in a different file.  It was defined in "/home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/and_gate.vhd", and is now defined in "/home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/and_gate.vhd".
+WARNING:HDLParsers:3607 - Unit work/and_gate/dataflow is now defined in a different file.  It was defined in "/home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/and_gate.vhd", and is now defined in "/home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/and_gate.vhd".
+WARNING:HDLParsers:3607 - Unit work/adder8 is now defined in a different file.  It was defined in "/home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/adder8.vhd", and is now defined in "/home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/adder8.vhd".
+WARNING:HDLParsers:3607 - Unit work/adder8/Behavioral is now defined in a different file.  It was defined in "/home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/adder8.vhd", and is now defined in "/home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/adder8.vhd".
+WARNING:HDLParsers:3607 - Unit work/FullAdder is now defined in a different file.  It was defined in "/home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/FullAdder.vhd", and is now defined in "/home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/FullAdder.vhd".
+WARNING:HDLParsers:3607 - Unit work/FullAdder/FullAdder_struct is now defined in a different file.  It was defined in "/home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/FullAdder.vhd", and is now defined in "/home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/FullAdder.vhd".
+Compiling vhdl file "/home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/xor_gate.vhd" in Library work.
 Architecture dataflow of Entity xor_gate is up to date.
-Compiling vhdl file "/home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/and_gate.vhd" in Library work.
+Compiling vhdl file "/home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/and_gate.vhd" in Library work.
 Architecture dataflow of Entity and_gate is up to date.
-Compiling vhdl file "/home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/or_gate.vhd" in Library work.
+Compiling vhdl file "/home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/or_gate.vhd" in Library work.
 Architecture dataflow of Entity or_gate is up to date.
-Compiling vhdl file "/home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/d_ff.vhd" in Library work.
+Compiling vhdl file "/home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/d_ff.vhd" in Library work.
 Architecture behavioral of Entity d_ff is up to date.
-Compiling vhdl file "/home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/FullAdder.vhd" in Library work.
+Compiling vhdl file "/home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/FullAdder.vhd" in Library work.
 Architecture fulladder_struct of Entity fulladder is up to date.
-Compiling vhdl file "/home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/d_ff8.vhd" in Library work.
+Compiling vhdl file "/home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/d_ff8.vhd" in Library work.
 Architecture behavioral of Entity d_ff8 is up to date.
-Compiling vhdl file "/home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/adder8.vhd" in Library work.
+Compiling vhdl file "/home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/adder8.vhd" in Library work.
 Architecture behavioral of Entity adder8 is up to date.
-Compiling vhdl file "/home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/module1.vhd" in Library work.
+Compiling vhdl file "/home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/module1.vhd" in Library work.
 Architecture behavioral of Entity module1 is up to date.
-Compiling vhdl file "/home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/module2.vhd" in Library work.
+Compiling vhdl file "/home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/module2.vhd" in Library work.
 Architecture behavioral of Entity module2 is up to date.
-Compiling vhdl file "/home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/module3.vhd" in Library work.
+Compiling vhdl file "/home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/module3.vhd" in Library work.
 Architecture behavioral of Entity module3 is up to date.
-Compiling vhdl file "/home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/multiplier8.vhd" in Library work.
+Compiling vhdl file "/home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/multiplier8.vhd" in Library work.
 Architecture behavioral of Entity multiplier8 is up to date.
-Compiling vhdl file "/home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/causalFirFilter.vhd" in Library work.
+Compiling vhdl file "/home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/causalFirFilter.vhd" in Library work.
 Architecture behavioral of Entity threesamplefilter is up to date.
 
 =========================================================================
@@ -140,7 +164,7 @@ Analyzing Entity <threesamplefilter> in library <work> (Architecture <behavioral
 Entity <threesamplefilter> analyzed. Unit <threesamplefilter> generated.
 
 Analyzing Entity <module1> in library <work> (Architecture <behavioral>).
-WARNING:Xst:753 - "/home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/module1.vhd" line 55: Unconnected output port 'cout' of component 'adder8'.
+WARNING:Xst:753 - "/home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/module1.vhd" line 55: Unconnected output port 'cout' of component 'adder8'.
 Entity <module1> analyzed. Unit <module1> generated.
 
 Analyzing Entity <adder8> in library <work> (Architecture <behavioral>).
@@ -159,7 +183,7 @@ Analyzing Entity <or_gate> in library <work> (Architecture <dataflow>).
 Entity <or_gate> analyzed. Unit <or_gate> generated.
 
 Analyzing Entity <module2> in library <work> (Architecture <behavioral>).
-WARNING:Xst:753 - "/home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/module2.vhd" line 62: Unconnected output port 'cout' of component 'adder8'.
+WARNING:Xst:753 - "/home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/module2.vhd" line 62: Unconnected output port 'cout' of component 'adder8'.
 Entity <module2> analyzed. Unit <module2> generated.
 
 Analyzing Entity <D_FF8> in library <work> (Architecture <behavioral>).
@@ -179,23 +203,23 @@ Entity <module3> analyzed. Unit <module3> generated.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <xor_gate>.
-    Related source file is "/home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/xor_gate.vhd".
+    Related source file is "/home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/xor_gate.vhd".
     Found 1-bit xor2 for signal <z>.
 Unit <xor_gate> synthesized.
 
 
 Synthesizing Unit <and_gate>.
-    Related source file is "/home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/and_gate.vhd".
+    Related source file is "/home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/and_gate.vhd".
 Unit <and_gate> synthesized.
 
 
 Synthesizing Unit <or_gate>.
-    Related source file is "/home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/or_gate.vhd".
+    Related source file is "/home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/or_gate.vhd".
 Unit <or_gate> synthesized.
 
 
 Synthesizing Unit <D_FF>.
-    Related source file is "/home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/d_ff.vhd".
+    Related source file is "/home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/d_ff.vhd".
     Found 1-bit register for signal <Q>.
     Summary:
 	inferred   1 D-type flip-flop(s).
@@ -203,17 +227,17 @@ Unit <D_FF> synthesized.
 
 
 Synthesizing Unit <FullAdder>.
-    Related source file is "/home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/FullAdder.vhd".
+    Related source file is "/home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/FullAdder.vhd".
 Unit <FullAdder> synthesized.
 
 
 Synthesizing Unit <D_FF8>.
-    Related source file is "/home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/d_ff8.vhd".
+    Related source file is "/home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/d_ff8.vhd".
 Unit <D_FF8> synthesized.
 
 
 Synthesizing Unit <module3>.
-    Related source file is "/home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/module3.vhd".
+    Related source file is "/home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/module3.vhd".
 WARNING:Xst:646 - Signal <multoutext<15>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <multoutext<6:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
     Found 8x8-bit multiplier for signal <multoutext>.
@@ -223,12 +247,12 @@ Unit <module3> synthesized.
 
 
 Synthesizing Unit <adder8>.
-    Related source file is "/home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/adder8.vhd".
+    Related source file is "/home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/adder8.vhd".
 Unit <adder8> synthesized.
 
 
 Synthesizing Unit <module1>.
-    Related source file is "/home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/module1.vhd".
+    Related source file is "/home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/module1.vhd".
 WARNING:Xst:646 - Signal <multoutext<15>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <multoutext<6:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
     Found 8x8-bit multiplier for signal <multoutext>.
@@ -238,7 +262,7 @@ Unit <module1> synthesized.
 
 
 Synthesizing Unit <module2>.
-    Related source file is "/home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/module2.vhd".
+    Related source file is "/home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/module2.vhd".
 WARNING:Xst:646 - Signal <multoutext<15>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <multoutext<6:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
     Found 8x8-bit multiplier for signal <multoutext>.
@@ -248,7 +272,7 @@ Unit <module2> synthesized.
 
 
 Synthesizing Unit <threesamplefilter>.
-    Related source file is "/home/canaknesil/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/causalFirFilter.vhd".
+    Related source file is "/home/ege/Documents/elec491/Elec491-Project/test/vhdl-synthesis-fir/causalFirFilter.vhd".
 WARNING:Xst:653 - Signal <hardcoded_4> is used but never assigned. This sourceless signal will be automatically connected to value 00011010.
 WARNING:Xst:653 - Signal <hardcoded_3> is used but never assigned. This sourceless signal will be automatically connected to value 00011010.
 WARNING:Xst:653 - Signal <hardcoded_2> is used but never assigned. This sourceless signal will be automatically connected to value 00011010.
@@ -515,15 +539,15 @@ Delay:               15.547ns (Levels of Logic = 13)
 =========================================================================
 
 
-Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 4.61 secs
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.10 secs
  
 --> 
 
 
-Total memory usage is 517560 kilobytes
+Total memory usage is 517540 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   13 (   0 filtered)
+Number of warnings :   37 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 
