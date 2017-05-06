@@ -24,7 +24,7 @@ string FpgaLoader::getVhdlPath() {
 }
 
 int FpgaLoader::load() {
-    cout << "FpgaLoader::load(): Has not been implemented yet. Load manually." <<endl;
+    cout << "FpgaLoader::load(): Has not been implemented yet. Load manually." << endl;
     return 0;
 }
 
