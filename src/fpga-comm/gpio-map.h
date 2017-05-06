@@ -22,6 +22,9 @@
 #define OUT_BIT6 11
 #define OUT_BIT7 8
 
+
+#define CLOCK_BIT 21
+
 /*
  
  

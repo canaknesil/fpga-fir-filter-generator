@@ -70,7 +70,11 @@ char FPGA_Comm::readChar() {
 }
 
 
+void FPGA_Comm::setClock(int val) {
 
+	digitalWrite(CLOCK_BIT, (val==1 ? HIGH : LOW) );
+
+}
 
 
 
