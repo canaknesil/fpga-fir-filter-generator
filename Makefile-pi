@@ -5,11 +5,25 @@ CC := g++
 SRCDIR := src/
 BINDIR := bin/
 
-SRC := $(shell find ./$(SRCDIR) -name [^.]*.cpp) 
-EXEC := run
+SRC  = $(SRCDIR)pimain.cpp
+SRC += $(SRCDIR)fpga-program.cpp
+SRC += $(SRCDIR)fpga-causal-fir-filter.cpp
+SRC += $(SRCDIR)fpga-causal-fir-filter-pi.cpp
+SRC += $(SRCDIR)fpga-loader/fpga-loader.cpp
+SRC += $(SRCDIR)fpga-loader/fpga-loader-pi.cpp
+SRC += $(SRCDIR)fpga-comm/fpga-comm.cpp
+
+HDR  = $(SRCDIR)fpga-program.h
+HDR += $(SRCDIR)fpga-causal-fir-filter.h
+HDR += $(SRCDIR)causal-fir-filter-vhdl.h
+HDR += $(SRCDIR)fpga-loader/fpga-loader.h
+HDR += $(SRCDIR)fpga-comm/fpga-comm.h
+HDR += $(SRCDIR)fpga-comm/gpio.map.h
+
 LIB := -lwiringPi
-INC := $(shell find ./$(SRCDIR) -name [^.]*.h)
+
+EXEC := $(BINDIR)run
 
 
-run: $(SRC) $(INC)
-	$(CC) -o $(BINDIR)run $(SRC) $(LIB)
+$(EXEC): $(SRC) $(HDR)
+	$(CC) -o $(EXEC) $(SRC) $(LIB)

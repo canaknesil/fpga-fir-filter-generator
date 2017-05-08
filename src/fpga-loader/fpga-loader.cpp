@@ -24,10 +24,6 @@ string FpgaLoader::getVhdlPath() {
     return vhdlPath;
 }
 
-int FpgaLoader::load() {
-    system("./loadFir.sh");
-    return 0;
-}
 
 //private
 string FpgaLoader::vhdlPath = "../vhdl-build/"; //current directory

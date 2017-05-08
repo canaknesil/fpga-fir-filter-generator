@@ -6,6 +6,11 @@
 using namespace std;
 
 
+#define FIXED_POINT_SCALE 7
+#define FIXED_POINT_SCALE_N (1 << FIXED_POINT_SCALE)
+
+
+
 class FpgaCausalFirFilter : public FpgaProgram {
 
 public:
@@ -16,7 +21,7 @@ public:
     vector<float> getFilter();
     int getFilterLength();
 
-    vector<char> filter(const vector<char> &input);
+    static vector<char> filter(const vector<char> &input);
 
 protected:
     int generateVhdl();

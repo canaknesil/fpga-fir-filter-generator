@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Map" timeStamp="Mon May  8 14:17:18 2017">
+  <application stringID="Map" timeStamp="Mon May  8 14:30:35 2017">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -45,7 +45,7 @@
         <column stringID="speed"/>
         <row stringID="row" value="0">
           <item stringID="arch" value="Intel(R) Core(TM) i5-3427U CPU @ 1.80GHz"/>
-          <item stringID="speed" value="1894.535 MHz"/>
+          <item stringID="speed" value="2717.953 MHz"/>
         </row>
       </table>
     </section>
@@ -70,7 +70,7 @@
         <item dataType="int" stringID="MAP_NUM_ERRORS" value="0"/>
         <item dataType="int" stringID="MAP_FILTERED_WARNINGS" value="0"/>
         <item dataType="int" stringID="MAP_NUM_WARNINGS" value="1"/>
-        <item UNITS="KB" dataType="int" stringID="MAP_PEAK_MEMORY" value="679140"/>
+        <item UNITS="KB" dataType="int" stringID="MAP_PEAK_MEMORY" value="679136"/>
         <item stringID="MAP_TOTAL_REAL_TIME" value="6 secs "/>
         <item stringID="MAP_TOTAL_CPU_TIME" value="6 secs "/>
       </section>

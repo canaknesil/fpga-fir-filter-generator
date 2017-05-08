@@ -7,8 +7,10 @@ BINDIR := bin/
 
 SRC  = $(SRCDIR)pcmain.cpp
 SRC += $(SRCDIR)fpga-program.cpp
+SRC += $(SRCDIR)fpga-causal-fir-filter.cpp
 SRC += $(SRCDIR)fpga-causal-fir-filter-pc.cpp
 SRC += $(SRCDIR)fpga-loader/fpga-loader.cpp
+SRC += $(SRCDIR)fpga-loader/fpga-loader-pc.cpp
 
 HDR  = $(SRCDIR)fpga-program.h
 HDR += $(SRCDIR)fpga-causal-fir-filter.h
