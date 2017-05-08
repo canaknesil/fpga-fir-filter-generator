@@ -1,6 +1,7 @@
 #include <iostream>
 #include <unistd.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <errno.h>
 #include "fpga-loader.h"
 
@@ -24,11 +25,11 @@ string FpgaLoader::getVhdlPath() {
 }
 
 int FpgaLoader::load() {
-    cout << "FpgaLoader::load(): Has not been implemented yet. Load manually." << endl;
+    system("./loadFir.sh");
     return 0;
 }
 
 //private
-string FpgaLoader::vhdlPath = ""; //current directory
+string FpgaLoader::vhdlPath = "../vhdl-build/"; //current directory
 
 
