@@ -3,13 +3,7 @@
 #include "fpga-comm/fpga-comm.h"
 #include <vector>
 #include <cmath>
-
-
-using namespace std;
-
-#include "fpga-causal-fir-filter.h"
 #include <iostream>
-#include <vector>
 
 using namespace FPGA_Comm;
 using namespace std;
@@ -18,7 +12,7 @@ using namespace std;
 
 vector<char> FpgaCausalFirFilter::filter(const vector<char> &input) {
     
-    return this->filter(input, 0);
+    return filter(input, 0);
 
 }
 
@@ -33,8 +27,8 @@ vector<char> FpgaCausalFirFilter::filter(const vector<char> &input, int filterSi
         return output;
     }
 
-    int inputSize = input.size();
-    int outputLength = inputSize + filterSize - 1;
+    int inputLength = input.size();
+    int outputLength = inputLength + filterSize - 1;
 
 
     for (int i=0; i<inputLength; i++) {
@@ -50,16 +44,16 @@ vector<char> FpgaCausalFirFilter::filter(const vector<char> &input, int filterSi
 
 
 
-char filterChar(char ch) {
+char FpgaCausalFirFilter::filterChar(char ch) {
     
     writeChar(ch);
-    usleep(this->delay);
+    usleep(delay);
 
     setClock(HIGH);
-    usleep(this->delay);
+    usleep(delay);
 
     setClock(LOW);
-    usleep(this->delay);
+    usleep(delay);
     
     return readChar();
 

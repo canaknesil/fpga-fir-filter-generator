@@ -37,5 +37,7 @@ private:
 
     char convertToFixed(float f);
     float convertFromFixed(char ch);
+
+    static char filterChar(char ch);
     
 };

@@ -3,6 +3,8 @@
 #include <wiringPi.h>
 #include <iostream>
 
+using namespace std;
+
 
 
 int in_bits[] = { IN_BIT0,
