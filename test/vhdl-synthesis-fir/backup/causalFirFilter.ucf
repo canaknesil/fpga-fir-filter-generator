@@ -1,0 +1,17 @@
+NET "clock" LOC = A7;
+NET "input(0)" LOC = N3;
+NET "input(1)" LOC = E2;
+NET "input(2)" LOC = F3;
+NET "input(3)" LOC = G3;
+NET "input(4)" LOC = B4;
+NET "input(5)" LOC = K3;
+NET "input(6)" LOC = L3;
+NET "input(7)" LOC = P11;
+NET "output(0)" LOC = G1;
+NET "output(1)" LOC = P4;
+NET "output(2)" LOC = N4;
+NET "output(3)" LOC = N5;
+NET "output(4)" LOC = P6;
+NET "output(5)" LOC = P7;
+NET "output(6)" LOC = M11;
+NET "output(7)" LOC = M5;

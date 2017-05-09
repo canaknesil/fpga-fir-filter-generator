@@ -1,0 +1,4 @@
+
+class FpgaFirFilter : public FpgaProgram {
+
+};

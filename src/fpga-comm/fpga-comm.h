@@ -1,4 +1,7 @@
 
+#define HIGH 1
+#define LOW 0
+
 namespace FPGA_Comm {
 	
 	int initialize();
@@ -6,7 +9,7 @@ namespace FPGA_Comm {
 	
 	void writeChar(char ch);
 	char readChar();
-	
-	unsigned int writeReadInt(unsigned int n); //works for linear systems only
+
+	void setClock(int val);
 	
 }

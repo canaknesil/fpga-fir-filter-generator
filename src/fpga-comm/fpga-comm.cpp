@@ -1,6 +1,7 @@
 #include "fpga-comm.h"
 #include "gpio-map.h"
 #include <wiringPi.h>
+#include <iostream>
 
 
 
@@ -27,6 +28,7 @@ int out_bits[] = { OUT_BIT0,
 int FPGA_Comm::initialize() {
 	
 	if (wiringPiSetupGpio () == -1) {
+		cout << "FPGA_Comm::initialize(): wiringPi setup failed." << endl;
 		return -1;
 	}
 
@@ -67,28 +69,12 @@ char FPGA_Comm::readChar() {
 	return ch;
 }
 
-//works for linear systems only
-unsigned int FPGA_Comm::writeReadInt(unsigned int n) {
-	
-	unsigned int output = 0;
-	
-	for (int i=3; i>=0; i--) {
-		
-		writeChar((n >> i*8) & 0xFF);
-		
-		output <<= 8;
-		output += readChar();
-		
-	}
-	
-	return output;
+
+void FPGA_Comm::setClock(int val) {
+
+	digitalWrite(CLOCK_BIT, (val==1 ? HIGH : LOW) );
 
 }
-
-
-
-
-
 
 
 
