@@ -5,8 +5,7 @@ Command Line: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/ngdbuild
 causalFirFilter.ngc
 
 Reading NGO file
-"/home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/causalFirFilter.n
-gc" ...
+"/home/ege/Documents/elec491/Elec491-Project/vhdl-build/causalFirFilter.ngc" ...
 Gathering constraint information from source properties...
 Done.
 
@@ -28,7 +27,7 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 389116 kilobytes
+Total memory usage is 396256 kilobytes
 
 Writing NGD file "causalFirFilter.ngd" ...
 Total REAL time to NGDBUILD completion:  2 sec

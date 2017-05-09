@@ -20,6 +20,9 @@
 <msg type="info" file="Pack" num="1720" delta="new" >Initializing voltage to <arg fmt="%0.3f" index="1">1.140</arg> Volts. (default - Range: <arg fmt="%0.3f" index="2">1.140</arg> to <arg fmt="%0.3f" index="3">1.320</arg> Volts)
 </msg>
 
+<msg type="info" file="Pack" num="1679" delta="new" ><arg fmt="%s" index="1">FLOP symbol &quot;module2op_2/D_FF8op/D_FF4/Q_REPLICA_0&quot; (Output Signal = module2op_2/D_FF8op/D_FF4/Q_REPLICA_0)</arg> was replicated from <arg fmt="%s" index="2">FLOP symbol &quot;module2op_2/D_FF8op/D_FF4/Q&quot; (Output Signal = module2op_2/D_FF8op/D_FF4/Q)</arg>
+</msg>
+
 <msg type="info" file="Pack" num="1650" delta="new" >Map created a placed design.
 </msg>
 

@@ -6,11 +6,15 @@ using namespace std;
 int main() {
 
     vector<float> filter;
-	filter.push_back(0.2);
-	filter.push_back(0.2);
-	filter.push_back(0.2);
-	filter.push_back(0.2);
-	filter.push_back(0.2);
+	//filter.push_back(0.2);
+	//filter.push_back(0.2);
+	//filter.push_back(0.2);
+	//filter.push_back(0.2);
+	//filter.push_back(0.2);
+
+	for (int i=0; i<32; i++) {
+		filter.push_back(0.031);
+	}
 
 	FpgaCausalFirFilter f(filter);
 
