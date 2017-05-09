@@ -14,6 +14,14 @@ vector<char> FpgaCausalFirFilter::filter(const vector<char> &input) {
 }
 
 
+vector<char> FpgaCausalFirFilter::filter(const vector<char> &input, int filterSize) {
+    //TODO using fpga-comm.h
+    cout << "FpgaCausalFirFilter::filter(): Implementation is for raspberry pi only." << endl;
+    vector<char> output;
+    return output;
+}
+
+
 
 
 

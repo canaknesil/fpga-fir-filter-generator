@@ -1,6 +1,7 @@
 #include "fpga-program.h"
 #include "fpga-loader/fpga-loader.h"
 #include <iostream>
+#include <unistd.h>
 
 
 int FpgaProgram::load() {
@@ -30,3 +31,6 @@ int FpgaProgram::loadVhdl() {
     return 0;
 
 }
+
+
+useconds_t FpgaProgram::delay = 100000; //will be replaced with the result of escilloscobe

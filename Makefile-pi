@@ -18,7 +18,7 @@ HDR += $(SRCDIR)fpga-causal-fir-filter.h
 HDR += $(SRCDIR)causal-fir-filter-vhdl.h
 HDR += $(SRCDIR)fpga-loader/fpga-loader.h
 HDR += $(SRCDIR)fpga-comm/fpga-comm.h
-HDR += $(SRCDIR)fpga-comm/gpio.map.h
+HDR += $(SRCDIR)fpga-comm/gpio-map.h
 
 LIB := -lwiringPi
 

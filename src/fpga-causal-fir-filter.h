@@ -22,6 +22,7 @@ public:
     int getFilterLength();
 
     static vector<char> filter(const vector<char> &input);
+    static vector<char> filter(const vector<char> &intput, int filterSize);
 
 protected:
     int generateVhdl();
