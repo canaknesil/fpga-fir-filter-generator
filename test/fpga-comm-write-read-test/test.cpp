@@ -7,11 +7,18 @@ using namespace std;
 
 int ch;
 
-void read_print() {
+void write_read_print() {
+
+	int ch;
+	cout << "Write: ";
+	cin >> ch;
+
+	writeChar(ch);
+
+	usleep(200000);
 
 	char readCh = readChar();
-	cout << (int) readCh << endl;
-	usleep(200000);
+	cout << "Read: " << (int) readCh << endl;
 
 }
 
@@ -20,7 +27,7 @@ int main() {
 	initialize();
 
 	while (true) {
-		read_print();
+		write_read_print();
 	}
 
 	return 0;
