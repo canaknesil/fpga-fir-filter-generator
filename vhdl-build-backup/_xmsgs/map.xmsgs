@@ -20,7 +20,7 @@
 <msg type="info" file="Pack" num="1720" delta="new" >Initializing voltage to <arg fmt="%0.3f" index="1">1.140</arg> Volts. (default - Range: <arg fmt="%0.3f" index="2">1.140</arg> to <arg fmt="%0.3f" index="3">1.320</arg> Volts)
 </msg>
 
-<msg type="info" file="Pack" num="1679" delta="new" ><arg fmt="%s" index="1">FLOP symbol &quot;module2op_2/D_FF8op/D_FF4/Q_REPLICA_0&quot; (Output Signal = module2op_2/D_FF8op/D_FF4/Q_REPLICA_0)</arg> was replicated from <arg fmt="%s" index="2">FLOP symbol &quot;module2op_2/D_FF8op/D_FF4/Q&quot; (Output Signal = module2op_2/D_FF8op/D_FF4/Q)</arg>
+<msg type="warning" file="Place" num="1019" delta="new" >A clock IOB / clock component pair have been found that are not placed at an optimal clock IOB / clock site pair. The clock component &lt;<arg fmt="%s" index="1">clock_BUFGP/BUFG</arg>&gt; is placed at site &lt;<arg fmt="%s" index="2">BUFGMUX_X1Y10</arg>&gt;. The IO component &lt;<arg fmt="%s" index="3">clock</arg>&gt; is placed at site &lt;<arg fmt="%s" index="4">B1</arg>&gt;.  This will not allow the use of the fast path between the IO and the Clock buffer. This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint was applied on COMP.PIN &lt;<arg fmt="%s" index="5">clock.PAD</arg>&gt; allowing your design to continue. This constraint disables all clock placer rules related to the specified COMP.PIN. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
 </msg>
 
 <msg type="info" file="Pack" num="1650" delta="new" >Map created a placed design.

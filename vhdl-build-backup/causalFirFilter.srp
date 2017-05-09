@@ -82,40 +82,40 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "/home/ege/Documents/elec491/Elec491-Project/vhdl-build/xor_gate.vhd" in Library work.
+Compiling vhdl file "/home/ege/Documents/Elec491-Project/vhdl-build/xor_gate.vhd" in Library work.
 Entity <xor_gate> compiled.
 Entity <xor_gate> (Architecture <dataflow>) compiled.
-Compiling vhdl file "/home/ege/Documents/elec491/Elec491-Project/vhdl-build/and_gate.vhd" in Library work.
+Compiling vhdl file "/home/ege/Documents/Elec491-Project/vhdl-build/and_gate.vhd" in Library work.
 Entity <and_gate> compiled.
 Entity <and_gate> (Architecture <dataflow>) compiled.
-Compiling vhdl file "/home/ege/Documents/elec491/Elec491-Project/vhdl-build/or_gate.vhd" in Library work.
+Compiling vhdl file "/home/ege/Documents/Elec491-Project/vhdl-build/or_gate.vhd" in Library work.
 Entity <or_gate> compiled.
 Entity <or_gate> (Architecture <dataflow>) compiled.
-Compiling vhdl file "/home/ege/Documents/elec491/Elec491-Project/vhdl-build/d_ff.vhd" in Library work.
+Compiling vhdl file "/home/ege/Documents/Elec491-Project/vhdl-build/d_ff.vhd" in Library work.
 Entity <D_FF> compiled.
 Entity <D_FF> (Architecture <Behavioral>) compiled.
-Compiling vhdl file "/home/ege/Documents/elec491/Elec491-Project/vhdl-build/FullAdder.vhd" in Library work.
+Compiling vhdl file "/home/ege/Documents/Elec491-Project/vhdl-build/FullAdder.vhd" in Library work.
 Entity <FullAdder> compiled.
 Entity <FullAdder> (Architecture <FullAdder_struct>) compiled.
-Compiling vhdl file "/home/ege/Documents/elec491/Elec491-Project/vhdl-build/d_ff8.vhd" in Library work.
+Compiling vhdl file "/home/ege/Documents/Elec491-Project/vhdl-build/d_ff8.vhd" in Library work.
 Entity <D_FF8> compiled.
 Entity <D_FF8> (Architecture <Behavioral>) compiled.
-Compiling vhdl file "/home/ege/Documents/elec491/Elec491-Project/vhdl-build/adder8.vhd" in Library work.
+Compiling vhdl file "/home/ege/Documents/Elec491-Project/vhdl-build/adder8.vhd" in Library work.
 Entity <adder8> compiled.
 Entity <adder8> (Architecture <Behavioral>) compiled.
-Compiling vhdl file "/home/ege/Documents/elec491/Elec491-Project/vhdl-build/module1.vhd" in Library work.
+Compiling vhdl file "/home/ege/Documents/Elec491-Project/vhdl-build/module1.vhd" in Library work.
 Entity <module1> compiled.
 Entity <module1> (Architecture <Behavioral>) compiled.
-Compiling vhdl file "/home/ege/Documents/elec491/Elec491-Project/vhdl-build/module2.vhd" in Library work.
+Compiling vhdl file "/home/ege/Documents/Elec491-Project/vhdl-build/module2.vhd" in Library work.
 Entity <module2> compiled.
 Entity <module2> (Architecture <Behavioral>) compiled.
-Compiling vhdl file "/home/ege/Documents/elec491/Elec491-Project/vhdl-build/module3.vhd" in Library work.
+Compiling vhdl file "/home/ege/Documents/Elec491-Project/vhdl-build/module3.vhd" in Library work.
 Entity <module3> compiled.
 Entity <module3> (Architecture <Behavioral>) compiled.
-Compiling vhdl file "/home/ege/Documents/elec491/Elec491-Project/vhdl-build/multiplier8.vhd" in Library work.
+Compiling vhdl file "/home/ege/Documents/Elec491-Project/vhdl-build/multiplier8.vhd" in Library work.
 Entity <multiplier8> compiled.
 Entity <multiplier8> (Architecture <Behavioral>) compiled.
-Compiling vhdl file "/home/ege/Documents/elec491/Elec491-Project/vhdl-build/causalFirFilter.vhd" in Library work.
+Compiling vhdl file "/home/ege/Documents/Elec491-Project/vhdl-build/causalFirFilter.vhd" in Library work.
 Entity <threesamplefilter> compiled.
 Entity <threesamplefilter> (Architecture <Behavioral>) compiled.
 
@@ -152,7 +152,7 @@ Analyzing Entity <threesamplefilter> in library <work> (Architecture <Behavioral
 Entity <threesamplefilter> analyzed. Unit <threesamplefilter> generated.
 
 Analyzing Entity <module1> in library <work> (Architecture <Behavioral>).
-WARNING:Xst:753 - "/home/ege/Documents/elec491/Elec491-Project/vhdl-build/module1.vhd" line 55: Unconnected output port 'cout' of component 'adder8'.
+WARNING:Xst:753 - "/home/ege/Documents/Elec491-Project/vhdl-build/module1.vhd" line 55: Unconnected output port 'cout' of component 'adder8'.
 Entity <module1> analyzed. Unit <module1> generated.
 
 Analyzing Entity <adder8> in library <work> (Architecture <Behavioral>).
@@ -171,7 +171,7 @@ Analyzing Entity <or_gate> in library <work> (Architecture <dataflow>).
 Entity <or_gate> analyzed. Unit <or_gate> generated.
 
 Analyzing Entity <module2> in library <work> (Architecture <Behavioral>).
-WARNING:Xst:753 - "/home/ege/Documents/elec491/Elec491-Project/vhdl-build/module2.vhd" line 62: Unconnected output port 'cout' of component 'adder8'.
+WARNING:Xst:753 - "/home/ege/Documents/Elec491-Project/vhdl-build/module2.vhd" line 62: Unconnected output port 'cout' of component 'adder8'.
 Entity <module2> analyzed. Unit <module2> generated.
 
 Analyzing Entity <D_FF8> in library <work> (Architecture <Behavioral>).
@@ -191,23 +191,23 @@ Entity <module3> analyzed. Unit <module3> generated.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <xor_gate>.
-    Related source file is "/home/ege/Documents/elec491/Elec491-Project/vhdl-build/xor_gate.vhd".
+    Related source file is "/home/ege/Documents/Elec491-Project/vhdl-build/xor_gate.vhd".
     Found 1-bit xor2 for signal <z>.
 Unit <xor_gate> synthesized.
 
 
 Synthesizing Unit <and_gate>.
-    Related source file is "/home/ege/Documents/elec491/Elec491-Project/vhdl-build/and_gate.vhd".
+    Related source file is "/home/ege/Documents/Elec491-Project/vhdl-build/and_gate.vhd".
 Unit <and_gate> synthesized.
 
 
 Synthesizing Unit <or_gate>.
-    Related source file is "/home/ege/Documents/elec491/Elec491-Project/vhdl-build/or_gate.vhd".
+    Related source file is "/home/ege/Documents/Elec491-Project/vhdl-build/or_gate.vhd".
 Unit <or_gate> synthesized.
 
 
 Synthesizing Unit <D_FF>.
-    Related source file is "/home/ege/Documents/elec491/Elec491-Project/vhdl-build/d_ff.vhd".
+    Related source file is "/home/ege/Documents/Elec491-Project/vhdl-build/d_ff.vhd".
     Found 1-bit register for signal <Q>.
     Summary:
 	inferred   1 D-type flip-flop(s).
@@ -215,17 +215,17 @@ Unit <D_FF> synthesized.
 
 
 Synthesizing Unit <FullAdder>.
-    Related source file is "/home/ege/Documents/elec491/Elec491-Project/vhdl-build/FullAdder.vhd".
+    Related source file is "/home/ege/Documents/Elec491-Project/vhdl-build/FullAdder.vhd".
 Unit <FullAdder> synthesized.
 
 
 Synthesizing Unit <D_FF8>.
-    Related source file is "/home/ege/Documents/elec491/Elec491-Project/vhdl-build/d_ff8.vhd".
+    Related source file is "/home/ege/Documents/Elec491-Project/vhdl-build/d_ff8.vhd".
 Unit <D_FF8> synthesized.
 
 
 Synthesizing Unit <module3>.
-    Related source file is "/home/ege/Documents/elec491/Elec491-Project/vhdl-build/module3.vhd".
+    Related source file is "/home/ege/Documents/Elec491-Project/vhdl-build/module3.vhd".
 WARNING:Xst:646 - Signal <multoutext<15>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <multoutext<6:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
     Found 8x8-bit multiplier for signal <multoutext>.
@@ -235,12 +235,12 @@ Unit <module3> synthesized.
 
 
 Synthesizing Unit <adder8>.
-    Related source file is "/home/ege/Documents/elec491/Elec491-Project/vhdl-build/adder8.vhd".
+    Related source file is "/home/ege/Documents/Elec491-Project/vhdl-build/adder8.vhd".
 Unit <adder8> synthesized.
 
 
 Synthesizing Unit <module1>.
-    Related source file is "/home/ege/Documents/elec491/Elec491-Project/vhdl-build/module1.vhd".
+    Related source file is "/home/ege/Documents/Elec491-Project/vhdl-build/module1.vhd".
 WARNING:Xst:646 - Signal <multoutext<15>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <multoutext<6:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
     Found 8x8-bit multiplier for signal <multoutext>.
@@ -250,7 +250,7 @@ Unit <module1> synthesized.
 
 
 Synthesizing Unit <module2>.
-    Related source file is "/home/ege/Documents/elec491/Elec491-Project/vhdl-build/module2.vhd".
+    Related source file is "/home/ege/Documents/Elec491-Project/vhdl-build/module2.vhd".
 WARNING:Xst:646 - Signal <multoutext<15>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <multoutext<6:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
     Found 8x8-bit multiplier for signal <multoutext>.
@@ -260,7 +260,7 @@ Unit <module2> synthesized.
 
 
 Synthesizing Unit <threesamplefilter>.
-    Related source file is "/home/ege/Documents/elec491/Elec491-Project/vhdl-build/causalFirFilter.vhd".
+    Related source file is "/home/ege/Documents/Elec491-Project/vhdl-build/causalFirFilter.vhd".
 WARNING:Xst:653 - Signal <hardcoded_9> is used but never assigned. This sourceless signal will be automatically connected to value 00000100.
 WARNING:Xst:653 - Signal <hardcoded_8> is used but never assigned. This sourceless signal will be automatically connected to value 00000100.
 WARNING:Xst:653 - Signal <hardcoded_7> is used but never assigned. This sourceless signal will be automatically connected to value 00000100.
@@ -619,13 +619,13 @@ Delay:               15.006ns (Levels of Logic = 8)
 =========================================================================
 
 
-Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 7.48 secs
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.28 secs
  
 --> 
 
 
-Total memory usage is 533952 kilobytes
+Total memory usage is 534524 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   42 (   0 filtered)
