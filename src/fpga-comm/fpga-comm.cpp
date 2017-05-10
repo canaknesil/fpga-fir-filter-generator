@@ -7,23 +7,15 @@ using namespace std;
 
 
 
-int in_bits[] = { IN_BIT0,
+int in_bits[] = {IN_BIT0,
 				 IN_BIT1,
 				 IN_BIT2,
-				 IN_BIT3,
-				 IN_BIT4,
-				 IN_BIT5,
-				 IN_BIT6,
-				 IN_BIT7 };
+				 IN_BIT3};
 
-int out_bits[] = { OUT_BIT0,
+int out_bits[] = {OUT_BIT0,
 				  OUT_BIT1,
 				  OUT_BIT2,
-				  OUT_BIT3,
-				  OUT_BIT4,
-				  OUT_BIT5,
-				  OUT_BIT6,
-				  OUT_BIT7 };
+				  OUT_BIT3};
 
 
 
@@ -34,10 +26,14 @@ int FPGA_Comm::initialize() {
 		return -1;
 	}
 
-	for (int i=0; i<8; i++) {
+	for (int i=0; i<4; i++) {
 		pinMode(out_bits[i], OUTPUT);
 		pinMode(in_bits[i], INPUT);
 	}
+
+	pinMode(CLOCK_BIT, OUTPUT);
+	pinMode(WRITE_MUX, OUTPUT);
+	pinMode(READ_MUX, OUTPUT);
 	
 	return 0;
 }
@@ -50,7 +46,7 @@ int FPGA_Comm::finalize() {
 
 void FPGA_Comm::writeChar(char ch) {
 
-	for (int i=0; i<8; i++) {
+	for (int i=0; i<4; i++) {
 
 		digitalWrite(out_bits[i], (ch%2 == 0 ? LOW : HIGH));
 		ch >>= 1;
@@ -63,7 +59,7 @@ char FPGA_Comm::readChar() {
 	
 	char ch = 0;
 	
-	for (int i=7; i>=0; i--) {
+	for (int i=3; i>=0; i--) {
 		ch <<= 1;
 		if (digitalRead(in_bits[i]) == HIGH) ch += 1;
 	}
@@ -73,13 +69,18 @@ char FPGA_Comm::readChar() {
 
 
 void FPGA_Comm::setClock(int val) {
-
 	digitalWrite(CLOCK_BIT, (val==1 ? HIGH : LOW) );
-
 }
 
 
+void FPGA::Comm::writeMux(int val) {
+	digitalWrite(WRITE_MUX, (val == MS4B ? HIGH : LOW) );
+}
 
+
+void FPGA::Comm::readMux(int val) {
+	digitalWrite(READ_MUX, (val == MS4B ? HIGH : LOW) );
+}
 
 
 

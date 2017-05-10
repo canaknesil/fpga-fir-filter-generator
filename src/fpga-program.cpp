@@ -34,3 +34,7 @@ int FpgaProgram::loadVhdl() {
 
 
 useconds_t FpgaProgram::delay = 100000; //will be replaced with the result of escilloscobe
+
+void FpgaProgram::delay() {
+    usleep(delayusec);
+}

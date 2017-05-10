@@ -46,15 +46,38 @@ vector<char> FpgaCausalFirFilter::filter(const vector<char> &input, int filterSi
 
 char FpgaCausalFirFilter::filterChar(char ch) {
     
+    //write least significant 4 bits
+    writeMux(LS4B);
+    delay();
     writeChar(ch);
-    usleep(delay);
+    delay();
 
+    //write most significant 4 bits
+    ch >>= 4;
+    writeMux(MS4B);
+    delay();
+    writeChar(ch);
+    delay();
+
+   //run the clock for fpga
     setClock(HIGH);
-    usleep(delay);
-
+    delay();
     setClock(LOW);
-    usleep(delay);
+    delay();
+
+    //read least significant 4 bits
+    char readCh = 0;
+
+    readMux(LS4B);
+    delay();
+    readCh = readChar();
+
+    //read most significant 4 bits
+    readCh <<= 4;
+    readMux(MS4B);
+    delay();
+    readCh += readChar();
     
-    return readChar();
+    return readChar;
 
 }

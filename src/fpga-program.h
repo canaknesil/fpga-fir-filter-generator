@@ -8,12 +8,13 @@ public:
     int load();
 
 protected:
-
-    static useconds_t delay;
-
     virtual int generateVhdl() = 0;
+
+    static void delay();
 
 private:
     int loadVhdl();
+
+    static useconds_t delayusec;
 
 };

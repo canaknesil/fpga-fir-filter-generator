@@ -6,24 +6,18 @@
 #define IN_BIT2 22 //b9
 #define IN_BIT3 23 //a9
 
-#define IN_BIT4 13 //b5
-#define IN_BIT5 19 //j3
-#define IN_BIT6 26 //a3
-#define IN_BIT7 20 //b2
-
-
 #define OUT_BIT0 2 //d12
 #define OUT_BIT1 3 //c13
 #define OUT_BIT2 4 //a13
 #define OUT_BIT3 14//c12
 
-#define OUT_BIT4 10//b7
-#define OUT_BIT5 9 //c5
-#define OUT_BIT6 11//b6
-#define OUT_BIT7 8 //c6
-
 
 #define CLOCK_BIT 21
+
+#define WRITE_MUX 2
+#define READ_MUX 2
+
+
 
 /*
  
