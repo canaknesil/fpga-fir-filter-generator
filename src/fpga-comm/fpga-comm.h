@@ -10,12 +10,11 @@ namespace FPGA_Comm {
 	int initialize();
 	int finalize();
 	
-	void writeChar(char ch); //only writes loast significant 4 bits
-	char readChar(); ////only reads loast significant 4 bits
+	void writeChar(char ch); //writes all 8 bits
+	char readChar(); //only reads loast significant 4 bits
 
 	void setClock(int val);
 
-	void writeMux(int val);
 	void readMux(int val);
 	
 }
