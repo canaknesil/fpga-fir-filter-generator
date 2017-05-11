@@ -34,7 +34,7 @@ entity module3 is
     Port ( input : in  STD_LOGIC_VECTOR (7 downto 0);
            clock : in  STD_LOGIC;
 			  hardcoded : in std_logic_vector (7 downto 0);
-           output : out  STD_LOGIC_VECTOR (7 downto 0));
+           output : out  STD_LOGIC_VECTOR (15 downto 0));
 end module3;
 
 architecture Behavioral of module3 is
@@ -44,14 +44,15 @@ Q_out8: out std_logic_vector(7 downto 0));
 END COMPONENT; 
 
 signal multin: std_logic_vector(7 downto 0);
-signal multoutext: std_logic_vector(15 downto 0);
---signal hardcoded: std_logic_vector(7 downto 0) := "00000101";
+signal multoutext: unsigned(15 downto 0);
+signal multoutext_logic: std_logic_vector(15 downto 0);
 
 begin
 
 D_FF8op: D_FF8 PORT MAP(input, clock, multin);
-multoutext <= std_logic_vector(signed(multin) * signed(hardcoded));
-output <= multoutext(14 downto 7);
+multoutext <= unsigned(multin) * unsigned(hardcoded);
+multoutext_logic <= STD_LOGIC_VECTOR(multoutext);
+output <= multoutext_logic;
 
 end Behavioral;
 

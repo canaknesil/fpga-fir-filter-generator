@@ -1,3 +1,19 @@
+//NET "input(0)" LOC = P11;
+//NET "input(1)" LOC = L3;
+//NET "input(2)" LOC = K3;
+//NET "input(3)" LOC = B4;
+//NET "input(4)" LOC = G3;
+//NET "input(5)" LOC = F3;
+//NET "input(6)" LOC = E2;
+//NET "input(7)" LOC = N3;
+//NET "clock" LOC = A7;
+//NET "out_sw" LOC = M4;
+//NET "output(0)" LOC = M5;
+//NET "output(1)" LOC = M11;
+//NET "output(2)" LOC = P7;
+//NET "output(3)" LOC = P6;
+
+
 NET "input(0)" LOC = D12;
 NET "input(1)" LOC = C13;
 NET "input(2)" LOC = A13;
@@ -6,12 +22,10 @@ NET "input(4)" LOC = C9;
 NET "input(5)" LOC = A10;
 NET "input(6)" LOC = B9;
 NET "input(7)" LOC = A9;
-NET "switch" LOC = B5;
+NET "clock" LOC = B5;
 NET "out_sw" LOC = J3;
 NET "output(0)" LOC = B7;
 NET "output(1)" LOC = C5;
 NET "output(2)" LOC = B6;
 NET "output(3)" LOC = C6;
-
-NET "switch" CLOCK_DEDICATED_ROUTE = FALSE;
-
+NET "clock" CLOCK_DEDICATED_ROUTE = FALSE;

@@ -31,7 +31,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity topModule is
     Port ( input : in  STD_LOGIC_VECTOR (7 downto 0);
-           switch : in  STD_LOGIC;
+           clock : in  STD_LOGIC;
            out_sw : in  STD_LOGIC;
            output : out  STD_LOGIC_VECTOR (3 downto 0));
 end topModule;
@@ -55,7 +55,7 @@ signal dummy_out_least, dummy_out_most : std_logic_vector(3 downto 0);
 
 begin
 
-threesamplefilter_op: threesamplefilter PORT MAP(input, switch, dummy_out);
+threesamplefilter_op: threesamplefilter PORT MAP(input, clock, dummy_out);
 dummy_out_least <= dummy_out(3 downto 0);
 dummy_out_most <= dummy_out(7 downto 4);
 

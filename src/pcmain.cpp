@@ -12,8 +12,8 @@ int main() {
 	//filter.push_back(0.2);
 	//filter.push_back(0.2);
 
-	for (int i=0; i<32; i++) {
-		filter.push_back(0.01);
+	for (int i=0; i<64; i++) {
+		filter.push_back(0.25);
 	}
 
 	FpgaCausalFirFilter f(filter);

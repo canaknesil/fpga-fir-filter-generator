@@ -16,17 +16,17 @@
 "\n"\
 "component module1 is \n"\
 "\tPort ( input : in  STD_LOGIC_VECTOR (7 downto 0); \n"\
-"\t\tterm : in  STD_LOGIC_VECTOR (7 downto 0); \n"\
+"\t\tterm : in  STD_LOGIC_VECTOR (15 downto 0); \n"\
 "\t\thardcoded : in std_logic_vector (7 downto 0); \n"\
 "\t\toutput : out  STD_LOGIC_VECTOR (7 downto 0)); \n"\
 "end component; \n"\
 "\n"\
 "component module2 is \n"\
 "\tPort ( input : in  STD_LOGIC_VECTOR (7 downto 0); \n"\
-"\t\tterm : in  STD_LOGIC_VECTOR (7 downto 0); \n"\
+"\t\tterm : in  STD_LOGIC_VECTOR (15 downto 0); \n"\
 "\t\tclock : in  STD_LOGIC; \n"\
 "\t\thardcoded : in std_logic_vector (7 downto 0); \n"\
-"\t\toutput : out  STD_LOGIC_VECTOR (7 downto 0); \n"\
+"\t\toutput : out  STD_LOGIC_VECTOR (15 downto 0); \n"\
 "\t\tfout : out  STD_LOGIC_VECTOR (7 downto 0)); \n"\
 "end component; \n"\
 "\n"\
@@ -34,7 +34,7 @@
 "\tPort ( input : in  STD_LOGIC_VECTOR (7 downto 0); \n"\
 "\t\tclock : in  STD_LOGIC; \n"\
 "\t\thardcoded : in std_logic_vector (7 downto 0); \n"\
-"\t\toutput : out  STD_LOGIC_VECTOR (7 downto 0)); \n"\
+"\t\toutput : out  STD_LOGIC_VECTOR (15 downto 0)); \n"\
 "end component; \n"\
 "\n"
 
@@ -47,12 +47,13 @@ string CAUSAL_FIR_FILTER_VHDL_HARDCODED(int N, string VAL) {
 
 
 #define CAUSAL_FIR_FILTER_VHDL_M1_TERM \
-"signal module1_term: std_logic_vector(7 downto 0); \n"
+"signal module1_term: std_logic_vector(15 downto 0); \n"
 
 
 string CAUSAL_FIR_FILTER_VHDL_M2_SIGNALS(int N) {
     stringstream ss("");
-    ss << "signal module2_" << N << "_todown, module2_" << N << "_fromdown : std_logic_vector(7 downto 0); \n";
+    ss << "signal module2_" << N << "_todown : std_logic_vector(7 downto 0); \n";
+	ss << "signal module2_" << N << "_fromdown : std_logic_vector(15 downto 0); \n";
     return ss.str();
 }
 

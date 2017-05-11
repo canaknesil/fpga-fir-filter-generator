@@ -32,27 +32,28 @@ use ieee.numeric_std.all;
 
 entity module1 is
     Port ( input : in  STD_LOGIC_VECTOR (7 downto 0);
-           term : in  STD_LOGIC_VECTOR (7 downto 0);
+           term : in  STD_LOGIC_VECTOR (15 downto 0);
 			  hardcoded : in std_logic_vector (7 downto 0);
            output : out  STD_LOGIC_VECTOR (7 downto 0));
 end module1;
 
 architecture Behavioral of module1 is
 
-COMPONENT adder8 is Port ( term1 : in  STD_LOGIC_VECTOR (7 downto 0); term2 : in  STD_LOGIC_VECTOR (7 downto 0);
-           output : out  STD_LOGIC_VECTOR (7 downto 0);
+COMPONENT adder8 is Port ( term1 : in  STD_LOGIC_VECTOR (15 downto 0); term2 : in  STD_LOGIC_VECTOR (15 downto 0);
+           output : out  STD_LOGIC_VECTOR (15 downto 0);
            cout : out  STD_LOGIC);
 end COMPONENT;
 
-signal multoutext: std_logic_vector(15 downto 0);
-signal multout: std_logic_vector(7 downto 0);
---signal hardcoded: std_logic_vector(7 downto 0) := "00000101";
+signal multoutext: unsigned(15 downto 0);
+signal multoutext_logic: std_logic_vector(15 downto 0);
+signal dumb_output: std_logic_vector(15 downto 0);
 
 begin
 
-multoutext <= std_logic_vector(signed(input) * signed(hardcoded));
-multout <= multoutext(14 downto 7);
-adder: adder8 PORT MAP(multout, term, output);
+multoutext <= unsigned(input) * unsigned(hardcoded);
+multoutext_logic <= STD_LOGIC_VECTOR(multoutext);
+adder: adder8 PORT MAP(multoutext_logic, term, dumb_output);
+output <= dumb_output(14 downto 7);
 
 end Behavioral;
 

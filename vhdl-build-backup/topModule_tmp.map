@@ -9,7 +9,7 @@ Target Device  : xc3s100e
 Target Package : cp132
 Target Speed   : -5
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Thu May 11 19:41:49 2017
+Mapped Date    : Fri May 12 00:32:22 2017
 
 WARNING:Map:34 - Speed grade not specified.  Using default "-5".
 Mapping design into LUTs...
@@ -18,104 +18,36 @@ Running directed packing...
 Running delay-based LUT packing...
 Updating timing models...
 Running timing-driven placement...
-Total REAL time at the beginning of Placer: 2 secs 
-Total CPU  time at the beginning of Placer: 2 secs 
+Total REAL time at the beginning of Placer: 3 secs 
+Total CPU  time at the beginning of Placer: 3 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:f3e1e3d9) REAL time: 3 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:e10245ba) REAL time: 4 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:f3e1e3d9) REAL time: 3 secs 
+ERROR:Place:836 - Not enough free sites available for the components of the
+   following type(s).
+      LUT   	Number of Components 2535   	Number of Sites 1920
+      FF   	Number of Components 1987   	Number of Sites 1920
 
-Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:f3e1e3d9) REAL time: 3 secs 
+ERROR:Place:375 - The design does not fit in device.
+    Total LUT Utilization      : 2535 out of 1920
+    LUTs used as Logic         : 2535
+    LUTs used as Memory        : 0
+    FF Utilization             : 1987 out of 1920
 
-Phase 4.2  Initial Clock and IO Placement
 
-..............
-WARNING:Place:1019 - A clock IOB / clock component pair have been found that are
-   not placed at an optimal clock IOB / clock site pair. The clock component
-   <switch_BUFGP/BUFG> is placed at site <BUFGMUX_X1Y10>. The IO component
-   <switch> is placed at site <B5>.  This will not allow the use of the fast
-   path between the IO and the Clock buffer. This is normally an ERROR but the
-   CLOCK_DEDICATED_ROUTE constraint was applied on COMP.PIN <switch.PAD>
-   allowing your design to continue. This constraint disables all clock placer
-   rules related to the specified COMP.PIN. The use of this override is highly
-   discouraged as it may lead to very poor timing results. It is recommended
-   that this error condition be corrected in the design.
-Phase 4.2  Initial Clock and IO Placement (Checksum:73a69521) REAL time: 4 secs 
+Phase 2.7  Design Feasibility Check (Checksum:e10245ba) REAL time: 4 secs 
 
-Phase 5.30  Global Clock Region Assignment
-Phase 5.30  Global Clock Region Assignment (Checksum:73a69521) REAL time: 4 secs 
-
-Phase 6.36  Local Placement Optimization
-Phase 6.36  Local Placement Optimization (Checksum:73a69521) REAL time: 4 secs 
-
-Phase 7.8  Global Placement
-..................................................................................................................................................................
-..
-Phase 7.8  Global Placement (Checksum:6f64f257) REAL time: 4 secs 
-
-Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:6f64f257) REAL time: 4 secs 
-
-Phase 9.18  Placement Optimization
-Phase 9.18  Placement Optimization (Checksum:a8b0c003) REAL time: 5 secs 
-
-Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:a8b0c003) REAL time: 5 secs 
-
-Total REAL time to Placer completion: 5 secs 
-Total CPU  time to Placer completion: 5 secs 
-Running physical synthesis...
-......
-Physical synthesis completed.
-Running post-placement packing...
-WARNING:PhysDesignRules:367 - The signal <input<0>_IBUF> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <input<1>_IBUF> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <input<2>_IBUF> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <input<3>_IBUF> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <input<4>_IBUF> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <input<5>_IBUF> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <input<6>_IBUF> is incomplete. The
-   signal does not drive any load pins in the design.
-
-Design Summary
---------------
-
-Design Summary:
-Number of errors:      0
-Number of warnings:    9
-Logic Utilization:
-  Number of Slice Flip Flops:            33 out of   1,920    1%
-  Number of 4 input LUTs:               641 out of   1,920   33%
-Logic Distribution:
-  Number of occupied Slices:            493 out of     960   51%
-    Number of Slices containing only related logic:     493 out of     493 100%
-    Number of Slices containing unrelated logic:          0 out of     493   0%
-      *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:         911 out of   1,920   47%
-    Number used as logic:               641
-    Number used as a route-thru:        270
-
-  The Slice Logic Distribution report is not meaningful if the design is
-  over-mapped for a non-slice resource or if Placement fails.
-
-  Number of bonded IOBs:                 14 out of      83   16%
-    IOB Flip Flops:                       1
-  Number of BUFGMUXs:                     1 out of      24    4%
-
-Average Fanout of Non-Clock Nets:                1.78
-
-Peak Memory Usage:  670 MB
-Total REAL time to MAP completion:  8 secs 
-Total CPU time to MAP completion:   8 secs 
+Total REAL time to Placer completion: 4 secs 
+Total CPU  time to Placer completion: 4 secs 
+ERROR:Pack:1654 - The timing-driven placement phase encountered an error.
 
 Mapping completed.
 See MAP report file "topModule_tmp.mrp" for details.
+Problem encountered during the packing phase.
+
+Design Summary
+--------------
+Number of errors   :   3
+Number of warnings :   1
