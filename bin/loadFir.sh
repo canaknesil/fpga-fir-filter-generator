@@ -2,12 +2,12 @@
 
 
 progdir="../"
-bitfile="causalFirFilter.bit"
-vhdltop="causalFirFilter.vhd"
+bitfile="topModule.bit"
+firvhdl="causalFirFilter.vhd"
 
 cd $progdir
 
-if [ -f "vhdl-build/"$vhdltop ]
+if [ -f "vhdl-build/"$firvhdl ]
 then
 	
 	cp resources/causal-fir-filter-vhdl/* vhdl-build

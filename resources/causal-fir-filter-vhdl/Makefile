@@ -33,13 +33,13 @@
 #
 # TODO: .xco files are device dependant, should use a template based system
 
-project = causalFirFilter
+project = topModule
 vendor = xilinx
 family = spartan3e
 part =  XC3S100E-CP132
-top_module = threesamplefilter
+top_module = topModule
 
-vfiles = causalFirFilter.vhd adder8.vhd and_gate.vhd d_ff.vhd d_ff8.vhd FullAdder.vhd module1.vhd module2.vhd module3.vhd multiplier8.vhd or_gate.vhd xor_gate.vhd
+vfiles = topModule.vhd MUX8_4.vhd MUX4_2.vhd causalFirFilter.vhd adder8.vhd and_gate.vhd d_ff.vhd d_ff8.vhd FullAdder.vhd module1.vhd module2.vhd module3.vhd multiplier8.vhd or_gate.vhd xor_gate.vhd
 LANG = vhdl
 bitgen_opts = UserID:0xADEAFBEE
 isedir ?= /opt/Xilinx/14.7/ISE_DS

@@ -1,0 +1,15 @@
+vhdl work FullAdder.vhd
+vhdl work MUX4_2.vhd
+vhdl work MUX8_4.vhd
+vhdl work adder8.vhd
+vhdl work and_gate.vhd
+vhdl work causalFirFilter.vhd
+vhdl work d_ff.vhd
+vhdl work d_ff8.vhd
+vhdl work module1.vhd
+vhdl work module2.vhd
+vhdl work module3.vhd
+vhdl work multiplier8.vhd
+vhdl work or_gate.vhd
+vhdl work topModule.vhd
+vhdl work xor_gate.vhd

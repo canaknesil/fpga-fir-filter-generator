@@ -1,0 +1,875 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "topModule.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Target Device                      : XC3S100E-CP132
+Output File Name                   : "topModule.ngc"
+Output Format                      : NGC
+
+---- Source Options
+Top Module Name                    : topModule
+Safe Implementation                : No
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+ROM Style                          : Auto
+Shift Register Extraction          : YES
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : speed
+Optimization Effort                : 1
+Keep Hierarchy                     : no
+Netlist Hierarchy                  : as_optimized
+RTL Output                         : no
+Global Optimization                : AllClockNets
+Read Cores                         : yes
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/xor_gate.vhd" in Library work.
+Entity <xor_gate> compiled.
+Entity <xor_gate> (Architecture <dataflow>) compiled.
+Compiling vhdl file "/home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/and_gate.vhd" in Library work.
+Entity <and_gate> compiled.
+Entity <and_gate> (Architecture <dataflow>) compiled.
+Compiling vhdl file "/home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/or_gate.vhd" in Library work.
+Entity <or_gate> compiled.
+Entity <or_gate> (Architecture <dataflow>) compiled.
+Compiling vhdl file "/home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/d_ff.vhd" in Library work.
+Entity <D_FF> compiled.
+Entity <D_FF> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/FullAdder.vhd" in Library work.
+Entity <FullAdder> compiled.
+Entity <FullAdder> (Architecture <FullAdder_struct>) compiled.
+Compiling vhdl file "/home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/d_ff8.vhd" in Library work.
+Entity <D_FF8> compiled.
+Entity <D_FF8> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/adder8.vhd" in Library work.
+Entity <adder8> compiled.
+Entity <adder8> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/MUX4_2.vhd" in Library work.
+Entity <MUX4_2> compiled.
+Entity <MUX4_2> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/module1.vhd" in Library work.
+Entity <module1> compiled.
+Entity <module1> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/module2.vhd" in Library work.
+Entity <module2> compiled.
+Entity <module2> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/module3.vhd" in Library work.
+Entity <module3> compiled.
+Entity <module3> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/causalFirFilter.vhd" in Library work.
+Entity <threesamplefilter> compiled.
+Entity <threesamplefilter> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/MUX8_4.vhd" in Library work.
+Entity <MUX8_4> compiled.
+Entity <MUX8_4> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/topModule.vhd" in Library work.
+Entity <topModule> compiled.
+Entity <topModule> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/multiplier8.vhd" in Library work.
+Entity <multiplier8> compiled.
+Entity <multiplier8> (Architecture <Behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <topModule> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <threesamplefilter> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <MUX8_4> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <module1> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <module2> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <module3> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <MUX4_2> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <adder8> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <D_FF8> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <FullAdder> in library <work> (architecture <FullAdder_struct>).
+
+Analyzing hierarchy for entity <D_FF> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <xor_gate> in library <work> (architecture <dataflow>).
+
+Analyzing hierarchy for entity <and_gate> in library <work> (architecture <dataflow>).
+
+Analyzing hierarchy for entity <or_gate> in library <work> (architecture <dataflow>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <topModule> in library <work> (Architecture <Behavioral>).
+Entity <topModule> analyzed. Unit <topModule> generated.
+
+Analyzing Entity <threesamplefilter> in library <work> (Architecture <Behavioral>).
+Entity <threesamplefilter> analyzed. Unit <threesamplefilter> generated.
+
+Analyzing Entity <module1> in library <work> (Architecture <Behavioral>).
+WARNING:Xst:753 - "/home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/module1.vhd" line 55: Unconnected output port 'cout' of component 'adder8'.
+Entity <module1> analyzed. Unit <module1> generated.
+
+Analyzing Entity <adder8> in library <work> (Architecture <Behavioral>).
+Entity <adder8> analyzed. Unit <adder8> generated.
+
+Analyzing Entity <FullAdder> in library <work> (Architecture <FullAdder_struct>).
+Entity <FullAdder> analyzed. Unit <FullAdder> generated.
+
+Analyzing Entity <xor_gate> in library <work> (Architecture <dataflow>).
+Entity <xor_gate> analyzed. Unit <xor_gate> generated.
+
+Analyzing Entity <and_gate> in library <work> (Architecture <dataflow>).
+Entity <and_gate> analyzed. Unit <and_gate> generated.
+
+Analyzing Entity <or_gate> in library <work> (Architecture <dataflow>).
+Entity <or_gate> analyzed. Unit <or_gate> generated.
+
+Analyzing Entity <module2> in library <work> (Architecture <Behavioral>).
+WARNING:Xst:753 - "/home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/module2.vhd" line 62: Unconnected output port 'cout' of component 'adder8'.
+Entity <module2> analyzed. Unit <module2> generated.
+
+Analyzing Entity <D_FF8> in library <work> (Architecture <Behavioral>).
+Entity <D_FF8> analyzed. Unit <D_FF8> generated.
+
+Analyzing Entity <D_FF> in library <work> (Architecture <Behavioral>).
+Entity <D_FF> analyzed. Unit <D_FF> generated.
+
+Analyzing Entity <module3> in library <work> (Architecture <Behavioral>).
+Entity <module3> analyzed. Unit <module3> generated.
+
+Analyzing Entity <MUX8_4> in library <work> (Architecture <Behavioral>).
+Entity <MUX8_4> analyzed. Unit <MUX8_4> generated.
+
+Analyzing Entity <MUX4_2> in library <work> (Architecture <Behavioral>).
+Entity <MUX4_2> analyzed. Unit <MUX4_2> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <xor_gate>.
+    Related source file is "/home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/xor_gate.vhd".
+    Found 1-bit xor2 for signal <z>.
+Unit <xor_gate> synthesized.
+
+
+Synthesizing Unit <and_gate>.
+    Related source file is "/home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/and_gate.vhd".
+Unit <and_gate> synthesized.
+
+
+Synthesizing Unit <or_gate>.
+    Related source file is "/home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/or_gate.vhd".
+Unit <or_gate> synthesized.
+
+
+Synthesizing Unit <D_FF>.
+    Related source file is "/home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/d_ff.vhd".
+    Found 1-bit register for signal <Q>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <D_FF> synthesized.
+
+
+Synthesizing Unit <MUX4_2>.
+    Related source file is "/home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/MUX4_2.vhd".
+Unit <MUX4_2> synthesized.
+
+
+Synthesizing Unit <MUX8_4>.
+    Related source file is "/home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/MUX8_4.vhd".
+Unit <MUX8_4> synthesized.
+
+
+Synthesizing Unit <FullAdder>.
+    Related source file is "/home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/FullAdder.vhd".
+Unit <FullAdder> synthesized.
+
+
+Synthesizing Unit <D_FF8>.
+    Related source file is "/home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/d_ff8.vhd".
+Unit <D_FF8> synthesized.
+
+
+Synthesizing Unit <module3>.
+    Related source file is "/home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/module3.vhd".
+WARNING:Xst:646 - Signal <multoutext<15>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <multoutext<6:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 8x8-bit multiplier for signal <multoutext>.
+    Summary:
+	inferred   1 Multiplier(s).
+Unit <module3> synthesized.
+
+
+Synthesizing Unit <adder8>.
+    Related source file is "/home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/adder8.vhd".
+Unit <adder8> synthesized.
+
+
+Synthesizing Unit <module1>.
+    Related source file is "/home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/module1.vhd".
+WARNING:Xst:646 - Signal <multoutext<15>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <multoutext<6:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 8x8-bit multiplier for signal <multoutext>.
+    Summary:
+	inferred   1 Multiplier(s).
+Unit <module1> synthesized.
+
+
+Synthesizing Unit <module2>.
+    Related source file is "/home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/module2.vhd".
+WARNING:Xst:646 - Signal <multoutext<15>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <multoutext<6:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 8x8-bit multiplier for signal <multoutext>.
+    Summary:
+	inferred   1 Multiplier(s).
+Unit <module2> synthesized.
+
+
+Synthesizing Unit <threesamplefilter>.
+    Related source file is "/home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/causalFirFilter.vhd".
+WARNING:Xst:653 - Signal <hardcoded_9> is used but never assigned. This sourceless signal will be automatically connected to value 00000001.
+WARNING:Xst:653 - Signal <hardcoded_8> is used but never assigned. This sourceless signal will be automatically connected to value 00000001.
+WARNING:Xst:653 - Signal <hardcoded_7> is used but never assigned. This sourceless signal will be automatically connected to value 00000001.
+WARNING:Xst:653 - Signal <hardcoded_6> is used but never assigned. This sourceless signal will be automatically connected to value 00000001.
+WARNING:Xst:653 - Signal <hardcoded_5> is used but never assigned. This sourceless signal will be automatically connected to value 00000001.
+WARNING:Xst:653 - Signal <hardcoded_4> is used but never assigned. This sourceless signal will be automatically connected to value 00000001.
+WARNING:Xst:653 - Signal <hardcoded_31> is used but never assigned. This sourceless signal will be automatically connected to value 00000001.
+WARNING:Xst:653 - Signal <hardcoded_30> is used but never assigned. This sourceless signal will be automatically connected to value 00000001.
+WARNING:Xst:653 - Signal <hardcoded_3> is used but never assigned. This sourceless signal will be automatically connected to value 00000001.
+WARNING:Xst:653 - Signal <hardcoded_29> is used but never assigned. This sourceless signal will be automatically connected to value 00000001.
+WARNING:Xst:653 - Signal <hardcoded_28> is used but never assigned. This sourceless signal will be automatically connected to value 00000001.
+WARNING:Xst:653 - Signal <hardcoded_27> is used but never assigned. This sourceless signal will be automatically connected to value 00000001.
+WARNING:Xst:653 - Signal <hardcoded_26> is used but never assigned. This sourceless signal will be automatically connected to value 00000001.
+WARNING:Xst:653 - Signal <hardcoded_25> is used but never assigned. This sourceless signal will be automatically connected to value 00000001.
+WARNING:Xst:653 - Signal <hardcoded_24> is used but never assigned. This sourceless signal will be automatically connected to value 00000001.
+WARNING:Xst:653 - Signal <hardcoded_23> is used but never assigned. This sourceless signal will be automatically connected to value 00000001.
+WARNING:Xst:653 - Signal <hardcoded_22> is used but never assigned. This sourceless signal will be automatically connected to value 00000001.
+WARNING:Xst:653 - Signal <hardcoded_21> is used but never assigned. This sourceless signal will be automatically connected to value 00000001.
+WARNING:Xst:653 - Signal <hardcoded_20> is used but never assigned. This sourceless signal will be automatically connected to value 00000001.
+WARNING:Xst:653 - Signal <hardcoded_2> is used but never assigned. This sourceless signal will be automatically connected to value 00000001.
+WARNING:Xst:653 - Signal <hardcoded_19> is used but never assigned. This sourceless signal will be automatically connected to value 00000001.
+WARNING:Xst:653 - Signal <hardcoded_18> is used but never assigned. This sourceless signal will be automatically connected to value 00000001.
+WARNING:Xst:653 - Signal <hardcoded_17> is used but never assigned. This sourceless signal will be automatically connected to value 00000001.
+WARNING:Xst:653 - Signal <hardcoded_16> is used but never assigned. This sourceless signal will be automatically connected to value 00000001.
+WARNING:Xst:653 - Signal <hardcoded_15> is used but never assigned. This sourceless signal will be automatically connected to value 00000001.
+WARNING:Xst:653 - Signal <hardcoded_14> is used but never assigned. This sourceless signal will be automatically connected to value 00000001.
+WARNING:Xst:653 - Signal <hardcoded_13> is used but never assigned. This sourceless signal will be automatically connected to value 00000001.
+WARNING:Xst:653 - Signal <hardcoded_12> is used but never assigned. This sourceless signal will be automatically connected to value 00000001.
+WARNING:Xst:653 - Signal <hardcoded_11> is used but never assigned. This sourceless signal will be automatically connected to value 00000001.
+WARNING:Xst:653 - Signal <hardcoded_10> is used but never assigned. This sourceless signal will be automatically connected to value 00000001.
+WARNING:Xst:653 - Signal <hardcoded_1> is used but never assigned. This sourceless signal will be automatically connected to value 00000001.
+WARNING:Xst:653 - Signal <hardcoded_0> is used but never assigned. This sourceless signal will be automatically connected to value 00000001.
+Unit <threesamplefilter> synthesized.
+
+
+Synthesizing Unit <topModule>.
+    Related source file is "/home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/topModule.vhd".
+Unit <topModule> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 32
+ 8x8-bit multiplier                                    : 32
+# Registers                                            : 248
+ 1-bit register                                        : 248
+# Xors                                                 : 496
+ 1-bit xor2                                            : 496
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 32
+ 8x8-bit multiplier                                    : 32
+# Registers                                            : 248
+ Flip-Flops                                            : 248
+# Xors                                                 : 496
+ 1-bit xor2                                            : 496
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <D_FF8op/D_FF1/Q> of sequential type is unconnected in block <module3>.
+WARNING:Xst:2677 - Node <D_FF8op/D_FF0/Q> of sequential type is unconnected in block <module3>.
+WARNING:Xst:2677 - Node <D_FF8op/D_FF2/Q> of sequential type is unconnected in block <module3>.
+WARNING:Xst:2677 - Node <D_FF8op/D_FF3/Q> of sequential type is unconnected in block <module3>.
+WARNING:Xst:2677 - Node <D_FF8op/D_FF4/Q> of sequential type is unconnected in block <module3>.
+WARNING:Xst:2677 - Node <D_FF8op/D_FF5/Q> of sequential type is unconnected in block <module3>.
+WARNING:Xst:2677 - Node <D_FF8op/D_FF6/Q> of sequential type is unconnected in block <module3>.
+
+Optimizing unit <topModule> ...
+
+Optimizing unit <module2> ...
+
+Optimizing unit <threesamplefilter> ...
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_1/D_FF8op/D_FF0/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_2/D_FF8op/D_FF0/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_3/D_FF8op/D_FF0/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_4/D_FF8op/D_FF0/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_5/D_FF8op/D_FF0/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_6/D_FF8op/D_FF0/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_7/D_FF8op/D_FF0/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_8/D_FF8op/D_FF0/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_9/D_FF8op/D_FF0/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_10/D_FF8op/D_FF0/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_11/D_FF8op/D_FF0/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_12/D_FF8op/D_FF0/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_13/D_FF8op/D_FF0/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_14/D_FF8op/D_FF0/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_15/D_FF8op/D_FF0/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_16/D_FF8op/D_FF0/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_17/D_FF8op/D_FF0/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_18/D_FF8op/D_FF0/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_19/D_FF8op/D_FF0/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_20/D_FF8op/D_FF0/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_21/D_FF8op/D_FF0/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_22/D_FF8op/D_FF0/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_23/D_FF8op/D_FF0/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_24/D_FF8op/D_FF0/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_25/D_FF8op/D_FF0/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_26/D_FF8op/D_FF0/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_27/D_FF8op/D_FF0/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_28/D_FF8op/D_FF0/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_29/D_FF8op/D_FF0/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_30/D_FF8op/D_FF0/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_1/D_FF8op/D_FF1/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_2/D_FF8op/D_FF1/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_3/D_FF8op/D_FF1/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_4/D_FF8op/D_FF1/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_5/D_FF8op/D_FF1/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_6/D_FF8op/D_FF1/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_7/D_FF8op/D_FF1/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_8/D_FF8op/D_FF1/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_9/D_FF8op/D_FF1/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_10/D_FF8op/D_FF1/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_11/D_FF8op/D_FF1/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_12/D_FF8op/D_FF1/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_13/D_FF8op/D_FF1/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_14/D_FF8op/D_FF1/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_15/D_FF8op/D_FF1/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_16/D_FF8op/D_FF1/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_17/D_FF8op/D_FF1/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_18/D_FF8op/D_FF1/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_19/D_FF8op/D_FF1/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_20/D_FF8op/D_FF1/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_21/D_FF8op/D_FF1/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_22/D_FF8op/D_FF1/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_23/D_FF8op/D_FF1/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_24/D_FF8op/D_FF1/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_25/D_FF8op/D_FF1/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_26/D_FF8op/D_FF1/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_27/D_FF8op/D_FF1/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_28/D_FF8op/D_FF1/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_29/D_FF8op/D_FF1/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_30/D_FF8op/D_FF1/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_1/D_FF8op/D_FF2/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_2/D_FF8op/D_FF2/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_3/D_FF8op/D_FF2/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_4/D_FF8op/D_FF2/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_5/D_FF8op/D_FF2/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_6/D_FF8op/D_FF2/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_7/D_FF8op/D_FF2/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_8/D_FF8op/D_FF2/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_9/D_FF8op/D_FF2/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_10/D_FF8op/D_FF2/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_11/D_FF8op/D_FF2/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_12/D_FF8op/D_FF2/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_13/D_FF8op/D_FF2/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_14/D_FF8op/D_FF2/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_15/D_FF8op/D_FF2/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_16/D_FF8op/D_FF2/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_17/D_FF8op/D_FF2/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_18/D_FF8op/D_FF2/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_19/D_FF8op/D_FF2/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_20/D_FF8op/D_FF2/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_21/D_FF8op/D_FF2/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_22/D_FF8op/D_FF2/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_23/D_FF8op/D_FF2/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_24/D_FF8op/D_FF2/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_25/D_FF8op/D_FF2/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_26/D_FF8op/D_FF2/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_27/D_FF8op/D_FF2/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_28/D_FF8op/D_FF2/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_29/D_FF8op/D_FF2/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_30/D_FF8op/D_FF2/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_1/D_FF8op/D_FF3/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_2/D_FF8op/D_FF3/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_3/D_FF8op/D_FF3/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_4/D_FF8op/D_FF3/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_5/D_FF8op/D_FF3/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_6/D_FF8op/D_FF3/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_7/D_FF8op/D_FF3/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_8/D_FF8op/D_FF3/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_9/D_FF8op/D_FF3/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_10/D_FF8op/D_FF3/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_11/D_FF8op/D_FF3/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_12/D_FF8op/D_FF3/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_13/D_FF8op/D_FF3/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_14/D_FF8op/D_FF3/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_15/D_FF8op/D_FF3/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_16/D_FF8op/D_FF3/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_17/D_FF8op/D_FF3/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_18/D_FF8op/D_FF3/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_19/D_FF8op/D_FF3/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_20/D_FF8op/D_FF3/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_21/D_FF8op/D_FF3/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_22/D_FF8op/D_FF3/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_23/D_FF8op/D_FF3/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_24/D_FF8op/D_FF3/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_25/D_FF8op/D_FF3/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_26/D_FF8op/D_FF3/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_27/D_FF8op/D_FF3/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_28/D_FF8op/D_FF3/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_29/D_FF8op/D_FF3/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_30/D_FF8op/D_FF3/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_1/D_FF8op/D_FF4/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_2/D_FF8op/D_FF4/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_3/D_FF8op/D_FF4/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_4/D_FF8op/D_FF4/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_5/D_FF8op/D_FF4/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_6/D_FF8op/D_FF4/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_7/D_FF8op/D_FF4/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_8/D_FF8op/D_FF4/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_9/D_FF8op/D_FF4/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_10/D_FF8op/D_FF4/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_11/D_FF8op/D_FF4/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_12/D_FF8op/D_FF4/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_13/D_FF8op/D_FF4/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_14/D_FF8op/D_FF4/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_15/D_FF8op/D_FF4/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_16/D_FF8op/D_FF4/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_17/D_FF8op/D_FF4/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_18/D_FF8op/D_FF4/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_19/D_FF8op/D_FF4/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_20/D_FF8op/D_FF4/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_21/D_FF8op/D_FF4/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_22/D_FF8op/D_FF4/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_23/D_FF8op/D_FF4/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_24/D_FF8op/D_FF4/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_25/D_FF8op/D_FF4/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_26/D_FF8op/D_FF4/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_27/D_FF8op/D_FF4/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_28/D_FF8op/D_FF4/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_29/D_FF8op/D_FF4/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_30/D_FF8op/D_FF4/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_1/D_FF8op/D_FF5/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_2/D_FF8op/D_FF5/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_3/D_FF8op/D_FF5/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_4/D_FF8op/D_FF5/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_5/D_FF8op/D_FF5/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_6/D_FF8op/D_FF5/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_7/D_FF8op/D_FF5/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_8/D_FF8op/D_FF5/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_9/D_FF8op/D_FF5/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_10/D_FF8op/D_FF5/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_11/D_FF8op/D_FF5/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_12/D_FF8op/D_FF5/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_13/D_FF8op/D_FF5/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_14/D_FF8op/D_FF5/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_15/D_FF8op/D_FF5/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_16/D_FF8op/D_FF5/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_17/D_FF8op/D_FF5/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_18/D_FF8op/D_FF5/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_19/D_FF8op/D_FF5/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_20/D_FF8op/D_FF5/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_21/D_FF8op/D_FF5/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_22/D_FF8op/D_FF5/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_23/D_FF8op/D_FF5/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_24/D_FF8op/D_FF5/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_25/D_FF8op/D_FF5/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_26/D_FF8op/D_FF5/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_27/D_FF8op/D_FF5/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_28/D_FF8op/D_FF5/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_29/D_FF8op/D_FF5/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_30/D_FF8op/D_FF5/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_1/D_FF8op/D_FF6/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_2/D_FF8op/D_FF6/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_3/D_FF8op/D_FF6/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_4/D_FF8op/D_FF6/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_5/D_FF8op/D_FF6/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_6/D_FF8op/D_FF6/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_7/D_FF8op/D_FF6/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_8/D_FF8op/D_FF6/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_9/D_FF8op/D_FF6/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_10/D_FF8op/D_FF6/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_11/D_FF8op/D_FF6/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_12/D_FF8op/D_FF6/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_13/D_FF8op/D_FF6/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_14/D_FF8op/D_FF6/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_15/D_FF8op/D_FF6/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_16/D_FF8op/D_FF6/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_17/D_FF8op/D_FF6/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_18/D_FF8op/D_FF6/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_19/D_FF8op/D_FF6/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_20/D_FF8op/D_FF6/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_21/D_FF8op/D_FF6/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_22/D_FF8op/D_FF6/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_23/D_FF8op/D_FF6/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_24/D_FF8op/D_FF6/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_25/D_FF8op/D_FF6/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_26/D_FF8op/D_FF6/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_27/D_FF8op/D_FF6/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_28/D_FF8op/D_FF6/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_29/D_FF8op/D_FF6/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_30/D_FF8op/D_FF6/Q> is unconnected in block <topModule>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block topModule, actual ratio is 56.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 31
+ Flip-Flops                                            : 31
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+Top Level Output File Name         : topModule.ngc
+Output Format                      : NGC
+Optimization Goal                  : speed
+Keep Hierarchy                     : no
+
+Design Statistics
+# IOs                              : 14
+
+Cell Usage :
+# BELS                             : 1667
+#      GND                         : 1
+#      LUT1                        : 270
+#      LUT2                        : 1
+#      LUT3                        : 281
+#      LUT4                        : 149
+#      MUXCY                       : 420
+#      MUXF5                       : 34
+#      VCC                         : 1
+#      XORCY                       : 510
+# FlipFlops/Latches                : 31
+#      FD                          : 31
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 6
+#      IBUF                        : 2
+#      OBUF                        : 4
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-5 
+
+ Number of Slices:                      513  out of    960    53%  
+ Number of Slice Flip Flops:             31  out of   1920     1%  
+ Number of 4 input LUTs:                701  out of   1920    36%  
+ Number of IOs:                          14
+ Number of bonded IOBs:                   7  out of     83     8%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+switch                             | BUFGP                  | 31    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 1.162ns (Maximum Frequency: 860.622MHz)
+   Minimum input arrival time before clock: 1.912ns
+   Maximum output required time after clock: 59.109ns
+   Maximum combinational path delay: 8.337ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'switch'
+  Clock period: 1.162ns (frequency: 860.622MHz)
+  Total number of paths / destination ports: 30 / 30
+-------------------------------------------------------------------------
+Delay:               1.162ns (Levels of Logic = 0)
+  Source:            threesamplefilter_op/module2op_1/D_FF8op/D_FF7/Q (FF)
+  Destination:       threesamplefilter_op/module2op_2/D_FF8op/D_FF7/Q (FF)
+  Source Clock:      switch rising
+  Destination Clock: switch rising
+
+  Data Path: threesamplefilter_op/module2op_1/D_FF8op/D_FF7/Q to threesamplefilter_op/module2op_2/D_FF8op/D_FF7/Q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.514   0.380  threesamplefilter_op/module2op_1/D_FF8op/D_FF7/Q (threesamplefilter_op/module2op_1/D_FF8op/D_FF7/Q)
+     FD:D                      0.268          threesamplefilter_op/module2op_2/D_FF8op/D_FF7/Q
+    ----------------------------------------
+    Total                      1.162ns (0.782ns logic, 0.380ns route)
+                                       (67.3% logic, 32.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'switch'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.912ns (Levels of Logic = 1)
+  Source:            input<7> (PAD)
+  Destination:       threesamplefilter_op/module2op_1/D_FF8op/D_FF7/Q (FF)
+  Destination Clock: switch rising
+
+  Data Path: input<7> to threesamplefilter_op/module2op_1/D_FF8op/D_FF7/Q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   1.106   0.538  input_7_IBUF (input_7_IBUF)
+     FD:D                      0.268          threesamplefilter_op/module2op_1/D_FF8op/D_FF7/Q
+    ----------------------------------------
+    Total                      1.912ns (1.374ns logic, 0.538ns route)
+                                       (71.9% logic, 28.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'switch'
+  Total number of paths / destination ports: 957265350096 / 4
+-------------------------------------------------------------------------
+Offset:              59.109ns (Levels of Logic = 74)
+  Source:            threesamplefilter_op/module2op_30/D_FF8op/D_FF7/Q (FF)
+  Destination:       output<3> (PAD)
+  Source Clock:      switch rising
+
+  Data Path: threesamplefilter_op/module2op_30/D_FF8op/D_FF7/Q to output<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.514   0.532  threesamplefilter_op/module2op_30/D_FF8op/D_FF7/Q (threesamplefilter_op/module2op_30/D_FF8op/D_FF7/Q)
+     LUT1:I0->O            0   0.612   0.000  threesamplefilter_op/module2op_30/Mmult_multoutext_Madd5_xor<4>_rt (threesamplefilter_op/module2op_30/Mmult_multoutext_Madd5_xor<4>_rt)
+     XORCY:LI->O           1   0.458   0.509  threesamplefilter_op/module2op_30/Mmult_multoutext_Madd5_xor<4> (threesamplefilter_op/module2op_30/Mmult_multoutext_Madd6_lut<7>)
+     LUT1:I0->O            1   0.612   0.000  threesamplefilter_op/module2op_30/Mmult_multoutext_Madd6_cy<7>_rt (threesamplefilter_op/module2op_30/Mmult_multoutext_Madd6_cy<7>_rt)
+     MUXCY:S->O            1   0.404   0.000  threesamplefilter_op/module2op_30/Mmult_multoutext_Madd6_cy<7> (threesamplefilter_op/module2op_30/Mmult_multoutext_Madd6_cy<7>)
+     XORCY:CI->O           1   0.699   0.509  threesamplefilter_op/module2op_30/Mmult_multoutext_Madd6_xor<8> (threesamplefilter_op/module2op_30/Mmult_multoutext_Madd7_lut<8>)
+     LUT1:I0->O            1   0.612   0.000  threesamplefilter_op/module2op_30/Mmult_multoutext_Madd7_cy<8>_rt (threesamplefilter_op/module2op_30/Mmult_multoutext_Madd7_cy<8>_rt)
+     XORCY:LI->O           4   0.458   0.651  threesamplefilter_op/module2op_30/Mmult_multoutext_Madd7_xor<8> (threesamplefilter_op/module2op_30/multoutext<8>)
+     LUT3:I0->O            2   0.612   0.383  threesamplefilter_op/module2op_30/adder/FullAdder1/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_29_fromdown<1>)
+     LUT4:I3->O            2   0.612   0.410  threesamplefilter_op/module2op_29/adder/FullAdder2/XOR2_1/Mxor_z_Result21 (threesamplefilter_op/module2op_29/N7)
+     LUT3:I2->O            2   0.612   0.410  threesamplefilter_op/module2op_29/adder/FullAdder2/OR2_1/z1 (threesamplefilter_op/module2op_29/adder/interc<2>)
+     LUT3:I2->O            2   0.612   0.410  threesamplefilter_op/module2op_29/adder/FullAdder4/XOR2_1/Mxor_z_Result11 (threesamplefilter_op/module2op_29/N11)
+     LUT3:I2->O            2   0.612   0.410  threesamplefilter_op/module2op_29/adder/FullAdder4/OR2_1/z1 (threesamplefilter_op/module2op_29/adder/interc<4>)
+     LUT3:I2->O            3   0.612   0.603  threesamplefilter_op/module2op_29/adder/FullAdder6/XOR2_1/Mxor_z_Result11 (threesamplefilter_op/module2op_29/N2)
+     LUT4:I0->O            1   0.612   0.000  threesamplefilter_op/module2op_28/adder/FullAdder7/XOR2_0/Mxor_z_Result12 (threesamplefilter_op/module2op_28/adder/FullAdder7/XOR2_0/Mxor_z_Result11)
+     MUXF5:I0->O           2   0.278   0.532  threesamplefilter_op/module2op_28/adder/FullAdder7/XOR2_0/Mxor_z_Result1_f5 (threesamplefilter_op/module2op_28/adder/FullAdder7/XOR2_0_out)
+     LUT4:I0->O            1   0.612   0.000  threesamplefilter_op/module2op_27/adder/FullAdder7/XOR2_0/Mxor_z_Result11 (threesamplefilter_op/module2op_27/adder/FullAdder7/XOR2_0/Mxor_z_Result1)
+     MUXF5:I1->O           2   0.278   0.532  threesamplefilter_op/module2op_27/adder/FullAdder7/XOR2_0/Mxor_z_Result1_f5 (threesamplefilter_op/module2op_27/adder/FullAdder7/XOR2_0_out)
+     LUT4:I0->O            1   0.612   0.000  threesamplefilter_op/module2op_26/adder/FullAdder7/XOR2_0/Mxor_z_Result11 (threesamplefilter_op/module2op_26/adder/FullAdder7/XOR2_0/Mxor_z_Result1)
+     MUXF5:I1->O           2   0.278   0.532  threesamplefilter_op/module2op_26/adder/FullAdder7/XOR2_0/Mxor_z_Result1_f5 (threesamplefilter_op/module2op_26/adder/FullAdder7/XOR2_0_out)
+     LUT4:I0->O            1   0.612   0.000  threesamplefilter_op/module2op_25/adder/FullAdder7/XOR2_0/Mxor_z_Result11 (threesamplefilter_op/module2op_25/adder/FullAdder7/XOR2_0/Mxor_z_Result1)
+     MUXF5:I1->O           2   0.278   0.532  threesamplefilter_op/module2op_25/adder/FullAdder7/XOR2_0/Mxor_z_Result1_f5 (threesamplefilter_op/module2op_25/adder/FullAdder7/XOR2_0_out)
+     LUT4:I0->O            1   0.612   0.000  threesamplefilter_op/module2op_24/adder/FullAdder7/XOR2_0/Mxor_z_Result11 (threesamplefilter_op/module2op_24/adder/FullAdder7/XOR2_0/Mxor_z_Result1)
+     MUXF5:I1->O           2   0.278   0.532  threesamplefilter_op/module2op_24/adder/FullAdder7/XOR2_0/Mxor_z_Result1_f5 (threesamplefilter_op/module2op_24/adder/FullAdder7/XOR2_0_out)
+     LUT4:I0->O            1   0.612   0.000  threesamplefilter_op/module2op_23/adder/FullAdder7/XOR2_0/Mxor_z_Result11 (threesamplefilter_op/module2op_23/adder/FullAdder7/XOR2_0/Mxor_z_Result1)
+     MUXF5:I1->O           2   0.278   0.532  threesamplefilter_op/module2op_23/adder/FullAdder7/XOR2_0/Mxor_z_Result1_f5 (threesamplefilter_op/module2op_23/adder/FullAdder7/XOR2_0_out)
+     LUT4:I0->O            1   0.612   0.000  threesamplefilter_op/module2op_22/adder/FullAdder7/XOR2_0/Mxor_z_Result11 (threesamplefilter_op/module2op_22/adder/FullAdder7/XOR2_0/Mxor_z_Result1)
+     MUXF5:I1->O           2   0.278   0.532  threesamplefilter_op/module2op_22/adder/FullAdder7/XOR2_0/Mxor_z_Result1_f5 (threesamplefilter_op/module2op_22/adder/FullAdder7/XOR2_0_out)
+     LUT4:I0->O            1   0.612   0.000  threesamplefilter_op/module2op_21/adder/FullAdder7/XOR2_0/Mxor_z_Result11 (threesamplefilter_op/module2op_21/adder/FullAdder7/XOR2_0/Mxor_z_Result1)
+     MUXF5:I1->O           2   0.278   0.532  threesamplefilter_op/module2op_21/adder/FullAdder7/XOR2_0/Mxor_z_Result1_f5 (threesamplefilter_op/module2op_21/adder/FullAdder7/XOR2_0_out)
+     LUT4:I0->O            1   0.612   0.000  threesamplefilter_op/module2op_20/adder/FullAdder7/XOR2_0/Mxor_z_Result11 (threesamplefilter_op/module2op_20/adder/FullAdder7/XOR2_0/Mxor_z_Result1)
+     MUXF5:I1->O           2   0.278   0.532  threesamplefilter_op/module2op_20/adder/FullAdder7/XOR2_0/Mxor_z_Result1_f5 (threesamplefilter_op/module2op_20/adder/FullAdder7/XOR2_0_out)
+     LUT4:I0->O            1   0.612   0.000  threesamplefilter_op/module2op_19/adder/FullAdder7/XOR2_0/Mxor_z_Result11 (threesamplefilter_op/module2op_19/adder/FullAdder7/XOR2_0/Mxor_z_Result1)
+     MUXF5:I1->O           2   0.278   0.532  threesamplefilter_op/module2op_19/adder/FullAdder7/XOR2_0/Mxor_z_Result1_f5 (threesamplefilter_op/module2op_19/adder/FullAdder7/XOR2_0_out)
+     LUT4:I0->O            1   0.612   0.000  threesamplefilter_op/module2op_18/adder/FullAdder7/XOR2_0/Mxor_z_Result11 (threesamplefilter_op/module2op_18/adder/FullAdder7/XOR2_0/Mxor_z_Result1)
+     MUXF5:I1->O           2   0.278   0.532  threesamplefilter_op/module2op_18/adder/FullAdder7/XOR2_0/Mxor_z_Result1_f5 (threesamplefilter_op/module2op_18/adder/FullAdder7/XOR2_0_out)
+     LUT4:I0->O            1   0.612   0.000  threesamplefilter_op/module2op_17/adder/FullAdder7/XOR2_0/Mxor_z_Result11 (threesamplefilter_op/module2op_17/adder/FullAdder7/XOR2_0/Mxor_z_Result1)
+     MUXF5:I1->O           2   0.278   0.532  threesamplefilter_op/module2op_17/adder/FullAdder7/XOR2_0/Mxor_z_Result1_f5 (threesamplefilter_op/module2op_17/adder/FullAdder7/XOR2_0_out)
+     LUT4:I0->O            1   0.612   0.000  threesamplefilter_op/module2op_16/adder/FullAdder7/XOR2_0/Mxor_z_Result11 (threesamplefilter_op/module2op_16/adder/FullAdder7/XOR2_0/Mxor_z_Result1)
+     MUXF5:I1->O           2   0.278   0.532  threesamplefilter_op/module2op_16/adder/FullAdder7/XOR2_0/Mxor_z_Result1_f5 (threesamplefilter_op/module2op_16/adder/FullAdder7/XOR2_0_out)
+     LUT4:I0->O            1   0.612   0.000  threesamplefilter_op/module2op_15/adder/FullAdder7/XOR2_0/Mxor_z_Result11 (threesamplefilter_op/module2op_15/adder/FullAdder7/XOR2_0/Mxor_z_Result1)
+     MUXF5:I1->O           2   0.278   0.532  threesamplefilter_op/module2op_15/adder/FullAdder7/XOR2_0/Mxor_z_Result1_f5 (threesamplefilter_op/module2op_15/adder/FullAdder7/XOR2_0_out)
+     LUT4:I0->O            1   0.612   0.000  threesamplefilter_op/module2op_14/adder/FullAdder7/XOR2_0/Mxor_z_Result11 (threesamplefilter_op/module2op_14/adder/FullAdder7/XOR2_0/Mxor_z_Result1)
+     MUXF5:I1->O           2   0.278   0.532  threesamplefilter_op/module2op_14/adder/FullAdder7/XOR2_0/Mxor_z_Result1_f5 (threesamplefilter_op/module2op_14/adder/FullAdder7/XOR2_0_out)
+     LUT4:I0->O            1   0.612   0.000  threesamplefilter_op/module2op_13/adder/FullAdder7/XOR2_0/Mxor_z_Result11 (threesamplefilter_op/module2op_13/adder/FullAdder7/XOR2_0/Mxor_z_Result1)
+     MUXF5:I1->O           2   0.278   0.532  threesamplefilter_op/module2op_13/adder/FullAdder7/XOR2_0/Mxor_z_Result1_f5 (threesamplefilter_op/module2op_13/adder/FullAdder7/XOR2_0_out)
+     LUT4:I0->O            1   0.612   0.000  threesamplefilter_op/module2op_12/adder/FullAdder7/XOR2_0/Mxor_z_Result11 (threesamplefilter_op/module2op_12/adder/FullAdder7/XOR2_0/Mxor_z_Result1)
+     MUXF5:I1->O           2   0.278   0.532  threesamplefilter_op/module2op_12/adder/FullAdder7/XOR2_0/Mxor_z_Result1_f5 (threesamplefilter_op/module2op_12/adder/FullAdder7/XOR2_0_out)
+     LUT4:I0->O            1   0.612   0.000  threesamplefilter_op/module2op_11/adder/FullAdder7/XOR2_0/Mxor_z_Result11 (threesamplefilter_op/module2op_11/adder/FullAdder7/XOR2_0/Mxor_z_Result1)
+     MUXF5:I1->O           2   0.278   0.532  threesamplefilter_op/module2op_11/adder/FullAdder7/XOR2_0/Mxor_z_Result1_f5 (threesamplefilter_op/module2op_11/adder/FullAdder7/XOR2_0_out)
+     LUT4:I0->O            1   0.612   0.000  threesamplefilter_op/module2op_10/adder/FullAdder7/XOR2_0/Mxor_z_Result11 (threesamplefilter_op/module2op_10/adder/FullAdder7/XOR2_0/Mxor_z_Result1)
+     MUXF5:I1->O           2   0.278   0.532  threesamplefilter_op/module2op_10/adder/FullAdder7/XOR2_0/Mxor_z_Result1_f5 (threesamplefilter_op/module2op_10/adder/FullAdder7/XOR2_0_out)
+     LUT4:I0->O            1   0.612   0.000  threesamplefilter_op/module2op_9/adder/FullAdder7/XOR2_0/Mxor_z_Result11 (threesamplefilter_op/module2op_9/adder/FullAdder7/XOR2_0/Mxor_z_Result1)
+     MUXF5:I1->O           2   0.278   0.532  threesamplefilter_op/module2op_9/adder/FullAdder7/XOR2_0/Mxor_z_Result1_f5 (threesamplefilter_op/module2op_9/adder/FullAdder7/XOR2_0_out)
+     LUT4:I0->O            1   0.612   0.000  threesamplefilter_op/module2op_8/adder/FullAdder7/XOR2_0/Mxor_z_Result11 (threesamplefilter_op/module2op_8/adder/FullAdder7/XOR2_0/Mxor_z_Result1)
+     MUXF5:I1->O           2   0.278   0.532  threesamplefilter_op/module2op_8/adder/FullAdder7/XOR2_0/Mxor_z_Result1_f5 (threesamplefilter_op/module2op_8/adder/FullAdder7/XOR2_0_out)
+     LUT4:I0->O            1   0.612   0.000  threesamplefilter_op/module2op_7/adder/FullAdder7/XOR2_0/Mxor_z_Result11 (threesamplefilter_op/module2op_7/adder/FullAdder7/XOR2_0/Mxor_z_Result1)
+     MUXF5:I1->O           2   0.278   0.532  threesamplefilter_op/module2op_7/adder/FullAdder7/XOR2_0/Mxor_z_Result1_f5 (threesamplefilter_op/module2op_7/adder/FullAdder7/XOR2_0_out)
+     LUT4:I0->O            1   0.612   0.000  threesamplefilter_op/module2op_6/adder/FullAdder7/XOR2_0/Mxor_z_Result11 (threesamplefilter_op/module2op_6/adder/FullAdder7/XOR2_0/Mxor_z_Result1)
+     MUXF5:I1->O           2   0.278   0.532  threesamplefilter_op/module2op_6/adder/FullAdder7/XOR2_0/Mxor_z_Result1_f5 (threesamplefilter_op/module2op_6/adder/FullAdder7/XOR2_0_out)
+     LUT4:I0->O            1   0.612   0.000  threesamplefilter_op/module2op_5/adder/FullAdder7/XOR2_0/Mxor_z_Result11 (threesamplefilter_op/module2op_5/adder/FullAdder7/XOR2_0/Mxor_z_Result1)
+     MUXF5:I1->O           2   0.278   0.532  threesamplefilter_op/module2op_5/adder/FullAdder7/XOR2_0/Mxor_z_Result1_f5 (threesamplefilter_op/module2op_5/adder/FullAdder7/XOR2_0_out)
+     LUT4:I0->O            1   0.612   0.000  threesamplefilter_op/module2op_4/adder/FullAdder7/XOR2_0/Mxor_z_Result11 (threesamplefilter_op/module2op_4/adder/FullAdder7/XOR2_0/Mxor_z_Result1)
+     MUXF5:I1->O           2   0.278   0.532  threesamplefilter_op/module2op_4/adder/FullAdder7/XOR2_0/Mxor_z_Result1_f5 (threesamplefilter_op/module2op_4/adder/FullAdder7/XOR2_0_out)
+     LUT4:I0->O            1   0.612   0.000  threesamplefilter_op/module2op_3/adder/FullAdder7/XOR2_0/Mxor_z_Result11 (threesamplefilter_op/module2op_3/adder/FullAdder7/XOR2_0/Mxor_z_Result1)
+     MUXF5:I1->O           2   0.278   0.532  threesamplefilter_op/module2op_3/adder/FullAdder7/XOR2_0/Mxor_z_Result1_f5 (threesamplefilter_op/module2op_3/adder/FullAdder7/XOR2_0_out)
+     LUT4:I0->O            1   0.612   0.000  threesamplefilter_op/module2op_2/adder/FullAdder7/XOR2_0/Mxor_z_Result11 (threesamplefilter_op/module2op_2/adder/FullAdder7/XOR2_0/Mxor_z_Result1)
+     MUXF5:I1->O           2   0.278   0.532  threesamplefilter_op/module2op_2/adder/FullAdder7/XOR2_0/Mxor_z_Result1_f5 (threesamplefilter_op/module2op_2/adder/FullAdder7/XOR2_0_out)
+     LUT4:I0->O            1   0.612   0.000  threesamplefilter_op/module2op_1/adder/FullAdder7/XOR2_0/Mxor_z_Result11 (threesamplefilter_op/module2op_1/adder/FullAdder7/XOR2_0/Mxor_z_Result1)
+     MUXF5:I1->O           1   0.278   0.509  threesamplefilter_op/module2op_1/adder/FullAdder7/XOR2_0/Mxor_z_Result1_f5 (threesamplefilter_op/module2op_1/adder/FullAdder7/XOR2_0_out)
+     LUT4:I0->O            2   0.612   0.449  threesamplefilter_op/module2op_1/adder/FullAdder7/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module1_term<7>)
+     LUT4:I1->O            1   0.612   0.360  muxop/mux4_2_inst1/m133 (muxop/mux4_2_inst1/m133)
+     LUT4:I3->O            1   0.612   0.000  muxop/mux4_2_inst1/m1110_F (N19)
+     MUXF5:I0->O           1   0.278   0.357  muxop/mux4_2_inst1/m1110 (output_3_OBUF)
+     OBUF:I->O                 3.169          output_3_OBUF (output<3>)
+    ----------------------------------------
+    Total                     59.109ns (38.244ns logic, 20.865ns route)
+                                       (64.7% logic, 35.3% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 12 / 4
+-------------------------------------------------------------------------
+Delay:               8.337ns (Levels of Logic = 6)
+  Source:            input<7> (PAD)
+  Destination:       output<3> (PAD)
+
+  Data Path: input<7> to output<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   1.106   0.541  input_7_IBUF (input_7_IBUF)
+     LUT4:I3->O            5   0.612   0.690  threesamplefilter_op/output<3>11 (threesamplefilter_op/output<3>_bdd0)
+     LUT3:I0->O            1   0.612   0.360  muxop/mux4_2_inst0/m1_SW0 (N3)
+     LUT4:I3->O            1   0.612   0.000  muxop/mux4_2_inst0/m1_F (N13)
+     MUXF5:I0->O           1   0.278   0.357  muxop/mux4_2_inst0/m1 (output_1_OBUF)
+     OBUF:I->O                 3.169          output_1_OBUF (output<1>)
+    ----------------------------------------
+    Total                      8.337ns (6.389ns logic, 1.948ns route)
+                                       (76.6% logic, 23.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.59 secs
+ 
+--> 
+
+
+Total memory usage is 551108 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  257 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

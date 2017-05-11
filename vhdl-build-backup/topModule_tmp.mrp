@@ -1,0 +1,1221 @@
+Release 14.7 Map P.20131013 (lin64)
+Xilinx Mapping Report File for Design 'topModule'
+
+Design Information
+------------------
+Command Line   : map -timing -ol high -detail -pr b -register_duplication -w -o
+topModule_tmp.ncd topModule.ngd 
+Target Device  : xc3s100e
+Target Package : cp132
+Target Speed   : -5
+Mapper Version : spartan3e -- $Revision: 1.55 $
+Mapped Date    : Thu May 11 19:41:49 2017
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    9
+Logic Utilization:
+  Number of Slice Flip Flops:            33 out of   1,920    1%
+  Number of 4 input LUTs:               641 out of   1,920   33%
+Logic Distribution:
+  Number of occupied Slices:            493 out of     960   51%
+    Number of Slices containing only related logic:     493 out of     493 100%
+    Number of Slices containing unrelated logic:          0 out of     493   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:         911 out of   1,920   47%
+    Number used as logic:               641
+    Number used as a route-thru:        270
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 14 out of      83   16%
+    IOB Flip Flops:                       1
+  Number of BUFGMUXs:                     1 out of      24    4%
+
+Average Fanout of Non-Clock Nets:                1.78
+
+Peak Memory Usage:  670 MB
+Total REAL time to MAP completion:  8 secs 
+Total CPU time to MAP completion:   8 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:Map:34 - Speed grade not specified.  Using default "-5".
+WARNING:Place:1019 - A clock IOB / clock component pair have been found that are
+   not placed at an optimal clock IOB / clock site pair. The clock component
+   <switch_BUFGP/BUFG> is placed at site <BUFGMUX_X1Y10>. The IO component
+   <switch> is placed at site <B5>.  This will not allow the use of the fast
+   path between the IO and the Clock buffer. This is normally an ERROR but the
+   CLOCK_DEDICATED_ROUTE constraint was applied on COMP.PIN <switch.PAD>
+   allowing your design to continue. This constraint disables all clock placer
+   rules related to the specified COMP.PIN. The use of this override is highly
+   discouraged as it may lead to very poor timing results. It is recommended
+   that this error condition be corrected in the design.
+WARNING:PhysDesignRules:367 - The signal <input<0>_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <input<1>_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <input<2>_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <input<3>_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <input<4>_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <input<5>_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <input<6>_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network input<6>_IBUF has no load.
+INFO:LIT:243 - Logical network input<5>_IBUF has no load.
+INFO:LIT:243 - Logical network input<4>_IBUF has no load.
+INFO:LIT:243 - Logical network input<3>_IBUF has no load.
+INFO:LIT:243 - Logical network input<2>_IBUF has no load.
+INFO:LIT:243 - Logical network input<1>_IBUF has no load.
+INFO:LIT:243 - Logical network input<0>_IBUF has no load.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   -40.000 to 100.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 1.140 Volts. (default - Range: 1.140 to
+   1.320 Volts)
+INFO:Pack:1679 - FLOP symbol
+   "threesamplefilter_op/module2op_2/D_FF8op/D_FF7/Q_REPLICA_0" (Output Signal =
+   threesamplefilter_op/module2op_2/D_FF8op/D_FF7/Q_REPLICA_0) was replicated
+   from FLOP symbol "threesamplefilter_op/module2op_2/D_FF8op/D_FF7/Q" (Output
+   Signal = threesamplefilter_op/module2op_2/D_FF8op/D_FF7/Q)
+INFO:Pack:1679 - FLOP symbol
+   "threesamplefilter_op/module2op_4/D_FF8op/D_FF7/Q_REPLICA_1" (Output Signal =
+   threesamplefilter_op/module2op_4/D_FF8op/D_FF7/Q_REPLICA_1) was replicated
+   from FLOP symbol "threesamplefilter_op/module2op_4/D_FF8op/D_FF7/Q" (Output
+   Signal = threesamplefilter_op/module2op_4/D_FF8op/D_FF7/Q)
+INFO:Pack:1679 - FLOP symbol
+   "threesamplefilter_op/module2op_11/D_FF8op/D_FF7/Q_REPLICA_2" (Output Signal
+   = threesamplefilter_op/module2op_11/D_FF8op/D_FF7/Q_REPLICA_2) was replicated
+   from FLOP symbol "threesamplefilter_op/module2op_11/D_FF8op/D_FF7/Q" (Output
+   Signal = threesamplefilter_op/module2op_11/D_FF8op/D_FF7/Q)
+INFO:Pack:1650 - Map created a placed design.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+  32 block(s) optimized away
+ 300 Block(s) redundant
+
+Section 5 - Removed Logic
+-------------------------
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+MUXCY 		threesamplefilter_op/module2op_1/Mmult_multoutext_Madd7_cy<7>
+MUXCY 		threesamplefilter_op/module2op_10/Mmult_multoutext_Madd7_cy<7>
+MUXCY 		threesamplefilter_op/module2op_11/Mmult_multoutext_Madd7_cy<7>
+MUXCY 		threesamplefilter_op/module2op_12/Mmult_multoutext_Madd7_cy<7>
+MUXCY 		threesamplefilter_op/module2op_13/Mmult_multoutext_Madd7_cy<7>
+MUXCY 		threesamplefilter_op/module2op_14/Mmult_multoutext_Madd7_cy<7>
+MUXCY 		threesamplefilter_op/module2op_15/Mmult_multoutext_Madd7_cy<7>
+MUXCY 		threesamplefilter_op/module2op_16/Mmult_multoutext_Madd7_cy<7>
+MUXCY 		threesamplefilter_op/module2op_17/Mmult_multoutext_Madd7_cy<7>
+MUXCY 		threesamplefilter_op/module2op_18/Mmult_multoutext_Madd7_cy<7>
+MUXCY 		threesamplefilter_op/module2op_19/Mmult_multoutext_Madd7_cy<7>
+MUXCY 		threesamplefilter_op/module2op_2/Mmult_multoutext_Madd7_cy<7>
+MUXCY 		threesamplefilter_op/module2op_20/Mmult_multoutext_Madd7_cy<7>
+MUXCY 		threesamplefilter_op/module2op_21/Mmult_multoutext_Madd7_cy<7>
+MUXCY 		threesamplefilter_op/module2op_22/Mmult_multoutext_Madd7_cy<7>
+MUXCY 		threesamplefilter_op/module2op_23/Mmult_multoutext_Madd7_cy<7>
+MUXCY 		threesamplefilter_op/module2op_24/Mmult_multoutext_Madd7_cy<7>
+MUXCY 		threesamplefilter_op/module2op_25/Mmult_multoutext_Madd7_cy<7>
+MUXCY 		threesamplefilter_op/module2op_26/Mmult_multoutext_Madd7_cy<7>
+MUXCY 		threesamplefilter_op/module2op_27/Mmult_multoutext_Madd7_cy<7>
+MUXCY 		threesamplefilter_op/module2op_28/Mmult_multoutext_Madd7_cy<7>
+MUXCY 		threesamplefilter_op/module2op_29/Mmult_multoutext_Madd7_cy<7>
+MUXCY 		threesamplefilter_op/module2op_3/Mmult_multoutext_Madd7_cy<7>
+MUXCY 		threesamplefilter_op/module2op_30/Mmult_multoutext_Madd7_cy<7>
+MUXCY 		threesamplefilter_op/module2op_4/Mmult_multoutext_Madd7_cy<7>
+MUXCY 		threesamplefilter_op/module2op_5/Mmult_multoutext_Madd7_cy<7>
+MUXCY 		threesamplefilter_op/module2op_6/Mmult_multoutext_Madd7_cy<7>
+MUXCY 		threesamplefilter_op/module2op_7/Mmult_multoutext_Madd7_cy<7>
+MUXCY 		threesamplefilter_op/module2op_8/Mmult_multoutext_Madd7_cy<7>
+MUXCY 		threesamplefilter_op/module2op_9/Mmult_multoutext_Madd7_cy<7>
+
+Redundant Block(s):
+TYPE 		BLOCK
+LUT1 		threesamplefilter_op/module2op_1/Mmult_multoutext_Madd6_cy<7>_rt
+LUT1 		threesamplefilter_op/module2op_1/Mmult_multoutext_Madd7_cy<7>_rt
+XORCY 		threesamplefilter_op/module2op_1/Mmult_multoutext_Madd7_xor<7>
+LUT1 		threesamplefilter_op/module2op_1/Mmult_multoutext_Madd7_cy<8>_rt
+LUT1 		threesamplefilter_op/module2op_1/Mmult_multoutext_Madd7_cy<9>_rt
+LUT1 		threesamplefilter_op/module2op_1/Mmult_multoutext_Madd7_cy<10>_rt
+LUT1 		threesamplefilter_op/module2op_1/Mmult_multoutext_Madd7_cy<11>_rt
+LUT1 		threesamplefilter_op/module2op_1/Mmult_multoutext_Madd7_cy<12>_rt
+LUT1 		threesamplefilter_op/module2op_1/Mmult_multoutext_Madd7_cy<13>_rt
+LUT1 		threesamplefilter_op/module2op_2/Mmult_multoutext_Madd6_cy<7>_rt
+LUT1 		threesamplefilter_op/module2op_2/Mmult_multoutext_Madd7_cy<7>_rt
+XORCY 		threesamplefilter_op/module2op_2/Mmult_multoutext_Madd7_xor<7>
+LUT1 		threesamplefilter_op/module2op_2/Mmult_multoutext_Madd7_cy<8>_rt
+LUT1 		threesamplefilter_op/module2op_2/Mmult_multoutext_Madd7_cy<9>_rt
+LUT1 		threesamplefilter_op/module2op_2/Mmult_multoutext_Madd7_cy<10>_rt
+LUT1 		threesamplefilter_op/module2op_2/Mmult_multoutext_Madd7_cy<11>_rt
+LUT1 		threesamplefilter_op/module2op_2/Mmult_multoutext_Madd7_cy<12>_rt
+LUT1 		threesamplefilter_op/module2op_2/Mmult_multoutext_Madd7_cy<13>_rt
+LUT1 		threesamplefilter_op/module2op_3/Mmult_multoutext_Madd6_cy<7>_rt
+LUT1 		threesamplefilter_op/module2op_3/Mmult_multoutext_Madd7_cy<7>_rt
+XORCY 		threesamplefilter_op/module2op_3/Mmult_multoutext_Madd7_xor<7>
+LUT1 		threesamplefilter_op/module2op_3/Mmult_multoutext_Madd7_cy<8>_rt
+LUT1 		threesamplefilter_op/module2op_3/Mmult_multoutext_Madd7_cy<9>_rt
+LUT1 		threesamplefilter_op/module2op_3/Mmult_multoutext_Madd7_cy<10>_rt
+LUT1 		threesamplefilter_op/module2op_3/Mmult_multoutext_Madd7_cy<11>_rt
+LUT1 		threesamplefilter_op/module2op_3/Mmult_multoutext_Madd7_cy<12>_rt
+LUT1 		threesamplefilter_op/module2op_3/Mmult_multoutext_Madd7_cy<13>_rt
+LUT1 		threesamplefilter_op/module2op_4/Mmult_multoutext_Madd6_cy<7>_rt
+LUT1 		threesamplefilter_op/module2op_4/Mmult_multoutext_Madd7_cy<7>_rt
+XORCY 		threesamplefilter_op/module2op_4/Mmult_multoutext_Madd7_xor<7>
+LUT1 		threesamplefilter_op/module2op_4/Mmult_multoutext_Madd7_cy<8>_rt
+LUT1 		threesamplefilter_op/module2op_4/Mmult_multoutext_Madd7_cy<9>_rt
+LUT1 		threesamplefilter_op/module2op_4/Mmult_multoutext_Madd7_cy<10>_rt
+LUT1 		threesamplefilter_op/module2op_4/Mmult_multoutext_Madd7_cy<11>_rt
+LUT1 		threesamplefilter_op/module2op_4/Mmult_multoutext_Madd7_cy<12>_rt
+LUT1 		threesamplefilter_op/module2op_4/Mmult_multoutext_Madd7_cy<13>_rt
+LUT1 		threesamplefilter_op/module2op_5/Mmult_multoutext_Madd6_cy<7>_rt
+LUT1 		threesamplefilter_op/module2op_5/Mmult_multoutext_Madd7_cy<7>_rt
+XORCY 		threesamplefilter_op/module2op_5/Mmult_multoutext_Madd7_xor<7>
+LUT1 		threesamplefilter_op/module2op_5/Mmult_multoutext_Madd7_cy<8>_rt
+LUT1 		threesamplefilter_op/module2op_5/Mmult_multoutext_Madd7_cy<9>_rt
+LUT1 		threesamplefilter_op/module2op_5/Mmult_multoutext_Madd7_cy<10>_rt
+LUT1 		threesamplefilter_op/module2op_5/Mmult_multoutext_Madd7_cy<11>_rt
+LUT1 		threesamplefilter_op/module2op_5/Mmult_multoutext_Madd7_cy<12>_rt
+LUT1 		threesamplefilter_op/module2op_5/Mmult_multoutext_Madd7_cy<13>_rt
+LUT1 		threesamplefilter_op/module2op_6/Mmult_multoutext_Madd6_cy<7>_rt
+LUT1 		threesamplefilter_op/module2op_6/Mmult_multoutext_Madd7_cy<7>_rt
+XORCY 		threesamplefilter_op/module2op_6/Mmult_multoutext_Madd7_xor<7>
+LUT1 		threesamplefilter_op/module2op_6/Mmult_multoutext_Madd7_cy<8>_rt
+LUT1 		threesamplefilter_op/module2op_6/Mmult_multoutext_Madd7_cy<9>_rt
+LUT1 		threesamplefilter_op/module2op_6/Mmult_multoutext_Madd7_cy<10>_rt
+LUT1 		threesamplefilter_op/module2op_6/Mmult_multoutext_Madd7_cy<11>_rt
+LUT1 		threesamplefilter_op/module2op_6/Mmult_multoutext_Madd7_cy<12>_rt
+LUT1 		threesamplefilter_op/module2op_6/Mmult_multoutext_Madd7_cy<13>_rt
+LUT1 		threesamplefilter_op/module2op_7/Mmult_multoutext_Madd6_cy<7>_rt
+LUT1 		threesamplefilter_op/module2op_7/Mmult_multoutext_Madd7_cy<7>_rt
+XORCY 		threesamplefilter_op/module2op_7/Mmult_multoutext_Madd7_xor<7>
+LUT1 		threesamplefilter_op/module2op_7/Mmult_multoutext_Madd7_cy<8>_rt
+LUT1 		threesamplefilter_op/module2op_7/Mmult_multoutext_Madd7_cy<9>_rt
+LUT1 		threesamplefilter_op/module2op_7/Mmult_multoutext_Madd7_cy<10>_rt
+LUT1 		threesamplefilter_op/module2op_7/Mmult_multoutext_Madd7_cy<11>_rt
+LUT1 		threesamplefilter_op/module2op_7/Mmult_multoutext_Madd7_cy<12>_rt
+LUT1 		threesamplefilter_op/module2op_7/Mmult_multoutext_Madd7_cy<13>_rt
+LUT1 		threesamplefilter_op/module2op_8/Mmult_multoutext_Madd6_cy<7>_rt
+LUT1 		threesamplefilter_op/module2op_8/Mmult_multoutext_Madd7_cy<7>_rt
+XORCY 		threesamplefilter_op/module2op_8/Mmult_multoutext_Madd7_xor<7>
+LUT1 		threesamplefilter_op/module2op_8/Mmult_multoutext_Madd7_cy<8>_rt
+LUT1 		threesamplefilter_op/module2op_8/Mmult_multoutext_Madd7_cy<9>_rt
+LUT1 		threesamplefilter_op/module2op_8/Mmult_multoutext_Madd7_cy<10>_rt
+LUT1 		threesamplefilter_op/module2op_8/Mmult_multoutext_Madd7_cy<11>_rt
+LUT1 		threesamplefilter_op/module2op_8/Mmult_multoutext_Madd7_cy<12>_rt
+LUT1 		threesamplefilter_op/module2op_8/Mmult_multoutext_Madd7_cy<13>_rt
+LUT1 		threesamplefilter_op/module2op_9/Mmult_multoutext_Madd6_cy<7>_rt
+LUT1 		threesamplefilter_op/module2op_9/Mmult_multoutext_Madd7_cy<7>_rt
+XORCY 		threesamplefilter_op/module2op_9/Mmult_multoutext_Madd7_xor<7>
+LUT1 		threesamplefilter_op/module2op_9/Mmult_multoutext_Madd7_cy<8>_rt
+LUT1 		threesamplefilter_op/module2op_9/Mmult_multoutext_Madd7_cy<9>_rt
+LUT1 		threesamplefilter_op/module2op_9/Mmult_multoutext_Madd7_cy<10>_rt
+LUT1 		threesamplefilter_op/module2op_9/Mmult_multoutext_Madd7_cy<11>_rt
+LUT1 		threesamplefilter_op/module2op_9/Mmult_multoutext_Madd7_cy<12>_rt
+LUT1 		threesamplefilter_op/module2op_9/Mmult_multoutext_Madd7_cy<13>_rt
+LUT1 		threesamplefilter_op/module2op_10/Mmult_multoutext_Madd6_cy<7>_rt
+LUT1 		threesamplefilter_op/module2op_10/Mmult_multoutext_Madd7_cy<7>_rt
+XORCY 		threesamplefilter_op/module2op_10/Mmult_multoutext_Madd7_xor<7>
+LUT1 		threesamplefilter_op/module2op_10/Mmult_multoutext_Madd7_cy<8>_rt
+LUT1 		threesamplefilter_op/module2op_10/Mmult_multoutext_Madd7_cy<9>_rt
+LUT1 		threesamplefilter_op/module2op_10/Mmult_multoutext_Madd7_cy<10>_rt
+LUT1 		threesamplefilter_op/module2op_10/Mmult_multoutext_Madd7_cy<11>_rt
+LUT1 		threesamplefilter_op/module2op_10/Mmult_multoutext_Madd7_cy<12>_rt
+LUT1 		threesamplefilter_op/module2op_10/Mmult_multoutext_Madd7_cy<13>_rt
+LUT1 		threesamplefilter_op/module2op_11/Mmult_multoutext_Madd6_cy<7>_rt
+LUT1 		threesamplefilter_op/module2op_11/Mmult_multoutext_Madd7_cy<7>_rt
+XORCY 		threesamplefilter_op/module2op_11/Mmult_multoutext_Madd7_xor<7>
+LUT1 		threesamplefilter_op/module2op_11/Mmult_multoutext_Madd7_cy<8>_rt
+LUT1 		threesamplefilter_op/module2op_11/Mmult_multoutext_Madd7_cy<9>_rt
+LUT1 		threesamplefilter_op/module2op_11/Mmult_multoutext_Madd7_cy<10>_rt
+LUT1 		threesamplefilter_op/module2op_11/Mmult_multoutext_Madd7_cy<11>_rt
+LUT1 		threesamplefilter_op/module2op_11/Mmult_multoutext_Madd7_cy<12>_rt
+LUT1 		threesamplefilter_op/module2op_11/Mmult_multoutext_Madd7_cy<13>_rt
+LUT1 		threesamplefilter_op/module2op_12/Mmult_multoutext_Madd6_cy<7>_rt
+LUT1 		threesamplefilter_op/module2op_12/Mmult_multoutext_Madd7_cy<7>_rt
+XORCY 		threesamplefilter_op/module2op_12/Mmult_multoutext_Madd7_xor<7>
+LUT1 		threesamplefilter_op/module2op_12/Mmult_multoutext_Madd7_cy<8>_rt
+LUT1 		threesamplefilter_op/module2op_12/Mmult_multoutext_Madd7_cy<9>_rt
+LUT1 		threesamplefilter_op/module2op_12/Mmult_multoutext_Madd7_cy<10>_rt
+LUT1 		threesamplefilter_op/module2op_12/Mmult_multoutext_Madd7_cy<11>_rt
+LUT1 		threesamplefilter_op/module2op_12/Mmult_multoutext_Madd7_cy<12>_rt
+LUT1 		threesamplefilter_op/module2op_12/Mmult_multoutext_Madd7_cy<13>_rt
+LUT1 		threesamplefilter_op/module2op_13/Mmult_multoutext_Madd6_cy<7>_rt
+LUT1 		threesamplefilter_op/module2op_13/Mmult_multoutext_Madd7_cy<7>_rt
+XORCY 		threesamplefilter_op/module2op_13/Mmult_multoutext_Madd7_xor<7>
+LUT1 		threesamplefilter_op/module2op_13/Mmult_multoutext_Madd7_cy<8>_rt
+LUT1 		threesamplefilter_op/module2op_13/Mmult_multoutext_Madd7_cy<9>_rt
+LUT1 		threesamplefilter_op/module2op_13/Mmult_multoutext_Madd7_cy<10>_rt
+LUT1 		threesamplefilter_op/module2op_13/Mmult_multoutext_Madd7_cy<11>_rt
+LUT1 		threesamplefilter_op/module2op_13/Mmult_multoutext_Madd7_cy<12>_rt
+LUT1 		threesamplefilter_op/module2op_13/Mmult_multoutext_Madd7_cy<13>_rt
+LUT1 		threesamplefilter_op/module2op_14/Mmult_multoutext_Madd6_cy<7>_rt
+LUT1 		threesamplefilter_op/module2op_14/Mmult_multoutext_Madd7_cy<7>_rt
+XORCY 		threesamplefilter_op/module2op_14/Mmult_multoutext_Madd7_xor<7>
+LUT1 		threesamplefilter_op/module2op_14/Mmult_multoutext_Madd7_cy<8>_rt
+LUT1 		threesamplefilter_op/module2op_14/Mmult_multoutext_Madd7_cy<9>_rt
+LUT1 		threesamplefilter_op/module2op_14/Mmult_multoutext_Madd7_cy<10>_rt
+LUT1 		threesamplefilter_op/module2op_14/Mmult_multoutext_Madd7_cy<11>_rt
+LUT1 		threesamplefilter_op/module2op_14/Mmult_multoutext_Madd7_cy<12>_rt
+LUT1 		threesamplefilter_op/module2op_14/Mmult_multoutext_Madd7_cy<13>_rt
+LUT1 		threesamplefilter_op/module2op_15/Mmult_multoutext_Madd6_cy<7>_rt
+LUT1 		threesamplefilter_op/module2op_15/Mmult_multoutext_Madd7_cy<7>_rt
+XORCY 		threesamplefilter_op/module2op_15/Mmult_multoutext_Madd7_xor<7>
+LUT1 		threesamplefilter_op/module2op_15/Mmult_multoutext_Madd7_cy<8>_rt
+LUT1 		threesamplefilter_op/module2op_15/Mmult_multoutext_Madd7_cy<9>_rt
+LUT1 		threesamplefilter_op/module2op_15/Mmult_multoutext_Madd7_cy<10>_rt
+LUT1 		threesamplefilter_op/module2op_15/Mmult_multoutext_Madd7_cy<11>_rt
+LUT1 		threesamplefilter_op/module2op_15/Mmult_multoutext_Madd7_cy<12>_rt
+LUT1 		threesamplefilter_op/module2op_15/Mmult_multoutext_Madd7_cy<13>_rt
+LUT1 		threesamplefilter_op/module2op_16/Mmult_multoutext_Madd6_cy<7>_rt
+LUT1 		threesamplefilter_op/module2op_16/Mmult_multoutext_Madd7_cy<7>_rt
+XORCY 		threesamplefilter_op/module2op_16/Mmult_multoutext_Madd7_xor<7>
+LUT1 		threesamplefilter_op/module2op_16/Mmult_multoutext_Madd7_cy<8>_rt
+LUT1 		threesamplefilter_op/module2op_16/Mmult_multoutext_Madd7_cy<9>_rt
+LUT1 		threesamplefilter_op/module2op_16/Mmult_multoutext_Madd7_cy<10>_rt
+LUT1 		threesamplefilter_op/module2op_16/Mmult_multoutext_Madd7_cy<11>_rt
+LUT1 		threesamplefilter_op/module2op_16/Mmult_multoutext_Madd7_cy<12>_rt
+LUT1 		threesamplefilter_op/module2op_16/Mmult_multoutext_Madd7_cy<13>_rt
+LUT1 		threesamplefilter_op/module2op_17/Mmult_multoutext_Madd6_cy<7>_rt
+LUT1 		threesamplefilter_op/module2op_17/Mmult_multoutext_Madd7_cy<7>_rt
+XORCY 		threesamplefilter_op/module2op_17/Mmult_multoutext_Madd7_xor<7>
+LUT1 		threesamplefilter_op/module2op_17/Mmult_multoutext_Madd7_cy<8>_rt
+LUT1 		threesamplefilter_op/module2op_17/Mmult_multoutext_Madd7_cy<9>_rt
+LUT1 		threesamplefilter_op/module2op_17/Mmult_multoutext_Madd7_cy<10>_rt
+LUT1 		threesamplefilter_op/module2op_17/Mmult_multoutext_Madd7_cy<11>_rt
+LUT1 		threesamplefilter_op/module2op_17/Mmult_multoutext_Madd7_cy<12>_rt
+LUT1 		threesamplefilter_op/module2op_17/Mmult_multoutext_Madd7_cy<13>_rt
+LUT1 		threesamplefilter_op/module2op_18/Mmult_multoutext_Madd6_cy<7>_rt
+LUT1 		threesamplefilter_op/module2op_18/Mmult_multoutext_Madd7_cy<7>_rt
+XORCY 		threesamplefilter_op/module2op_18/Mmult_multoutext_Madd7_xor<7>
+LUT1 		threesamplefilter_op/module2op_18/Mmult_multoutext_Madd7_cy<8>_rt
+LUT1 		threesamplefilter_op/module2op_18/Mmult_multoutext_Madd7_cy<9>_rt
+LUT1 		threesamplefilter_op/module2op_18/Mmult_multoutext_Madd7_cy<10>_rt
+LUT1 		threesamplefilter_op/module2op_18/Mmult_multoutext_Madd7_cy<11>_rt
+LUT1 		threesamplefilter_op/module2op_18/Mmult_multoutext_Madd7_cy<12>_rt
+LUT1 		threesamplefilter_op/module2op_18/Mmult_multoutext_Madd7_cy<13>_rt
+LUT1 		threesamplefilter_op/module2op_19/Mmult_multoutext_Madd6_cy<7>_rt
+LUT1 		threesamplefilter_op/module2op_19/Mmult_multoutext_Madd7_cy<7>_rt
+XORCY 		threesamplefilter_op/module2op_19/Mmult_multoutext_Madd7_xor<7>
+LUT1 		threesamplefilter_op/module2op_19/Mmult_multoutext_Madd7_cy<8>_rt
+LUT1 		threesamplefilter_op/module2op_19/Mmult_multoutext_Madd7_cy<9>_rt
+LUT1 		threesamplefilter_op/module2op_19/Mmult_multoutext_Madd7_cy<10>_rt
+LUT1 		threesamplefilter_op/module2op_19/Mmult_multoutext_Madd7_cy<11>_rt
+LUT1 		threesamplefilter_op/module2op_19/Mmult_multoutext_Madd7_cy<12>_rt
+LUT1 		threesamplefilter_op/module2op_19/Mmult_multoutext_Madd7_cy<13>_rt
+LUT1 		threesamplefilter_op/module2op_20/Mmult_multoutext_Madd6_cy<7>_rt
+LUT1 		threesamplefilter_op/module2op_20/Mmult_multoutext_Madd7_cy<7>_rt
+XORCY 		threesamplefilter_op/module2op_20/Mmult_multoutext_Madd7_xor<7>
+LUT1 		threesamplefilter_op/module2op_20/Mmult_multoutext_Madd7_cy<8>_rt
+LUT1 		threesamplefilter_op/module2op_20/Mmult_multoutext_Madd7_cy<9>_rt
+LUT1 		threesamplefilter_op/module2op_20/Mmult_multoutext_Madd7_cy<10>_rt
+LUT1 		threesamplefilter_op/module2op_20/Mmult_multoutext_Madd7_cy<11>_rt
+LUT1 		threesamplefilter_op/module2op_20/Mmult_multoutext_Madd7_cy<12>_rt
+LUT1 		threesamplefilter_op/module2op_20/Mmult_multoutext_Madd7_cy<13>_rt
+LUT1 		threesamplefilter_op/module2op_21/Mmult_multoutext_Madd6_cy<7>_rt
+LUT1 		threesamplefilter_op/module2op_21/Mmult_multoutext_Madd7_cy<7>_rt
+XORCY 		threesamplefilter_op/module2op_21/Mmult_multoutext_Madd7_xor<7>
+LUT1 		threesamplefilter_op/module2op_21/Mmult_multoutext_Madd7_cy<8>_rt
+LUT1 		threesamplefilter_op/module2op_21/Mmult_multoutext_Madd7_cy<9>_rt
+LUT1 		threesamplefilter_op/module2op_21/Mmult_multoutext_Madd7_cy<10>_rt
+LUT1 		threesamplefilter_op/module2op_21/Mmult_multoutext_Madd7_cy<11>_rt
+LUT1 		threesamplefilter_op/module2op_21/Mmult_multoutext_Madd7_cy<12>_rt
+LUT1 		threesamplefilter_op/module2op_21/Mmult_multoutext_Madd7_cy<13>_rt
+LUT1 		threesamplefilter_op/module2op_22/Mmult_multoutext_Madd6_cy<7>_rt
+LUT1 		threesamplefilter_op/module2op_22/Mmult_multoutext_Madd7_cy<7>_rt
+XORCY 		threesamplefilter_op/module2op_22/Mmult_multoutext_Madd7_xor<7>
+LUT1 		threesamplefilter_op/module2op_22/Mmult_multoutext_Madd7_cy<8>_rt
+LUT1 		threesamplefilter_op/module2op_22/Mmult_multoutext_Madd7_cy<9>_rt
+LUT1 		threesamplefilter_op/module2op_22/Mmult_multoutext_Madd7_cy<10>_rt
+LUT1 		threesamplefilter_op/module2op_22/Mmult_multoutext_Madd7_cy<11>_rt
+LUT1 		threesamplefilter_op/module2op_22/Mmult_multoutext_Madd7_cy<12>_rt
+LUT1 		threesamplefilter_op/module2op_22/Mmult_multoutext_Madd7_cy<13>_rt
+LUT1 		threesamplefilter_op/module2op_23/Mmult_multoutext_Madd6_cy<7>_rt
+LUT1 		threesamplefilter_op/module2op_23/Mmult_multoutext_Madd7_cy<7>_rt
+XORCY 		threesamplefilter_op/module2op_23/Mmult_multoutext_Madd7_xor<7>
+LUT1 		threesamplefilter_op/module2op_23/Mmult_multoutext_Madd7_cy<8>_rt
+LUT1 		threesamplefilter_op/module2op_23/Mmult_multoutext_Madd7_cy<9>_rt
+LUT1 		threesamplefilter_op/module2op_23/Mmult_multoutext_Madd7_cy<10>_rt
+LUT1 		threesamplefilter_op/module2op_23/Mmult_multoutext_Madd7_cy<11>_rt
+LUT1 		threesamplefilter_op/module2op_23/Mmult_multoutext_Madd7_cy<12>_rt
+LUT1 		threesamplefilter_op/module2op_23/Mmult_multoutext_Madd7_cy<13>_rt
+LUT1 		threesamplefilter_op/module2op_24/Mmult_multoutext_Madd6_cy<7>_rt
+LUT1 		threesamplefilter_op/module2op_24/Mmult_multoutext_Madd7_cy<7>_rt
+XORCY 		threesamplefilter_op/module2op_24/Mmult_multoutext_Madd7_xor<7>
+LUT1 		threesamplefilter_op/module2op_24/Mmult_multoutext_Madd7_cy<8>_rt
+LUT1 		threesamplefilter_op/module2op_24/Mmult_multoutext_Madd7_cy<9>_rt
+LUT1 		threesamplefilter_op/module2op_24/Mmult_multoutext_Madd7_cy<10>_rt
+LUT1 		threesamplefilter_op/module2op_24/Mmult_multoutext_Madd7_cy<11>_rt
+LUT1 		threesamplefilter_op/module2op_24/Mmult_multoutext_Madd7_cy<12>_rt
+LUT1 		threesamplefilter_op/module2op_24/Mmult_multoutext_Madd7_cy<13>_rt
+LUT1 		threesamplefilter_op/module2op_25/Mmult_multoutext_Madd6_cy<7>_rt
+LUT1 		threesamplefilter_op/module2op_25/Mmult_multoutext_Madd7_cy<7>_rt
+XORCY 		threesamplefilter_op/module2op_25/Mmult_multoutext_Madd7_xor<7>
+LUT1 		threesamplefilter_op/module2op_25/Mmult_multoutext_Madd7_cy<8>_rt
+LUT1 		threesamplefilter_op/module2op_25/Mmult_multoutext_Madd7_cy<9>_rt
+LUT1 		threesamplefilter_op/module2op_25/Mmult_multoutext_Madd7_cy<10>_rt
+LUT1 		threesamplefilter_op/module2op_25/Mmult_multoutext_Madd7_cy<11>_rt
+LUT1 		threesamplefilter_op/module2op_25/Mmult_multoutext_Madd7_cy<12>_rt
+LUT1 		threesamplefilter_op/module2op_25/Mmult_multoutext_Madd7_cy<13>_rt
+LUT1 		threesamplefilter_op/module2op_26/Mmult_multoutext_Madd6_cy<7>_rt
+LUT1 		threesamplefilter_op/module2op_26/Mmult_multoutext_Madd7_cy<7>_rt
+XORCY 		threesamplefilter_op/module2op_26/Mmult_multoutext_Madd7_xor<7>
+LUT1 		threesamplefilter_op/module2op_26/Mmult_multoutext_Madd7_cy<8>_rt
+LUT1 		threesamplefilter_op/module2op_26/Mmult_multoutext_Madd7_cy<9>_rt
+LUT1 		threesamplefilter_op/module2op_26/Mmult_multoutext_Madd7_cy<10>_rt
+LUT1 		threesamplefilter_op/module2op_26/Mmult_multoutext_Madd7_cy<11>_rt
+LUT1 		threesamplefilter_op/module2op_26/Mmult_multoutext_Madd7_cy<12>_rt
+LUT1 		threesamplefilter_op/module2op_26/Mmult_multoutext_Madd7_cy<13>_rt
+LUT1 		threesamplefilter_op/module2op_27/Mmult_multoutext_Madd6_cy<7>_rt
+LUT1 		threesamplefilter_op/module2op_27/Mmult_multoutext_Madd7_cy<7>_rt
+XORCY 		threesamplefilter_op/module2op_27/Mmult_multoutext_Madd7_xor<7>
+LUT1 		threesamplefilter_op/module2op_27/Mmult_multoutext_Madd7_cy<8>_rt
+LUT1 		threesamplefilter_op/module2op_27/Mmult_multoutext_Madd7_cy<9>_rt
+LUT1 		threesamplefilter_op/module2op_27/Mmult_multoutext_Madd7_cy<10>_rt
+LUT1 		threesamplefilter_op/module2op_27/Mmult_multoutext_Madd7_cy<11>_rt
+LUT1 		threesamplefilter_op/module2op_27/Mmult_multoutext_Madd7_cy<12>_rt
+LUT1 		threesamplefilter_op/module2op_27/Mmult_multoutext_Madd7_cy<13>_rt
+LUT1 		threesamplefilter_op/module2op_28/Mmult_multoutext_Madd6_cy<7>_rt
+LUT1 		threesamplefilter_op/module2op_28/Mmult_multoutext_Madd7_cy<7>_rt
+XORCY 		threesamplefilter_op/module2op_28/Mmult_multoutext_Madd7_xor<7>
+LUT1 		threesamplefilter_op/module2op_28/Mmult_multoutext_Madd7_cy<8>_rt
+LUT1 		threesamplefilter_op/module2op_28/Mmult_multoutext_Madd7_cy<9>_rt
+LUT1 		threesamplefilter_op/module2op_28/Mmult_multoutext_Madd7_cy<10>_rt
+LUT1 		threesamplefilter_op/module2op_28/Mmult_multoutext_Madd7_cy<11>_rt
+LUT1 		threesamplefilter_op/module2op_28/Mmult_multoutext_Madd7_cy<12>_rt
+LUT1 		threesamplefilter_op/module2op_28/Mmult_multoutext_Madd7_cy<13>_rt
+LUT1 		threesamplefilter_op/module2op_29/Mmult_multoutext_Madd6_cy<7>_rt
+LUT1 		threesamplefilter_op/module2op_29/Mmult_multoutext_Madd7_cy<7>_rt
+XORCY 		threesamplefilter_op/module2op_29/Mmult_multoutext_Madd7_xor<7>
+LUT1 		threesamplefilter_op/module2op_29/Mmult_multoutext_Madd7_cy<8>_rt
+LUT1 		threesamplefilter_op/module2op_29/Mmult_multoutext_Madd7_cy<9>_rt
+LUT1 		threesamplefilter_op/module2op_29/Mmult_multoutext_Madd7_cy<10>_rt
+LUT1 		threesamplefilter_op/module2op_29/Mmult_multoutext_Madd7_cy<11>_rt
+LUT1 		threesamplefilter_op/module2op_29/Mmult_multoutext_Madd7_cy<12>_rt
+LUT1 		threesamplefilter_op/module2op_29/Mmult_multoutext_Madd7_cy<13>_rt
+LUT1 		threesamplefilter_op/module2op_30/Mmult_multoutext_Madd6_cy<7>_rt
+LUT1 		threesamplefilter_op/module2op_30/Mmult_multoutext_Madd7_cy<7>_rt
+XORCY 		threesamplefilter_op/module2op_30/Mmult_multoutext_Madd7_xor<7>
+LUT1 		threesamplefilter_op/module2op_30/Mmult_multoutext_Madd7_cy<8>_rt
+LUT1 		threesamplefilter_op/module2op_30/Mmult_multoutext_Madd7_cy<9>_rt
+LUT1 		threesamplefilter_op/module2op_30/Mmult_multoutext_Madd7_cy<10>_rt
+LUT1 		threesamplefilter_op/module2op_30/Mmult_multoutext_Madd7_cy<11>_rt
+LUT1 		threesamplefilter_op/module2op_30/Mmult_multoutext_Madd7_cy<12>_rt
+LUT1 		threesamplefilter_op/module2op_30/Mmult_multoutext_Madd7_cy<13>_rt
+LUT1 		threesamplefilter_op/module2op_1/Mmult_multoutext_Madd5_xor<4>_rt
+LUT1 		threesamplefilter_op/module2op_2/Mmult_multoutext_Madd5_xor<4>_rt
+LUT1 		threesamplefilter_op/module2op_3/Mmult_multoutext_Madd5_xor<4>_rt
+LUT1 		threesamplefilter_op/module2op_4/Mmult_multoutext_Madd5_xor<4>_rt
+LUT1 		threesamplefilter_op/module2op_5/Mmult_multoutext_Madd5_xor<4>_rt
+LUT1 		threesamplefilter_op/module2op_6/Mmult_multoutext_Madd5_xor<4>_rt
+LUT1 		threesamplefilter_op/module2op_7/Mmult_multoutext_Madd5_xor<4>_rt
+LUT1 		threesamplefilter_op/module2op_8/Mmult_multoutext_Madd5_xor<4>_rt
+LUT1 		threesamplefilter_op/module2op_9/Mmult_multoutext_Madd5_xor<4>_rt
+LUT1 		threesamplefilter_op/module2op_10/Mmult_multoutext_Madd5_xor<4>_rt
+LUT1 		threesamplefilter_op/module2op_11/Mmult_multoutext_Madd5_xor<4>_rt
+LUT1 		threesamplefilter_op/module2op_12/Mmult_multoutext_Madd5_xor<4>_rt
+LUT1 		threesamplefilter_op/module2op_13/Mmult_multoutext_Madd5_xor<4>_rt
+LUT1 		threesamplefilter_op/module2op_14/Mmult_multoutext_Madd5_xor<4>_rt
+LUT1 		threesamplefilter_op/module2op_15/Mmult_multoutext_Madd5_xor<4>_rt
+LUT1 		threesamplefilter_op/module2op_16/Mmult_multoutext_Madd5_xor<4>_rt
+LUT1 		threesamplefilter_op/module2op_17/Mmult_multoutext_Madd5_xor<4>_rt
+LUT1 		threesamplefilter_op/module2op_18/Mmult_multoutext_Madd5_xor<4>_rt
+LUT1 		threesamplefilter_op/module2op_19/Mmult_multoutext_Madd5_xor<4>_rt
+LUT1 		threesamplefilter_op/module2op_20/Mmult_multoutext_Madd5_xor<4>_rt
+LUT1 		threesamplefilter_op/module2op_21/Mmult_multoutext_Madd5_xor<4>_rt
+LUT1 		threesamplefilter_op/module2op_22/Mmult_multoutext_Madd5_xor<4>_rt
+LUT1 		threesamplefilter_op/module2op_23/Mmult_multoutext_Madd5_xor<4>_rt
+LUT1 		threesamplefilter_op/module2op_24/Mmult_multoutext_Madd5_xor<4>_rt
+LUT1 		threesamplefilter_op/module2op_25/Mmult_multoutext_Madd5_xor<4>_rt
+LUT1 		threesamplefilter_op/module2op_26/Mmult_multoutext_Madd5_xor<4>_rt
+LUT1 		threesamplefilter_op/module2op_27/Mmult_multoutext_Madd5_xor<4>_rt
+LUT1 		threesamplefilter_op/module2op_28/Mmult_multoutext_Madd5_xor<4>_rt
+LUT1 		threesamplefilter_op/module2op_29/Mmult_multoutext_Madd5_xor<4>_rt
+LUT1 		threesamplefilter_op/module2op_30/Mmult_multoutext_Madd5_xor<4>_rt
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| input<0>                           | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| input<1>                           | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| input<2>                           | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| input<3>                           | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| input<4>                           | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| input<5>                           | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| input<6>                           | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| input<7>                           | IBUF             | INPUT     | LVCMOS25             |       |          |      | IFF1         |          | 0 / 2    |
+| out_sw                             | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| output<0>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| output<1>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| output<2>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| output<3>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| switch                             | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+BUFGMUX "switch_BUFGP/BUFG":
+DISABLE_ATTR:LOW
+
+
+
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Module                | Partition | Slices        | Slice Reg     | LUTs          | LUTRAM        | BRAM      | MULT18X18 | BUFG  | DCM   | Full Hierarchical Name                                               |
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| topModule/            |           | 0/693         | 0/33          | 0/701         | 0/0           | 0/0       | 0/0       | 1/1   | 0/0   | topModule                                                            |
+| +muxop                |           | 0/7           | 0/0           | 0/11          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/muxop                                                      |
+| ++mux4_2_inst0        |           | 3/3           | 0/0           | 5/5           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/muxop/mux4_2_inst0                                         |
+| ++mux4_2_inst1        |           | 4/4           | 0/0           | 6/6           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/muxop/mux4_2_inst1                                         |
+| +threesamplefilter_op |           | 1/686         | 0/33          | 1/690         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op                                       |
+| ++module2op_1         |           | 9/23          | 0/0           | 9/25          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_1                           |
+| +++D_FF8op            |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_1/D_FF8op                   |
+| ++++D_FF7             |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_1/D_FF8op/D_FF7             |
+| +++adder              |           | 0/14          | 0/0           | 0/16          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_1/adder                     |
+| ++++FullAdder0        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_1/adder/FullAdder0          |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_1/adder/FullAdder0/XOR2_0   |
+| ++++FullAdder1        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_1/adder/FullAdder1          |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_1/adder/FullAdder1/XOR2_1   |
+| ++++FullAdder2        |           | 0/3           | 0/0           | 0/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_1/adder/FullAdder2          |
+| +++++OR2_1            |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_1/adder/FullAdder2/OR2_1    |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_1/adder/FullAdder2/XOR2_1   |
+| ++++FullAdder3        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_1/adder/FullAdder3          |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_1/adder/FullAdder3/XOR2_1   |
+| ++++FullAdder4        |           | 0/3           | 0/0           | 0/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_1/adder/FullAdder4          |
+| +++++OR2_1            |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_1/adder/FullAdder4/OR2_1    |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_1/adder/FullAdder4/XOR2_1   |
+| ++++FullAdder5        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_1/adder/FullAdder5          |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_1/adder/FullAdder5/XOR2_1   |
+| ++++FullAdder6        |           | 0/2           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_1/adder/FullAdder6          |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_1/adder/FullAdder6/XOR2_1   |
+| ++++FullAdder7        |           | 0/2           | 0/0           | 0/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_1/adder/FullAdder7          |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_1/adder/FullAdder7/XOR2_0   |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_1/adder/FullAdder7/XOR2_1   |
+| ++module2op_10        |           | 9/23          | 0/1           | 9/24          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_10                          |
+| +++D_FF8op            |           | 0/1           | 0/1           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_10/D_FF8op                  |
+| ++++D_FF7             |           | 1/1           | 1/1           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_10/D_FF8op/D_FF7            |
+| +++adder              |           | 0/13          | 0/0           | 0/14          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_10/adder                    |
+| ++++FullAdder0        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_10/adder/FullAdder0         |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_10/adder/FullAdder0/XOR2_0  |
+| ++++FullAdder1        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_10/adder/FullAdder1         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_10/adder/FullAdder1/XOR2_1  |
+| ++++FullAdder2        |           | 0/3           | 0/0           | 0/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_10/adder/FullAdder2         |
+| +++++OR2_1            |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_10/adder/FullAdder2/OR2_1   |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_10/adder/FullAdder2/XOR2_1  |
+| ++++FullAdder3        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_10/adder/FullAdder3         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_10/adder/FullAdder3/XOR2_1  |
+| ++++FullAdder4        |           | 0/3           | 0/0           | 0/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_10/adder/FullAdder4         |
+| +++++OR2_1            |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_10/adder/FullAdder4/OR2_1   |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_10/adder/FullAdder4/XOR2_1  |
+| ++++FullAdder5        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_10/adder/FullAdder5         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_10/adder/FullAdder5/XOR2_1  |
+| ++++FullAdder6        |           | 0/2           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_10/adder/FullAdder6         |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_10/adder/FullAdder6/XOR2_1  |
+| ++++FullAdder7        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_10/adder/FullAdder7         |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_10/adder/FullAdder7/XOR2_0  |
+| ++module2op_11        |           | 9/24          | 0/2           | 8/22          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_11                          |
+| +++D_FF8op            |           | 0/2           | 0/2           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_11/D_FF8op                  |
+| ++++D_FF7             |           | 2/2           | 2/2           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_11/D_FF8op/D_FF7            |
+| +++adder              |           | 0/13          | 0/0           | 0/14          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_11/adder                    |
+| ++++FullAdder0        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_11/adder/FullAdder0         |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_11/adder/FullAdder0/XOR2_0  |
+| ++++FullAdder1        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_11/adder/FullAdder1         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_11/adder/FullAdder1/XOR2_1  |
+| ++++FullAdder2        |           | 0/3           | 0/0           | 0/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_11/adder/FullAdder2         |
+| +++++OR2_1            |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_11/adder/FullAdder2/OR2_1   |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_11/adder/FullAdder2/XOR2_1  |
+| ++++FullAdder3        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_11/adder/FullAdder3         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_11/adder/FullAdder3/XOR2_1  |
+| ++++FullAdder4        |           | 0/3           | 0/0           | 0/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_11/adder/FullAdder4         |
+| +++++OR2_1            |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_11/adder/FullAdder4/OR2_1   |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_11/adder/FullAdder4/XOR2_1  |
+| ++++FullAdder5        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_11/adder/FullAdder5         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_11/adder/FullAdder5/XOR2_1  |
+| ++++FullAdder6        |           | 0/2           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_11/adder/FullAdder6         |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_11/adder/FullAdder6/XOR2_1  |
+| ++++FullAdder7        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_11/adder/FullAdder7         |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_11/adder/FullAdder7/XOR2_0  |
+| ++module2op_12        |           | 9/23          | 0/1           | 8/25          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_12                          |
+| +++D_FF8op            |           | 0/1           | 0/1           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_12/D_FF8op                  |
+| ++++D_FF7             |           | 1/1           | 1/1           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_12/D_FF8op/D_FF7            |
+| +++adder              |           | 0/13          | 0/0           | 0/17          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_12/adder                    |
+| ++++FullAdder0        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_12/adder/FullAdder0         |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_12/adder/FullAdder0/XOR2_0  |
+| ++++FullAdder1        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_12/adder/FullAdder1         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_12/adder/FullAdder1/XOR2_1  |
+| ++++FullAdder2        |           | 0/3           | 0/0           | 0/4           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_12/adder/FullAdder2         |
+| +++++OR2_1            |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_12/adder/FullAdder2/OR2_1   |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_12/adder/FullAdder2/XOR2_1  |
+| ++++FullAdder3        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_12/adder/FullAdder3         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_12/adder/FullAdder3/XOR2_1  |
+| ++++FullAdder4        |           | 0/3           | 0/0           | 0/4           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_12/adder/FullAdder4         |
+| +++++OR2_1            |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_12/adder/FullAdder4/OR2_1   |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 3/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_12/adder/FullAdder4/XOR2_1  |
+| ++++FullAdder5        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_12/adder/FullAdder5         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_12/adder/FullAdder5/XOR2_1  |
+| ++++FullAdder6        |           | 0/2           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_12/adder/FullAdder6         |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_12/adder/FullAdder6/XOR2_1  |
+| ++++FullAdder7        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_12/adder/FullAdder7         |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_12/adder/FullAdder7/XOR2_0  |
+| ++module2op_13        |           | 9/23          | 0/1           | 7/21          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_13                          |
+| +++D_FF8op            |           | 0/1           | 0/1           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_13/D_FF8op                  |
+| ++++D_FF7             |           | 1/1           | 1/1           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_13/D_FF8op/D_FF7            |
+| +++adder              |           | 0/13          | 0/0           | 0/14          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_13/adder                    |
+| ++++FullAdder0        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_13/adder/FullAdder0         |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_13/adder/FullAdder0/XOR2_0  |
+| ++++FullAdder1        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_13/adder/FullAdder1         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_13/adder/FullAdder1/XOR2_1  |
+| ++++FullAdder2        |           | 0/3           | 0/0           | 0/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_13/adder/FullAdder2         |
+| +++++OR2_1            |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_13/adder/FullAdder2/OR2_1   |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_13/adder/FullAdder2/XOR2_1  |
+| ++++FullAdder3        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_13/adder/FullAdder3         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_13/adder/FullAdder3/XOR2_1  |
+| ++++FullAdder4        |           | 0/3           | 0/0           | 0/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_13/adder/FullAdder4         |
+| +++++OR2_1            |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_13/adder/FullAdder4/OR2_1   |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_13/adder/FullAdder4/XOR2_1  |
+| ++++FullAdder5        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_13/adder/FullAdder5         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_13/adder/FullAdder5/XOR2_1  |
+| ++++FullAdder6        |           | 0/2           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_13/adder/FullAdder6         |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_13/adder/FullAdder6/XOR2_1  |
+| ++++FullAdder7        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_13/adder/FullAdder7         |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_13/adder/FullAdder7/XOR2_0  |
+| ++module2op_14        |           | 9/23          | 0/1           | 8/25          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_14                          |
+| +++D_FF8op            |           | 0/1           | 0/1           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_14/D_FF8op                  |
+| ++++D_FF7             |           | 1/1           | 1/1           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_14/D_FF8op/D_FF7            |
+| +++adder              |           | 0/13          | 0/0           | 0/17          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_14/adder                    |
+| ++++FullAdder0        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_14/adder/FullAdder0         |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_14/adder/FullAdder0/XOR2_0  |
+| ++++FullAdder1        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_14/adder/FullAdder1         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_14/adder/FullAdder1/XOR2_1  |
+| ++++FullAdder2        |           | 0/3           | 0/0           | 0/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_14/adder/FullAdder2         |
+| +++++OR2_1            |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_14/adder/FullAdder2/OR2_1   |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_14/adder/FullAdder2/XOR2_1  |
+| ++++FullAdder3        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_14/adder/FullAdder3         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_14/adder/FullAdder3/XOR2_1  |
+| ++++FullAdder4        |           | 0/3           | 0/0           | 0/5           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_14/adder/FullAdder4         |
+| +++++OR2_1            |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_14/adder/FullAdder4/OR2_1   |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 3/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_14/adder/FullAdder4/XOR2_1  |
+| ++++FullAdder5        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_14/adder/FullAdder5         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_14/adder/FullAdder5/XOR2_1  |
+| ++++FullAdder6        |           | 0/2           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_14/adder/FullAdder6         |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_14/adder/FullAdder6/XOR2_1  |
+| ++++FullAdder7        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_14/adder/FullAdder7         |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_14/adder/FullAdder7/XOR2_0  |
+| ++module2op_15        |           | 9/23          | 0/1           | 7/21          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_15                          |
+| +++D_FF8op            |           | 0/1           | 0/1           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_15/D_FF8op                  |
+| ++++D_FF7             |           | 1/1           | 1/1           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_15/D_FF8op/D_FF7            |
+| +++adder              |           | 0/13          | 0/0           | 0/14          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_15/adder                    |
+| ++++FullAdder0        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_15/adder/FullAdder0         |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_15/adder/FullAdder0/XOR2_0  |
+| ++++FullAdder1        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_15/adder/FullAdder1         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_15/adder/FullAdder1/XOR2_1  |
+| ++++FullAdder2        |           | 0/3           | 0/0           | 0/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_15/adder/FullAdder2         |
+| +++++OR2_1            |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_15/adder/FullAdder2/OR2_1   |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_15/adder/FullAdder2/XOR2_1  |
+| ++++FullAdder3        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_15/adder/FullAdder3         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_15/adder/FullAdder3/XOR2_1  |
+| ++++FullAdder4        |           | 0/3           | 0/0           | 0/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_15/adder/FullAdder4         |
+| +++++OR2_1            |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_15/adder/FullAdder4/OR2_1   |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_15/adder/FullAdder4/XOR2_1  |
+| ++++FullAdder5        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_15/adder/FullAdder5         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_15/adder/FullAdder5/XOR2_1  |
+| ++++FullAdder6        |           | 0/2           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_15/adder/FullAdder6         |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_15/adder/FullAdder6/XOR2_1  |
+| ++++FullAdder7        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_15/adder/FullAdder7         |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_15/adder/FullAdder7/XOR2_0  |
+| ++module2op_16        |           | 9/23          | 0/1           | 8/25          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_16                          |
+| +++D_FF8op            |           | 0/1           | 0/1           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_16/D_FF8op                  |
+| ++++D_FF7             |           | 1/1           | 1/1           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_16/D_FF8op/D_FF7            |
+| +++adder              |           | 0/13          | 0/0           | 0/17          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_16/adder                    |
+| ++++FullAdder0        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_16/adder/FullAdder0         |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_16/adder/FullAdder0/XOR2_0  |
+| ++++FullAdder1        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_16/adder/FullAdder1         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_16/adder/FullAdder1/XOR2_1  |
+| ++++FullAdder2        |           | 0/3           | 0/0           | 0/4           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_16/adder/FullAdder2         |
+| +++++OR2_1            |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_16/adder/FullAdder2/OR2_1   |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_16/adder/FullAdder2/XOR2_1  |
+| ++++FullAdder3        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_16/adder/FullAdder3         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_16/adder/FullAdder3/XOR2_1  |
+| ++++FullAdder4        |           | 0/3           | 0/0           | 0/5           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_16/adder/FullAdder4         |
+| +++++OR2_1            |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_16/adder/FullAdder4/OR2_1   |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 3/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_16/adder/FullAdder4/XOR2_1  |
+| ++++FullAdder5        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_16/adder/FullAdder5         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_16/adder/FullAdder5/XOR2_1  |
+| ++++FullAdder6        |           | 0/2           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_16/adder/FullAdder6         |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_16/adder/FullAdder6/XOR2_1  |
+| ++++FullAdder7        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_16/adder/FullAdder7         |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_16/adder/FullAdder7/XOR2_0  |
+| ++module2op_17        |           | 9/23          | 0/1           | 8/22          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_17                          |
+| +++D_FF8op            |           | 0/1           | 0/1           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_17/D_FF8op                  |
+| ++++D_FF7             |           | 1/1           | 1/1           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_17/D_FF8op/D_FF7            |
+| +++adder              |           | 0/13          | 0/0           | 0/14          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_17/adder                    |
+| ++++FullAdder0        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_17/adder/FullAdder0         |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_17/adder/FullAdder0/XOR2_0  |
+| ++++FullAdder1        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_17/adder/FullAdder1         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_17/adder/FullAdder1/XOR2_1  |
+| ++++FullAdder2        |           | 0/3           | 0/0           | 0/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_17/adder/FullAdder2         |
+| +++++OR2_1            |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_17/adder/FullAdder2/OR2_1   |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_17/adder/FullAdder2/XOR2_1  |
+| ++++FullAdder3        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_17/adder/FullAdder3         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_17/adder/FullAdder3/XOR2_1  |
+| ++++FullAdder4        |           | 0/3           | 0/0           | 0/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_17/adder/FullAdder4         |
+| +++++OR2_1            |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_17/adder/FullAdder4/OR2_1   |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_17/adder/FullAdder4/XOR2_1  |
+| ++++FullAdder5        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_17/adder/FullAdder5         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_17/adder/FullAdder5/XOR2_1  |
+| ++++FullAdder6        |           | 0/2           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_17/adder/FullAdder6         |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_17/adder/FullAdder6/XOR2_1  |
+| ++++FullAdder7        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_17/adder/FullAdder7         |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_17/adder/FullAdder7/XOR2_0  |
+| ++module2op_18        |           | 9/23          | 0/1           | 9/24          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_18                          |
+| +++D_FF8op            |           | 0/1           | 0/1           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_18/D_FF8op                  |
+| ++++D_FF7             |           | 1/1           | 1/1           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_18/D_FF8op/D_FF7            |
+| +++adder              |           | 0/13          | 0/0           | 0/15          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_18/adder                    |
+| ++++FullAdder0        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_18/adder/FullAdder0         |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_18/adder/FullAdder0/XOR2_0  |
+| ++++FullAdder1        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_18/adder/FullAdder1         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_18/adder/FullAdder1/XOR2_1  |
+| ++++FullAdder2        |           | 0/3           | 0/0           | 0/4           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_18/adder/FullAdder2         |
+| +++++OR2_1            |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_18/adder/FullAdder2/OR2_1   |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_18/adder/FullAdder2/XOR2_1  |
+| ++++FullAdder3        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_18/adder/FullAdder3         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_18/adder/FullAdder3/XOR2_1  |
+| ++++FullAdder4        |           | 0/3           | 0/0           | 0/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_18/adder/FullAdder4         |
+| +++++OR2_1            |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_18/adder/FullAdder4/OR2_1   |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_18/adder/FullAdder4/XOR2_1  |
+| ++++FullAdder5        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_18/adder/FullAdder5         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_18/adder/FullAdder5/XOR2_1  |
+| ++++FullAdder6        |           | 0/2           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_18/adder/FullAdder6         |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_18/adder/FullAdder6/XOR2_1  |
+| ++++FullAdder7        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_18/adder/FullAdder7         |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_18/adder/FullAdder7/XOR2_0  |
+| ++module2op_19        |           | 9/23          | 0/1           | 8/22          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_19                          |
+| +++D_FF8op            |           | 0/1           | 0/1           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_19/D_FF8op                  |
+| ++++D_FF7             |           | 1/1           | 1/1           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_19/D_FF8op/D_FF7            |
+| +++adder              |           | 0/13          | 0/0           | 0/14          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_19/adder                    |
+| ++++FullAdder0        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_19/adder/FullAdder0         |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_19/adder/FullAdder0/XOR2_0  |
+| ++++FullAdder1        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_19/adder/FullAdder1         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_19/adder/FullAdder1/XOR2_1  |
+| ++++FullAdder2        |           | 0/3           | 0/0           | 0/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_19/adder/FullAdder2         |
+| +++++OR2_1            |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_19/adder/FullAdder2/OR2_1   |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_19/adder/FullAdder2/XOR2_1  |
+| ++++FullAdder3        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_19/adder/FullAdder3         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_19/adder/FullAdder3/XOR2_1  |
+| ++++FullAdder4        |           | 0/3           | 0/0           | 0/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_19/adder/FullAdder4         |
+| +++++OR2_1            |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_19/adder/FullAdder4/OR2_1   |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_19/adder/FullAdder4/XOR2_1  |
+| ++++FullAdder5        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_19/adder/FullAdder5         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_19/adder/FullAdder5/XOR2_1  |
+| ++++FullAdder6        |           | 0/2           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_19/adder/FullAdder6         |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_19/adder/FullAdder6/XOR2_1  |
+| ++++FullAdder7        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_19/adder/FullAdder7         |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_19/adder/FullAdder7/XOR2_0  |
+| ++module2op_2         |           | 9/24          | 0/2           | 8/23          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_2                           |
+| +++D_FF8op            |           | 0/2           | 0/2           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_2/D_FF8op                   |
+| ++++D_FF7             |           | 2/2           | 2/2           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_2/D_FF8op/D_FF7             |
+| +++adder              |           | 0/13          | 0/0           | 0/15          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_2/adder                     |
+| ++++FullAdder0        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_2/adder/FullAdder0          |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_2/adder/FullAdder0/XOR2_0   |
+| ++++FullAdder1        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_2/adder/FullAdder1          |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_2/adder/FullAdder1/XOR2_1   |
+| ++++FullAdder2        |           | 0/3           | 0/0           | 0/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_2/adder/FullAdder2          |
+| +++++OR2_1            |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_2/adder/FullAdder2/OR2_1    |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_2/adder/FullAdder2/XOR2_1   |
+| ++++FullAdder3        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_2/adder/FullAdder3          |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_2/adder/FullAdder3/XOR2_1   |
+| ++++FullAdder4        |           | 0/3           | 0/0           | 0/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_2/adder/FullAdder4          |
+| +++++OR2_1            |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_2/adder/FullAdder4/OR2_1    |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_2/adder/FullAdder4/XOR2_1   |
+| ++++FullAdder5        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_2/adder/FullAdder5          |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_2/adder/FullAdder5/XOR2_1   |
+| ++++FullAdder6        |           | 0/2           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_2/adder/FullAdder6          |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_2/adder/FullAdder6/XOR2_1   |
+| ++++FullAdder7        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_2/adder/FullAdder7          |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_2/adder/FullAdder7/XOR2_0   |
+| ++module2op_20        |           | 9/23          | 0/1           | 8/24          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_20                          |
+| +++D_FF8op            |           | 0/1           | 0/1           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_20/D_FF8op                  |
+| ++++D_FF7             |           | 1/1           | 1/1           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_20/D_FF8op/D_FF7            |
+| +++adder              |           | 0/13          | 0/0           | 0/16          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_20/adder                    |
+| ++++FullAdder0        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_20/adder/FullAdder0         |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_20/adder/FullAdder0/XOR2_0  |
+| ++++FullAdder1        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_20/adder/FullAdder1         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_20/adder/FullAdder1/XOR2_1  |
+| ++++FullAdder2        |           | 0/3           | 0/0           | 0/4           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_20/adder/FullAdder2         |
+| +++++OR2_1            |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_20/adder/FullAdder2/OR2_1   |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_20/adder/FullAdder2/XOR2_1  |
+| ++++FullAdder3        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_20/adder/FullAdder3         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_20/adder/FullAdder3/XOR2_1  |
+| ++++FullAdder4        |           | 0/3           | 0/0           | 0/4           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_20/adder/FullAdder4         |
+| +++++OR2_1            |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_20/adder/FullAdder4/OR2_1   |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_20/adder/FullAdder4/XOR2_1  |
+| ++++FullAdder5        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_20/adder/FullAdder5         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_20/adder/FullAdder5/XOR2_1  |
+| ++++FullAdder6        |           | 0/2           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_20/adder/FullAdder6         |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_20/adder/FullAdder6/XOR2_1  |
+| ++++FullAdder7        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_20/adder/FullAdder7         |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_20/adder/FullAdder7/XOR2_0  |
+| ++module2op_21        |           | 9/23          | 0/1           | 8/22          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_21                          |
+| +++D_FF8op            |           | 0/1           | 0/1           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_21/D_FF8op                  |
+| ++++D_FF7             |           | 1/1           | 1/1           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_21/D_FF8op/D_FF7            |
+| +++adder              |           | 0/13          | 0/0           | 0/14          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_21/adder                    |
+| ++++FullAdder0        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_21/adder/FullAdder0         |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_21/adder/FullAdder0/XOR2_0  |
+| ++++FullAdder1        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_21/adder/FullAdder1         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_21/adder/FullAdder1/XOR2_1  |
+| ++++FullAdder2        |           | 0/3           | 0/0           | 0/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_21/adder/FullAdder2         |
+| +++++OR2_1            |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_21/adder/FullAdder2/OR2_1   |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_21/adder/FullAdder2/XOR2_1  |
+| ++++FullAdder3        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_21/adder/FullAdder3         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_21/adder/FullAdder3/XOR2_1  |
+| ++++FullAdder4        |           | 0/3           | 0/0           | 0/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_21/adder/FullAdder4         |
+| +++++OR2_1            |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_21/adder/FullAdder4/OR2_1   |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_21/adder/FullAdder4/XOR2_1  |
+| ++++FullAdder5        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_21/adder/FullAdder5         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_21/adder/FullAdder5/XOR2_1  |
+| ++++FullAdder6        |           | 0/2           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_21/adder/FullAdder6         |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_21/adder/FullAdder6/XOR2_1  |
+| ++++FullAdder7        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_21/adder/FullAdder7         |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_21/adder/FullAdder7/XOR2_0  |
+| ++module2op_22        |           | 9/23          | 0/1           | 9/24          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_22                          |
+| +++D_FF8op            |           | 0/1           | 0/1           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_22/D_FF8op                  |
+| ++++D_FF7             |           | 1/1           | 1/1           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_22/D_FF8op/D_FF7            |
+| +++adder              |           | 0/13          | 0/0           | 0/15          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_22/adder                    |
+| ++++FullAdder0        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_22/adder/FullAdder0         |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_22/adder/FullAdder0/XOR2_0  |
+| ++++FullAdder1        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_22/adder/FullAdder1         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_22/adder/FullAdder1/XOR2_1  |
+| ++++FullAdder2        |           | 0/3           | 0/0           | 0/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_22/adder/FullAdder2         |
+| +++++OR2_1            |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_22/adder/FullAdder2/OR2_1   |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_22/adder/FullAdder2/XOR2_1  |
+| ++++FullAdder3        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_22/adder/FullAdder3         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_22/adder/FullAdder3/XOR2_1  |
+| ++++FullAdder4        |           | 0/3           | 0/0           | 0/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_22/adder/FullAdder4         |
+| +++++OR2_1            |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_22/adder/FullAdder4/OR2_1   |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_22/adder/FullAdder4/XOR2_1  |
+| ++++FullAdder5        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_22/adder/FullAdder5         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_22/adder/FullAdder5/XOR2_1  |
+| ++++FullAdder6        |           | 0/2           | 0/0           | 0/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_22/adder/FullAdder6         |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 3/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_22/adder/FullAdder6/XOR2_1  |
+| ++++FullAdder7        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_22/adder/FullAdder7         |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_22/adder/FullAdder7/XOR2_0  |
+| ++module2op_23        |           | 9/23          | 0/1           | 7/21          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_23                          |
+| +++D_FF8op            |           | 0/1           | 0/1           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_23/D_FF8op                  |
+| ++++D_FF7             |           | 1/1           | 1/1           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_23/D_FF8op/D_FF7            |
+| +++adder              |           | 0/13          | 0/0           | 0/14          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_23/adder                    |
+| ++++FullAdder0        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_23/adder/FullAdder0         |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_23/adder/FullAdder0/XOR2_0  |
+| ++++FullAdder1        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_23/adder/FullAdder1         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_23/adder/FullAdder1/XOR2_1  |
+| ++++FullAdder2        |           | 0/3           | 0/0           | 0/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_23/adder/FullAdder2         |
+| +++++OR2_1            |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_23/adder/FullAdder2/OR2_1   |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_23/adder/FullAdder2/XOR2_1  |
+| ++++FullAdder3        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_23/adder/FullAdder3         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_23/adder/FullAdder3/XOR2_1  |
+| ++++FullAdder4        |           | 0/3           | 0/0           | 0/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_23/adder/FullAdder4         |
+| +++++OR2_1            |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_23/adder/FullAdder4/OR2_1   |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_23/adder/FullAdder4/XOR2_1  |
+| ++++FullAdder5        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_23/adder/FullAdder5         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_23/adder/FullAdder5/XOR2_1  |
+| ++++FullAdder6        |           | 0/2           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_23/adder/FullAdder6         |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_23/adder/FullAdder6/XOR2_1  |
+| ++++FullAdder7        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_23/adder/FullAdder7         |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_23/adder/FullAdder7/XOR2_0  |
+| ++module2op_24        |           | 9/23          | 0/1           | 8/23          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_24                          |
+| +++D_FF8op            |           | 0/1           | 0/1           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_24/D_FF8op                  |
+| ++++D_FF7             |           | 1/1           | 1/1           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_24/D_FF8op/D_FF7            |
+| +++adder              |           | 0/13          | 0/0           | 0/14          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_24/adder                    |
+| ++++FullAdder0        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_24/adder/FullAdder0         |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_24/adder/FullAdder0/XOR2_0  |
+| ++++FullAdder1        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_24/adder/FullAdder1         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_24/adder/FullAdder1/XOR2_1  |
+| ++++FullAdder2        |           | 0/3           | 0/0           | 0/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_24/adder/FullAdder2         |
+| +++++OR2_1            |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_24/adder/FullAdder2/OR2_1   |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_24/adder/FullAdder2/XOR2_1  |
+| ++++FullAdder3        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_24/adder/FullAdder3         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_24/adder/FullAdder3/XOR2_1  |
+| ++++FullAdder4        |           | 0/3           | 0/0           | 0/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_24/adder/FullAdder4         |
+| +++++OR2_1            |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_24/adder/FullAdder4/OR2_1   |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_24/adder/FullAdder4/XOR2_1  |
+| ++++FullAdder5        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_24/adder/FullAdder5         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_24/adder/FullAdder5/XOR2_1  |
+| ++++FullAdder6        |           | 0/2           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_24/adder/FullAdder6         |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_24/adder/FullAdder6/XOR2_1  |
+| ++++FullAdder7        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_24/adder/FullAdder7         |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_24/adder/FullAdder7/XOR2_0  |
+| ++module2op_25        |           | 9/22          | 0/1           | 8/24          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_25                          |
+| +++D_FF8op            |           | 0/1           | 0/1           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_25/D_FF8op                  |
+| ++++D_FF7             |           | 1/1           | 1/1           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_25/D_FF8op/D_FF7            |
+| +++adder              |           | 0/12          | 0/0           | 0/15          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_25/adder                    |
+| ++++FullAdder0        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_25/adder/FullAdder0         |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_25/adder/FullAdder0/XOR2_0  |
+| ++++FullAdder1        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_25/adder/FullAdder1         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_25/adder/FullAdder1/XOR2_1  |
+| ++++FullAdder2        |           | 0/3           | 0/0           | 0/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_25/adder/FullAdder2         |
+| +++++OR2_1            |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_25/adder/FullAdder2/OR2_1   |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_25/adder/FullAdder2/XOR2_1  |
+| ++++FullAdder3        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_25/adder/FullAdder3         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_25/adder/FullAdder3/XOR2_1  |
+| ++++FullAdder4        |           | 0/3           | 0/0           | 0/4           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_25/adder/FullAdder4         |
+| +++++OR2_1            |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_25/adder/FullAdder4/OR2_1   |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_25/adder/FullAdder4/XOR2_1  |
+| ++++FullAdder5        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_25/adder/FullAdder5         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_25/adder/FullAdder5/XOR2_1  |
+| ++++FullAdder6        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_25/adder/FullAdder6         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_25/adder/FullAdder6/XOR2_1  |
+| ++++FullAdder7        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_25/adder/FullAdder7         |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_25/adder/FullAdder7/XOR2_0  |
+| ++module2op_26        |           | 9/22          | 0/1           | 9/23          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_26                          |
+| +++D_FF8op            |           | 0/1           | 0/1           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_26/D_FF8op                  |
+| ++++D_FF7             |           | 1/1           | 1/1           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_26/D_FF8op/D_FF7            |
+| +++adder              |           | 0/12          | 0/0           | 0/14          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_26/adder                    |
+| ++++FullAdder0        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_26/adder/FullAdder0         |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_26/adder/FullAdder0/XOR2_0  |
+| ++++FullAdder1        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_26/adder/FullAdder1         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_26/adder/FullAdder1/XOR2_1  |
+| ++++FullAdder2        |           | 0/3           | 0/0           | 0/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_26/adder/FullAdder2         |
+| +++++OR2_1            |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_26/adder/FullAdder2/OR2_1   |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_26/adder/FullAdder2/XOR2_1  |
+| ++++FullAdder3        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_26/adder/FullAdder3         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_26/adder/FullAdder3/XOR2_1  |
+| ++++FullAdder4        |           | 0/3           | 0/0           | 0/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_26/adder/FullAdder4         |
+| +++++OR2_1            |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_26/adder/FullAdder4/OR2_1   |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_26/adder/FullAdder4/XOR2_1  |
+| ++++FullAdder5        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_26/adder/FullAdder5         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_26/adder/FullAdder5/XOR2_1  |
+| ++++FullAdder6        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_26/adder/FullAdder6         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_26/adder/FullAdder6/XOR2_1  |
+| ++++FullAdder7        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_26/adder/FullAdder7         |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_26/adder/FullAdder7/XOR2_0  |
+| ++module2op_27        |           | 9/22          | 0/1           | 8/22          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_27                          |
+| +++D_FF8op            |           | 0/1           | 0/1           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_27/D_FF8op                  |
+| ++++D_FF7             |           | 1/1           | 1/1           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_27/D_FF8op/D_FF7            |
+| +++adder              |           | 0/12          | 0/0           | 0/14          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_27/adder                    |
+| ++++FullAdder0        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_27/adder/FullAdder0         |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_27/adder/FullAdder0/XOR2_0  |
+| ++++FullAdder1        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_27/adder/FullAdder1         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_27/adder/FullAdder1/XOR2_1  |
+| ++++FullAdder2        |           | 0/3           | 0/0           | 0/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_27/adder/FullAdder2         |
+| +++++OR2_1            |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_27/adder/FullAdder2/OR2_1   |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_27/adder/FullAdder2/XOR2_1  |
+| ++++FullAdder3        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_27/adder/FullAdder3         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_27/adder/FullAdder3/XOR2_1  |
+| ++++FullAdder4        |           | 0/3           | 0/0           | 0/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_27/adder/FullAdder4         |
+| +++++OR2_1            |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_27/adder/FullAdder4/OR2_1   |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_27/adder/FullAdder4/XOR2_1  |
+| ++++FullAdder5        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_27/adder/FullAdder5         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_27/adder/FullAdder5/XOR2_1  |
+| ++++FullAdder6        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_27/adder/FullAdder6         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_27/adder/FullAdder6/XOR2_1  |
+| ++++FullAdder7        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_27/adder/FullAdder7         |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_27/adder/FullAdder7/XOR2_0  |
+| ++module2op_28        |           | 9/21          | 0/1           | 8/24          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_28                          |
+| +++D_FF8op            |           | 0/1           | 0/1           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_28/D_FF8op                  |
+| ++++D_FF7             |           | 1/1           | 1/1           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_28/D_FF8op/D_FF7            |
+| +++adder              |           | 0/11          | 0/0           | 0/16          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_28/adder                    |
+| ++++FullAdder0        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_28/adder/FullAdder0         |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_28/adder/FullAdder0/XOR2_0  |
+| ++++FullAdder1        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_28/adder/FullAdder1         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_28/adder/FullAdder1/XOR2_1  |
+| ++++FullAdder2        |           | 0/3           | 0/0           | 0/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_28/adder/FullAdder2         |
+| +++++OR2_1            |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_28/adder/FullAdder2/OR2_1   |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_28/adder/FullAdder2/XOR2_1  |
+| ++++FullAdder3        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_28/adder/FullAdder3         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_28/adder/FullAdder3/XOR2_1  |
+| ++++FullAdder4        |           | 0/2           | 0/0           | 0/4           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_28/adder/FullAdder4         |
+| +++++OR2_1            |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_28/adder/FullAdder4/OR2_1   |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_28/adder/FullAdder4/XOR2_1  |
+| ++++FullAdder5        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_28/adder/FullAdder5         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_28/adder/FullAdder5/XOR2_1  |
+| ++++FullAdder6        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_28/adder/FullAdder6         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_28/adder/FullAdder6/XOR2_1  |
+| ++++FullAdder7        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_28/adder/FullAdder7         |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_28/adder/FullAdder7/XOR2_0  |
+| ++module2op_29        |           | 9/21          | 0/1           | 9/23          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_29                          |
+| +++D_FF8op            |           | 0/1           | 0/1           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_29/D_FF8op                  |
+| ++++D_FF7             |           | 1/1           | 1/1           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_29/D_FF8op/D_FF7            |
+| +++adder              |           | 0/11          | 0/0           | 0/14          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_29/adder                    |
+| ++++FullAdder0        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_29/adder/FullAdder0         |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_29/adder/FullAdder0/XOR2_0  |
+| ++++FullAdder1        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_29/adder/FullAdder1         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_29/adder/FullAdder1/XOR2_1  |
+| ++++FullAdder2        |           | 0/3           | 0/0           | 0/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_29/adder/FullAdder2         |
+| +++++OR2_1            |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_29/adder/FullAdder2/OR2_1   |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_29/adder/FullAdder2/XOR2_1  |
+| ++++FullAdder3        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_29/adder/FullAdder3         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_29/adder/FullAdder3/XOR2_1  |
+| ++++FullAdder4        |           | 0/2           | 0/0           | 0/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_29/adder/FullAdder4         |
+| +++++OR2_1            |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_29/adder/FullAdder4/OR2_1   |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_29/adder/FullAdder4/XOR2_1  |
+| ++++FullAdder5        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_29/adder/FullAdder5         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_29/adder/FullAdder5/XOR2_1  |
+| ++++FullAdder6        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_29/adder/FullAdder6         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_29/adder/FullAdder6/XOR2_1  |
+| ++++FullAdder7        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_29/adder/FullAdder7         |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_29/adder/FullAdder7/XOR2_0  |
+| ++module2op_3         |           | 9/23          | 0/1           | 8/22          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_3                           |
+| +++D_FF8op            |           | 0/1           | 0/1           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_3/D_FF8op                   |
+| ++++D_FF7             |           | 1/1           | 1/1           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_3/D_FF8op/D_FF7             |
+| +++adder              |           | 0/13          | 0/0           | 0/14          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_3/adder                     |
+| ++++FullAdder0        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_3/adder/FullAdder0          |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_3/adder/FullAdder0/XOR2_0   |
+| ++++FullAdder1        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_3/adder/FullAdder1          |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_3/adder/FullAdder1/XOR2_1   |
+| ++++FullAdder2        |           | 0/3           | 0/0           | 0/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_3/adder/FullAdder2          |
+| +++++OR2_1            |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_3/adder/FullAdder2/OR2_1    |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_3/adder/FullAdder2/XOR2_1   |
+| ++++FullAdder3        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_3/adder/FullAdder3          |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_3/adder/FullAdder3/XOR2_1   |
+| ++++FullAdder4        |           | 0/3           | 0/0           | 0/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_3/adder/FullAdder4          |
+| +++++OR2_1            |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_3/adder/FullAdder4/OR2_1    |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_3/adder/FullAdder4/XOR2_1   |
+| ++++FullAdder5        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_3/adder/FullAdder5          |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_3/adder/FullAdder5/XOR2_1   |
+| ++++FullAdder6        |           | 0/2           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_3/adder/FullAdder6          |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_3/adder/FullAdder6/XOR2_1   |
+| ++++FullAdder7        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_3/adder/FullAdder7          |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_3/adder/FullAdder7/XOR2_0   |
+| ++module2op_30        |           | 9/21          | 0/1           | 8/21          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_30                          |
+| +++D_FF8op            |           | 0/1           | 0/1           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_30/D_FF8op                  |
+| ++++D_FF7             |           | 1/1           | 1/1           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_30/D_FF8op/D_FF7            |
+| +++adder              |           | 0/11          | 0/0           | 0/13          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_30/adder                    |
+| ++++FullAdder0        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_30/adder/FullAdder0         |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_30/adder/FullAdder0/XOR2_0  |
+| ++++FullAdder1        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_30/adder/FullAdder1         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_30/adder/FullAdder1/XOR2_1  |
+| ++++FullAdder2        |           | 0/3           | 0/0           | 0/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_30/adder/FullAdder2         |
+| +++++OR2_1            |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_30/adder/FullAdder2/OR2_1   |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_30/adder/FullAdder2/XOR2_1  |
+| ++++FullAdder3        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_30/adder/FullAdder3         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_30/adder/FullAdder3/XOR2_1  |
+| ++++FullAdder4        |           | 0/2           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_30/adder/FullAdder4         |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_30/adder/FullAdder4/XOR2_1  |
+| ++++FullAdder5        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_30/adder/FullAdder5         |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_30/adder/FullAdder5/XOR2_1  |
+| ++++FullAdder6        |           | 0/2           | 0/0           | 0/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_30/adder/FullAdder6         |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 3/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_30/adder/FullAdder6/XOR2_1  |
+| ++module2op_4         |           | 9/24          | 0/2           | 8/23          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_4                           |
+| +++D_FF8op            |           | 0/2           | 0/2           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_4/D_FF8op                   |
+| ++++D_FF7             |           | 2/2           | 2/2           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_4/D_FF8op/D_FF7             |
+| +++adder              |           | 0/13          | 0/0           | 0/15          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_4/adder                     |
+| ++++FullAdder0        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_4/adder/FullAdder0          |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_4/adder/FullAdder0/XOR2_0   |
+| ++++FullAdder1        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_4/adder/FullAdder1          |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_4/adder/FullAdder1/XOR2_1   |
+| ++++FullAdder2        |           | 0/3           | 0/0           | 0/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_4/adder/FullAdder2          |
+| +++++OR2_1            |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_4/adder/FullAdder2/OR2_1    |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_4/adder/FullAdder2/XOR2_1   |
+| ++++FullAdder3        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_4/adder/FullAdder3          |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_4/adder/FullAdder3/XOR2_1   |
+| ++++FullAdder4        |           | 0/3           | 0/0           | 0/4           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_4/adder/FullAdder4          |
+| +++++OR2_1            |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_4/adder/FullAdder4/OR2_1    |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_4/adder/FullAdder4/XOR2_1   |
+| ++++FullAdder5        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_4/adder/FullAdder5          |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_4/adder/FullAdder5/XOR2_1   |
+| ++++FullAdder6        |           | 0/2           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_4/adder/FullAdder6          |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_4/adder/FullAdder6/XOR2_1   |
+| ++++FullAdder7        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_4/adder/FullAdder7          |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_4/adder/FullAdder7/XOR2_0   |
+| ++module2op_5         |           | 9/23          | 0/1           | 8/23          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_5                           |
+| +++D_FF8op            |           | 0/1           | 0/1           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_5/D_FF8op                   |
+| ++++D_FF7             |           | 1/1           | 1/1           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_5/D_FF8op/D_FF7             |
+| +++adder              |           | 0/13          | 0/0           | 0/14          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_5/adder                     |
+| ++++FullAdder0        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_5/adder/FullAdder0          |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_5/adder/FullAdder0/XOR2_0   |
+| ++++FullAdder1        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_5/adder/FullAdder1          |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_5/adder/FullAdder1/XOR2_1   |
+| ++++FullAdder2        |           | 0/3           | 0/0           | 0/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_5/adder/FullAdder2          |
+| +++++OR2_1            |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_5/adder/FullAdder2/OR2_1    |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_5/adder/FullAdder2/XOR2_1   |
+| ++++FullAdder3        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_5/adder/FullAdder3          |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_5/adder/FullAdder3/XOR2_1   |
+| ++++FullAdder4        |           | 0/3           | 0/0           | 0/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_5/adder/FullAdder4          |
+| +++++OR2_1            |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_5/adder/FullAdder4/OR2_1    |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_5/adder/FullAdder4/XOR2_1   |
+| ++++FullAdder5        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_5/adder/FullAdder5          |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_5/adder/FullAdder5/XOR2_1   |
+| ++++FullAdder6        |           | 0/2           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_5/adder/FullAdder6          |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_5/adder/FullAdder6/XOR2_1   |
+| ++++FullAdder7        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_5/adder/FullAdder7          |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_5/adder/FullAdder7/XOR2_0   |
+| ++module2op_6         |           | 9/23          | 0/1           | 7/24          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_6                           |
+| +++D_FF8op            |           | 0/1           | 0/1           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_6/D_FF8op                   |
+| ++++D_FF7             |           | 1/1           | 1/1           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_6/D_FF8op/D_FF7             |
+| +++adder              |           | 0/13          | 0/0           | 0/17          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_6/adder                     |
+| ++++FullAdder0        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_6/adder/FullAdder0          |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_6/adder/FullAdder0/XOR2_0   |
+| ++++FullAdder1        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_6/adder/FullAdder1          |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_6/adder/FullAdder1/XOR2_1   |
+| ++++FullAdder2        |           | 0/3           | 0/0           | 0/4           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_6/adder/FullAdder2          |
+| +++++OR2_1            |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_6/adder/FullAdder2/OR2_1    |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_6/adder/FullAdder2/XOR2_1   |
+| ++++FullAdder3        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_6/adder/FullAdder3          |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_6/adder/FullAdder3/XOR2_1   |
+| ++++FullAdder4        |           | 0/3           | 0/0           | 0/4           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_6/adder/FullAdder4          |
+| +++++OR2_1            |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_6/adder/FullAdder4/OR2_1    |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 3/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_6/adder/FullAdder4/XOR2_1   |
+| ++++FullAdder5        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_6/adder/FullAdder5          |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_6/adder/FullAdder5/XOR2_1   |
+| ++++FullAdder6        |           | 0/2           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_6/adder/FullAdder6          |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_6/adder/FullAdder6/XOR2_1   |
+| ++++FullAdder7        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_6/adder/FullAdder7          |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_6/adder/FullAdder7/XOR2_0   |
+| ++module2op_7         |           | 9/23          | 0/1           | 7/21          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_7                           |
+| +++D_FF8op            |           | 0/1           | 0/1           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_7/D_FF8op                   |
+| ++++D_FF7             |           | 1/1           | 1/1           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_7/D_FF8op/D_FF7             |
+| +++adder              |           | 0/13          | 0/0           | 0/14          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_7/adder                     |
+| ++++FullAdder0        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_7/adder/FullAdder0          |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_7/adder/FullAdder0/XOR2_0   |
+| ++++FullAdder1        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_7/adder/FullAdder1          |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_7/adder/FullAdder1/XOR2_1   |
+| ++++FullAdder2        |           | 0/3           | 0/0           | 0/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_7/adder/FullAdder2          |
+| +++++OR2_1            |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_7/adder/FullAdder2/OR2_1    |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_7/adder/FullAdder2/XOR2_1   |
+| ++++FullAdder3        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_7/adder/FullAdder3          |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_7/adder/FullAdder3/XOR2_1   |
+| ++++FullAdder4        |           | 0/3           | 0/0           | 0/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_7/adder/FullAdder4          |
+| +++++OR2_1            |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_7/adder/FullAdder4/OR2_1    |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_7/adder/FullAdder4/XOR2_1   |
+| ++++FullAdder5        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_7/adder/FullAdder5          |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_7/adder/FullAdder5/XOR2_1   |
+| ++++FullAdder6        |           | 0/2           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_7/adder/FullAdder6          |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_7/adder/FullAdder6/XOR2_1   |
+| ++++FullAdder7        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_7/adder/FullAdder7          |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_7/adder/FullAdder7/XOR2_0   |
+| ++module2op_8         |           | 9/23          | 0/1           | 8/23          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_8                           |
+| +++D_FF8op            |           | 0/1           | 0/1           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_8/D_FF8op                   |
+| ++++D_FF7             |           | 1/1           | 1/1           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_8/D_FF8op/D_FF7             |
+| +++adder              |           | 0/13          | 0/0           | 0/14          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_8/adder                     |
+| ++++FullAdder0        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_8/adder/FullAdder0          |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_8/adder/FullAdder0/XOR2_0   |
+| ++++FullAdder1        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_8/adder/FullAdder1          |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_8/adder/FullAdder1/XOR2_1   |
+| ++++FullAdder2        |           | 0/3           | 0/0           | 0/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_8/adder/FullAdder2          |
+| +++++OR2_1            |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_8/adder/FullAdder2/OR2_1    |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_8/adder/FullAdder2/XOR2_1   |
+| ++++FullAdder3        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_8/adder/FullAdder3          |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_8/adder/FullAdder3/XOR2_1   |
+| ++++FullAdder4        |           | 0/3           | 0/0           | 0/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_8/adder/FullAdder4          |
+| +++++OR2_1            |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_8/adder/FullAdder4/OR2_1    |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_8/adder/FullAdder4/XOR2_1   |
+| ++++FullAdder5        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_8/adder/FullAdder5          |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_8/adder/FullAdder5/XOR2_1   |
+| ++++FullAdder6        |           | 0/2           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_8/adder/FullAdder6          |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_8/adder/FullAdder6/XOR2_1   |
+| ++++FullAdder7        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_8/adder/FullAdder7          |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_8/adder/FullAdder7/XOR2_0   |
+| ++module2op_9         |           | 9/23          | 0/1           | 9/23          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_9                           |
+| +++D_FF8op            |           | 0/1           | 0/1           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_9/D_FF8op                   |
+| ++++D_FF7             |           | 1/1           | 1/1           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_9/D_FF8op/D_FF7             |
+| +++adder              |           | 0/13          | 0/0           | 0/14          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_9/adder                     |
+| ++++FullAdder0        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_9/adder/FullAdder0          |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_9/adder/FullAdder0/XOR2_0   |
+| ++++FullAdder1        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_9/adder/FullAdder1          |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_9/adder/FullAdder1/XOR2_1   |
+| ++++FullAdder2        |           | 0/3           | 0/0           | 0/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_9/adder/FullAdder2          |
+| +++++OR2_1            |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_9/adder/FullAdder2/OR2_1    |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_9/adder/FullAdder2/XOR2_1   |
+| ++++FullAdder3        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_9/adder/FullAdder3          |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_9/adder/FullAdder3/XOR2_1   |
+| ++++FullAdder4        |           | 0/3           | 0/0           | 0/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_9/adder/FullAdder4          |
+| +++++OR2_1            |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_9/adder/FullAdder4/OR2_1    |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_9/adder/FullAdder4/XOR2_1   |
+| ++++FullAdder5        |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_9/adder/FullAdder5          |
+| +++++XOR2_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_9/adder/FullAdder5/XOR2_1   |
+| ++++FullAdder6        |           | 0/2           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_9/adder/FullAdder6          |
+| +++++XOR2_1           |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_9/adder/FullAdder6/XOR2_1   |
+| ++++FullAdder7        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_9/adder/FullAdder7          |
+| +++++XOR2_0           |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module2op_9/adder/FullAdder7/XOR2_0   |
+| ++module3op           |           | 0/1           | 0/1           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module3op                             |
+| +++D_FF8op            |           | 0/1           | 0/1           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module3op/D_FF8op                     |
+| ++++D_FF7             |           | 1/1           | 1/1           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | topModule/threesamplefilter_op/module3op/D_FF8op/D_FF7               |
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+* Slices can be packed with basic elements from multiple hierarchies.
+  Therefore, a slice will be counted in every hierarchical module
+  that each of its packed basic elements belong to.
+** For each column, there are two numbers reported <A>/<B>.
+   <A> is the number of elements that belong to that specific hierarchical module.
+   <B> is the total number of elements from that hierarchical module and any lower level
+   hierarchical modules below.
+*** The LUTRAM column counts all LUTs used as memory including RAM, ROM, and shift registers.
