@@ -78,6 +78,6 @@ char FpgaCausalFirFilter::filterChar(char ch) {
     delay();
     readCh += readChar();
     
-    return readChar;
+    return readCh;
 
 }

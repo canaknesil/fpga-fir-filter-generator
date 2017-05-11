@@ -73,12 +73,12 @@ void FPGA_Comm::setClock(int val) {
 }
 
 
-void FPGA::Comm::writeMux(int val) {
+void FPGA_Comm::writeMux(int val) {
 	digitalWrite(WRITE_MUX, (val == MS4B ? HIGH : LOW) );
 }
 
 
-void FPGA::Comm::readMux(int val) {
+void FPGA_Comm::readMux(int val) {
 	digitalWrite(READ_MUX, (val == MS4B ? HIGH : LOW) );
 }
 
