@@ -2,7 +2,7 @@
 #include <unistd.h>
 #include <wiringPi.h>
 
-#define PIN 19
+#define PIN 3
 
 int main() {
 

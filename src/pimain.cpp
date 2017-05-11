@@ -6,11 +6,32 @@ using namespace std;
 int main() {
 
     vector<char> input;
-	input.push_back(10);
-	input.push_back(20);
-	input.push_back(30);
-	input.push_back(20);
-	input.push_back(10);
+	input.push_back(0);
+	input.push_back(0);
+	input.push_back(0);
+	input.push_back(0);
+	input.push_back(0);
+	input.push_back(100);
+	input.push_back(150);
+	input.push_back(200);
+	input.push_back(150);
+	input.push_back(100);
+        input.push_back(0);
+        input.push_back(0);
+        input.push_back(0);
+        input.push_back(0);
+        input.push_back(0);
+	input.push_back(100);
+        input.push_back(150);
+        input.push_back(200);
+        input.push_back(150);
+        input.push_back(100);
+        input.push_back(0);
+        input.push_back(0);
+        input.push_back(0);
+        input.push_back(0);
+        input.push_back(0);
+
 
 	vector<char> output = FpgaCausalFirFilter::filter(input);
 	//cout << output.size() << endl;

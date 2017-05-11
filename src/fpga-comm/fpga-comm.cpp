@@ -15,10 +15,10 @@ int in_bits[] = {IN_BIT0,
 int out_bits[] = {OUT_BIT0,
 				  OUT_BIT1,
 				  OUT_BIT2,
-				  OUT_BIT3
-				  OUT_BIT4
-				  OUT_BIT5
-				  OUT_BIT6
+				  OUT_BIT3,
+				  OUT_BIT4,
+				  OUT_BIT5,
+				  OUT_BIT6,
 				  OUT_BIT7};
 
 
@@ -52,12 +52,12 @@ int FPGA_Comm::finalize() {
 
 
 void FPGA_Comm::writeChar(char ch) {
-
+	
 	for (int i=0; i<8; i++) {
-
+		
 		digitalWrite(out_bits[i], (ch%2 == 0 ? LOW : HIGH));
 		ch >>= 1;
-
+		
 	}
 	
 }
@@ -82,7 +82,7 @@ void FPGA_Comm::setClock(int val) {
 
 
 void FPGA_Comm::readMux(int val) {
-	digitalWrite(READ_MUX, (val == MS4B ? HIGH : LOW) );
+	digitalWrite(READ_MUX, (val == LS4B ? HIGH : LOW) );
 }
 
 

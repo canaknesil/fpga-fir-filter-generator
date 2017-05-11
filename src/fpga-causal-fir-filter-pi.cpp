@@ -50,24 +50,24 @@ char FpgaCausalFirFilter::filterChar(char ch) {
     writeChar(ch);
     delay();
 
-   //run the clock for fpga
-    setClock(HIGH);
-    delay();
-    setClock(LOW);
-    delay();
-
     //read least significant 4 bits
     char readCh = 0;
 
-    readMux(LS4B);
+    readMux(MS4B);
     delay();
     readCh = readChar();
 
     //read most significant 4 bits
     readCh <<= 4;
-    readMux(MS4B);
+    readMux(LS4B);
     delay();
     readCh += readChar();
+
+	//run the clock for fpga
+    setClock(HIGH);
+    delay();
+    setClock(LOW);
+    delay();
     
     return readCh;
 
