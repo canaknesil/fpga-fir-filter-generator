@@ -291,70 +291,39 @@ Unit <module2> synthesized.
 
 Synthesizing Unit <threesamplefilter>.
     Related source file is "/home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/causalFirFilter.vhd".
-WARNING:Xst:653 - Signal <hardcoded_9> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_8> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_7> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_63> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_62> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_61> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_60> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_6> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_59> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_58> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_57> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_56> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_55> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_54> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_53> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_52> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_51> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_50> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_5> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_49> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_48> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_47> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_46> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_45> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_44> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_43> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_42> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_41> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_40> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_4> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_39> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_38> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_37> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_36> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_35> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_34> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_33> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_32> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_31> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_30> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_3> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_29> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_28> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_27> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_26> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_25> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_24> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_23> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_22> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_21> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_20> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_2> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_19> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_18> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_17> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_16> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_15> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_14> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_13> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_12> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_11> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_10> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_1> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
-WARNING:Xst:653 - Signal <hardcoded_0> is used but never assigned. This sourceless signal will be automatically connected to value 00100000.
+WARNING:Xst:653 - Signal <hardcoded_9> is used but never assigned. This sourceless signal will be automatically connected to value 00000001.
+WARNING:Xst:653 - Signal <hardcoded_8> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
+WARNING:Xst:653 - Signal <hardcoded_7> is used but never assigned. This sourceless signal will be automatically connected to value 11111111.
+WARNING:Xst:653 - Signal <hardcoded_6> is used but never assigned. This sourceless signal will be automatically connected to value 11111111.
+WARNING:Xst:653 - Signal <hardcoded_5> is used but never assigned. This sourceless signal will be automatically connected to value 11111111.
+WARNING:Xst:653 - Signal <hardcoded_4> is used but never assigned. This sourceless signal will be automatically connected to value 11111111.
+WARNING:Xst:653 - Signal <hardcoded_32> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
+WARNING:Xst:653 - Signal <hardcoded_31> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
+WARNING:Xst:653 - Signal <hardcoded_30> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
+WARNING:Xst:653 - Signal <hardcoded_3> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
+WARNING:Xst:653 - Signal <hardcoded_29> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
+WARNING:Xst:653 - Signal <hardcoded_28> is used but never assigned. This sourceless signal will be automatically connected to value 11111111.
+WARNING:Xst:653 - Signal <hardcoded_27> is used but never assigned. This sourceless signal will be automatically connected to value 11111111.
+WARNING:Xst:653 - Signal <hardcoded_26> is used but never assigned. This sourceless signal will be automatically connected to value 11111111.
+WARNING:Xst:653 - Signal <hardcoded_25> is used but never assigned. This sourceless signal will be automatically connected to value 11111111.
+WARNING:Xst:653 - Signal <hardcoded_24> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
+WARNING:Xst:653 - Signal <hardcoded_23> is used but never assigned. This sourceless signal will be automatically connected to value 00000001.
+WARNING:Xst:653 - Signal <hardcoded_22> is used but never assigned. This sourceless signal will be automatically connected to value 00000011.
+WARNING:Xst:653 - Signal <hardcoded_21> is used but never assigned. This sourceless signal will be automatically connected to value 00000110.
+WARNING:Xst:653 - Signal <hardcoded_20> is used but never assigned. This sourceless signal will be automatically connected to value 00001001.
+WARNING:Xst:653 - Signal <hardcoded_2> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
+WARNING:Xst:653 - Signal <hardcoded_19> is used but never assigned. This sourceless signal will be automatically connected to value 00001011.
+WARNING:Xst:653 - Signal <hardcoded_18> is used but never assigned. This sourceless signal will be automatically connected to value 00001110.
+WARNING:Xst:653 - Signal <hardcoded_17> is used but never assigned. This sourceless signal will be automatically connected to value 00001111.
+WARNING:Xst:653 - Signal <hardcoded_16> is used but never assigned. This sourceless signal will be automatically connected to value 00010000.
+WARNING:Xst:653 - Signal <hardcoded_15> is used but never assigned. This sourceless signal will be automatically connected to value 00001111.
+WARNING:Xst:653 - Signal <hardcoded_14> is used but never assigned. This sourceless signal will be automatically connected to value 00001110.
+WARNING:Xst:653 - Signal <hardcoded_13> is used but never assigned. This sourceless signal will be automatically connected to value 00001011.
+WARNING:Xst:653 - Signal <hardcoded_12> is used but never assigned. This sourceless signal will be automatically connected to value 00001001.
+WARNING:Xst:653 - Signal <hardcoded_11> is used but never assigned. This sourceless signal will be automatically connected to value 00000110.
+WARNING:Xst:653 - Signal <hardcoded_10> is used but never assigned. This sourceless signal will be automatically connected to value 00000011.
+WARNING:Xst:653 - Signal <hardcoded_1> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
+WARNING:Xst:653 - Signal <hardcoded_0> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
 Unit <threesamplefilter> synthesized.
 
 
@@ -367,12 +336,12 @@ Unit <topModule> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# Multipliers                                          : 64
- 8x8-bit multiplier                                    : 64
-# Registers                                            : 504
- 1-bit register                                        : 504
-# Xors                                                 : 2016
- 1-bit xor2                                            : 2016
+# Multipliers                                          : 33
+ 8x8-bit multiplier                                    : 33
+# Registers                                            : 256
+ 1-bit register                                        : 256
+# Xors                                                 : 1024
+ 1-bit xor2                                            : 1024
 
 =========================================================================
 
@@ -385,41 +354,101 @@ Macro Statistics
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Multipliers                                          : 64
- 8x8-bit multiplier                                    : 64
-# Registers                                            : 504
- Flip-Flops                                            : 504
-# Xors                                                 : 2016
- 1-bit xor2                                            : 2016
+# Multipliers                                          : 33
+ 8x8-bit multiplier                                    : 33
+# Registers                                            : 256
+ Flip-Flops                                            : 256
+# Xors                                                 : 1024
+ 1-bit xor2                                            : 1024
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
+WARNING:Xst:2677 - Node <D_FF8op/D_FF1/Q> of sequential type is unconnected in block <module3>.
+WARNING:Xst:2677 - Node <D_FF8op/D_FF0/Q> of sequential type is unconnected in block <module3>.
+WARNING:Xst:2677 - Node <D_FF8op/D_FF2/Q> of sequential type is unconnected in block <module3>.
+WARNING:Xst:2677 - Node <D_FF8op/D_FF3/Q> of sequential type is unconnected in block <module3>.
+WARNING:Xst:2677 - Node <D_FF8op/D_FF4/Q> of sequential type is unconnected in block <module3>.
+WARNING:Xst:2677 - Node <D_FF8op/D_FF5/Q> of sequential type is unconnected in block <module3>.
+WARNING:Xst:2677 - Node <D_FF8op/D_FF6/Q> of sequential type is unconnected in block <module3>.
+WARNING:Xst:2677 - Node <D_FF8op/D_FF7/Q> of sequential type is unconnected in block <module3>.
 
 Optimizing unit <topModule> ...
-
-Optimizing unit <module3> ...
 
 Optimizing unit <module2> ...
 
 Optimizing unit <threesamplefilter> ...
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_29/D_FF8op/D_FF7/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_30/D_FF8op/D_FF7/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_31/D_FF8op/D_FF7/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_29/D_FF8op/D_FF1/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_30/D_FF8op/D_FF1/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_31/D_FF8op/D_FF1/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_29/D_FF8op/D_FF2/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_30/D_FF8op/D_FF2/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_31/D_FF8op/D_FF2/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_29/D_FF8op/D_FF3/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_30/D_FF8op/D_FF3/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_31/D_FF8op/D_FF3/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_29/D_FF8op/D_FF4/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_30/D_FF8op/D_FF4/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_31/D_FF8op/D_FF4/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_29/D_FF8op/D_FF5/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_30/D_FF8op/D_FF5/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_31/D_FF8op/D_FF5/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_29/D_FF8op/D_FF6/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_30/D_FF8op/D_FF6/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_31/D_FF8op/D_FF6/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_29/D_FF8op/D_FF0/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_30/D_FF8op/D_FF0/Q> is unconnected in block <topModule>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <threesamplefilter_op/module2op_31/D_FF8op/D_FF0/Q> is unconnected in block <topModule>.
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block topModule, actual ratio is 127.
+Found area constraint ratio of 100 (+ 5) on block topModule, actual ratio is 105.
 Optimizing block <topModule> to meet ratio 100 (+ 5) of 960 slices :
-WARNING:Xst:2254 - Area constraint could not be met for block <topModule>, final ratio is 118.
+Area constraint is met for block <topModule>, final ratio is 103.
 
 Final Macro Processing ...
+
+Processing Unit <topModule> :
+	Found 4-bit shift register for signal <threesamplefilter_op/module2op_4/D_FF8op/D_FF0/Q>.
+	Found 4-bit shift register for signal <threesamplefilter_op/module2op_4/D_FF8op/D_FF1/Q>.
+	Found 4-bit shift register for signal <threesamplefilter_op/module2op_4/D_FF8op/D_FF2/Q>.
+	Found 4-bit shift register for signal <threesamplefilter_op/module2op_4/D_FF8op/D_FF5/Q>.
+	Found 4-bit shift register for signal <threesamplefilter_op/module2op_4/D_FF8op/D_FF3/Q>.
+	Found 4-bit shift register for signal <threesamplefilter_op/module2op_4/D_FF8op/D_FF4/Q>.
+	Found 4-bit shift register for signal <threesamplefilter_op/module2op_4/D_FF8op/D_FF6/Q>.
+	Found 4-bit shift register for signal <threesamplefilter_op/module2op_4/D_FF8op/D_FF7/Q>.
+	Found 2-bit shift register for signal <threesamplefilter_op/module2op_9/D_FF8op/D_FF0/Q>.
+	Found 2-bit shift register for signal <threesamplefilter_op/module2op_9/D_FF8op/D_FF1/Q>.
+	Found 2-bit shift register for signal <threesamplefilter_op/module2op_9/D_FF8op/D_FF2/Q>.
+	Found 2-bit shift register for signal <threesamplefilter_op/module2op_9/D_FF8op/D_FF5/Q>.
+	Found 2-bit shift register for signal <threesamplefilter_op/module2op_9/D_FF8op/D_FF3/Q>.
+	Found 2-bit shift register for signal <threesamplefilter_op/module2op_9/D_FF8op/D_FF4/Q>.
+	Found 2-bit shift register for signal <threesamplefilter_op/module2op_9/D_FF8op/D_FF6/Q>.
+	Found 2-bit shift register for signal <threesamplefilter_op/module2op_9/D_FF8op/D_FF7/Q>.
+	Found 2-bit shift register for signal <threesamplefilter_op/module2op_25/D_FF8op/D_FF0/Q>.
+	Found 2-bit shift register for signal <threesamplefilter_op/module2op_25/D_FF8op/D_FF1/Q>.
+	Found 2-bit shift register for signal <threesamplefilter_op/module2op_25/D_FF8op/D_FF2/Q>.
+	Found 2-bit shift register for signal <threesamplefilter_op/module2op_25/D_FF8op/D_FF5/Q>.
+	Found 2-bit shift register for signal <threesamplefilter_op/module2op_25/D_FF8op/D_FF3/Q>.
+	Found 2-bit shift register for signal <threesamplefilter_op/module2op_25/D_FF8op/D_FF4/Q>.
+	Found 2-bit shift register for signal <threesamplefilter_op/module2op_25/D_FF8op/D_FF6/Q>.
+	Found 2-bit shift register for signal <threesamplefilter_op/module2op_25/D_FF8op/D_FF7/Q>.
+Unit <topModule> processed.
 
 =========================================================================
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 504
- Flip-Flops                                            : 504
+# Registers                                            : 160
+ Flip-Flops                                            : 160
+# Shift Registers                                      : 24
+ 2-bit shift register                                  : 16
+ 4-bit shift register                                  : 8
 
 =========================================================================
 
@@ -447,24 +476,25 @@ Design Statistics
 # IOs                              : 14
 
 Cell Usage :
-# BELS                             : 3036
+# BELS                             : 3614
 #      GND                         : 1
-#      LUT1                        : 496
-#      LUT2                        : 1
-#      LUT3                        : 788
-#      LUT4                        : 258
-#      MUXF5                       : 3
+#      LUT1                        : 417
+#      LUT2                        : 592
+#      LUT3                        : 511
+#      LUT4                        : 64
+#      MUXCY                       : 931
+#      MUXF5                       : 6
 #      VCC                         : 1
-#      XORCY                       : 1488
-# FlipFlops/Latches                : 504
-#      FD                          : 504
+#      XORCY                       : 1091
+# FlipFlops/Latches                : 184
+#      FD                          : 184
+# Shift Registers                  : 24
+#      SRL16                       : 24
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
 # IO Buffers                       : 13
 #      IBUF                        : 9
 #      OBUF                        : 4
-# MULTs                            : 2
-#      MULT18X18SIO                : 2
 =========================================================================
 
 Device utilization summary:
@@ -472,12 +502,13 @@ Device utilization summary:
 
 Selected Device : 3s100ecp132-5 
 
- Number of Slices:                     1135  out of    960   118% (*) 
- Number of Slice Flip Flops:            504  out of   1920    26%  
- Number of 4 input LUTs:               1543  out of   1920    80%  
+ Number of Slices:                      974  out of    960   101% (*) 
+ Number of Slice Flip Flops:            184  out of   1920     9%  
+ Number of 4 input LUTs:               1608  out of   1920    83%  
+    Number used as logic:              1584
+    Number used as Shift registers:      24
  Number of IOs:                          14
  Number of bonded IOBs:                  14  out of     83    16%  
- Number of MULT18X18SIOs:                 2  out of      4    50%  
  Number of GCLKs:                         1  out of     24     4%  
 
 WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
@@ -503,7 +534,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clock                              | BUFGP                  | 504   |
+clock                              | BUFGP                  | 208   |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -514,10 +545,10 @@ Timing Summary:
 ---------------
 Speed Grade: -5
 
-   Minimum period: 1.162ns (Maximum Frequency: 860.622MHz)
-   Minimum input arrival time before clock: 1.754ns
-   Maximum output required time after clock: 86.626ns
-   Maximum combinational path delay: 22.204ns
+   Minimum period: 3.492ns (Maximum Frequency: 286.369MHz)
+   Minimum input arrival time before clock: 1.829ns
+   Maximum output required time after clock: 45.461ns
+   Maximum combinational path delay: 5.772ns
 
 Timing Detail:
 --------------
@@ -525,177 +556,132 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clock'
-  Clock period: 1.162ns (frequency: 860.622MHz)
-  Total number of paths / destination ports: 496 / 496
+  Clock period: 3.492ns (frequency: 286.369MHz)
+  Total number of paths / destination ports: 200 / 200
 -------------------------------------------------------------------------
-Delay:               1.162ns (Levels of Logic = 0)
-  Source:            threesamplefilter_op/module2op_1/D_FF8op/D_FF0/Q (FF)
-  Destination:       threesamplefilter_op/module2op_2/D_FF8op/D_FF0/Q (FF)
+Delay:               3.492ns (Levels of Logic = 0)
+  Source:            threesamplefilter_op/module2op_4/D_FF8op/D_FF2/Mshreg_Q (FF)
+  Destination:       threesamplefilter_op/module2op_4/D_FF8op/D_FF2/Q (FF)
   Source Clock:      clock rising
   Destination Clock: clock rising
 
-  Data Path: threesamplefilter_op/module2op_1/D_FF8op/D_FF0/Q to threesamplefilter_op/module2op_2/D_FF8op/D_FF0/Q
+  Data Path: threesamplefilter_op/module2op_4/D_FF8op/D_FF2/Mshreg_Q to threesamplefilter_op/module2op_4/D_FF8op/D_FF2/Q
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               2   0.514   0.380  threesamplefilter_op/module2op_1/D_FF8op/D_FF0/Q (threesamplefilter_op/module2op_1/D_FF8op/D_FF0/Q)
-     FD:D                      0.268          threesamplefilter_op/module2op_2/D_FF8op/D_FF0/Q
+     SRL16:CLK->Q          1   3.224   0.000  threesamplefilter_op/module2op_4/D_FF8op/D_FF2/Mshreg_Q (threesamplefilter_op/module2op_4/D_FF8op/D_FF2/Mshreg_Q)
+     FD:D                      0.268          threesamplefilter_op/module2op_4/D_FF8op/D_FF2/Q
     ----------------------------------------
-    Total                      1.162ns (0.782ns logic, 0.380ns route)
-                                       (67.3% logic, 32.7% route)
+    Total                      3.492ns (3.492ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clock'
   Total number of paths / destination ports: 8 / 8
 -------------------------------------------------------------------------
-Offset:              1.754ns (Levels of Logic = 1)
-  Source:            input<0> (PAD)
-  Destination:       threesamplefilter_op/module2op_1/D_FF8op/D_FF0/Q (FF)
+Offset:              1.829ns (Levels of Logic = 1)
+  Source:            input<2> (PAD)
+  Destination:       threesamplefilter_op/module2op_4/D_FF8op/D_FF2/Mshreg_Q (FF)
   Destination Clock: clock rising
 
-  Data Path: input<0> to threesamplefilter_op/module2op_1/D_FF8op/D_FF0/Q
+  Data Path: input<2> to threesamplefilter_op/module2op_4/D_FF8op/D_FF2/Mshreg_Q
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             2   1.106   0.380  input_0_IBUF (input_0_IBUF)
-     FD:D                      0.268          threesamplefilter_op/module2op_1/D_FF8op/D_FF0/Q
+     IBUF:I->O             1   1.106   0.357  input_2_IBUF (input_2_IBUF)
+     SRL16:D                   0.366          threesamplefilter_op/module2op_4/D_FF8op/D_FF2/Mshreg_Q
     ----------------------------------------
-    Total                      1.754ns (1.374ns logic, 0.380ns route)
-                                       (78.3% logic, 21.7% route)
+    Total                      1.829ns (1.472ns logic, 0.357ns route)
+                                       (80.5% logic, 19.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clock'
-  Total number of paths / destination ports: 852605558970 / 4
+  Total number of paths / destination ports: 66313739603 / 4
 -------------------------------------------------------------------------
-Offset:              86.626ns (Levels of Logic = 72)
-  Source:            threesamplefilter_op/module3op/D_FF8op/D_FF0/Q (FF)
+Offset:              45.461ns (Levels of Logic = 41)
+  Source:            threesamplefilter_op/module2op_27/D_FF8op/D_FF0/Q (FF)
   Destination:       output<3> (PAD)
   Source Clock:      clock rising
 
-  Data Path: threesamplefilter_op/module3op/D_FF8op/D_FF0/Q to output<3>
+  Data Path: threesamplefilter_op/module2op_27/D_FF8op/D_FF0/Q to output<3>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               1   0.514   0.357  threesamplefilter_op/module3op/D_FF8op/D_FF0/Q (threesamplefilter_op/module3op/D_FF8op/D_FF0/Q)
-     MULT18X18SIO:A0->P6    2   3.632   0.383  threesamplefilter_op/module3op/Mmult_multoutext (threesamplefilter_op/module2_62_fromdown<6>)
-     LUT4:I3->O            2   0.612   0.532  threesamplefilter_op/module2op_62/adder/FullAdder6/OR2_1/z1 (threesamplefilter_op/module2op_62/adder/interc<6>)
-     LUT3:I0->O            2   0.612   0.449  threesamplefilter_op/module2op_62/adder/FullAdder7/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_61_fromdown<7>)
-     LUT3:I1->O            2   0.612   0.532  threesamplefilter_op/module2op_61/adder/FullAdder7/OR2_1/z1 (threesamplefilter_op/module2op_61/adder/interc<7>)
-     LUT3:I0->O            2   0.612   0.449  threesamplefilter_op/module2op_61/adder/FullAdder8/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_60_fromdown<8>)
-     LUT3:I1->O            2   0.612   0.532  threesamplefilter_op/module2op_60/adder/FullAdder8/OR2_1/z1 (threesamplefilter_op/module2op_60/adder/interc<8>)
-     LUT3:I0->O            2   0.612   0.449  threesamplefilter_op/module2op_60/adder/FullAdder9/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_59_fromdown<9>)
-     LUT3:I1->O            2   0.612   0.532  threesamplefilter_op/module2op_59/adder/FullAdder9/OR2_1/z1 (threesamplefilter_op/module2op_59/adder/interc<9>)
-     LUT3:I0->O            2   0.612   0.449  threesamplefilter_op/module2op_59/adder/FullAdder10/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_58_fromdown<10>)
-     LUT3:I1->O            2   0.612   0.532  threesamplefilter_op/module2op_58/adder/FullAdder10/OR2_1/z1 (threesamplefilter_op/module2op_58/adder/interc<10>)
-     LUT3:I0->O            2   0.612   0.449  threesamplefilter_op/module2op_58/adder/FullAdder11/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_57_fromdown<11>)
-     LUT3:I1->O            3   0.612   0.603  threesamplefilter_op/module2op_57/adder/FullAdder11/OR2_1/z1 (threesamplefilter_op/module2op_57/adder/interc<11>)
-     LUT3:I0->O            3   0.612   0.481  threesamplefilter_op/module2op_57/adder/FullAdder12/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_56_fromdown<12>)
-     LUT4:I2->O            1   0.612   0.509  threesamplefilter_op/module2op_56/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_55_fromdown<13>)
-     LUT4:I0->O            2   0.612   0.532  threesamplefilter_op/module2op_55/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_54_fromdown<13>)
-     LUT4:I0->O            1   0.612   0.509  threesamplefilter_op/module2op_54/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_53_fromdown<13>)
-     LUT4:I0->O            2   0.612   0.532  threesamplefilter_op/module2op_53/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_52_fromdown<13>)
-     LUT4:I0->O            1   0.612   0.509  threesamplefilter_op/module2op_52/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_51_fromdown<13>)
-     LUT4:I0->O            2   0.612   0.532  threesamplefilter_op/module2op_51/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_50_fromdown<13>)
-     LUT4:I0->O            1   0.612   0.509  threesamplefilter_op/module2op_50/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_49_fromdown<13>)
-     LUT4:I0->O            2   0.612   0.532  threesamplefilter_op/module2op_49/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_48_fromdown<13>)
-     LUT4:I0->O            1   0.612   0.509  threesamplefilter_op/module2op_48/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_47_fromdown<13>)
-     LUT4:I0->O            2   0.612   0.532  threesamplefilter_op/module2op_47/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_46_fromdown<13>)
-     LUT4:I0->O            1   0.612   0.509  threesamplefilter_op/module2op_46/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_45_fromdown<13>)
-     LUT4:I0->O            2   0.612   0.532  threesamplefilter_op/module2op_45/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_44_fromdown<13>)
-     LUT4:I0->O            1   0.612   0.509  threesamplefilter_op/module2op_44/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_43_fromdown<13>)
-     LUT4:I0->O            2   0.612   0.532  threesamplefilter_op/module2op_43/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_42_fromdown<13>)
-     LUT4:I0->O            1   0.612   0.509  threesamplefilter_op/module2op_42/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_41_fromdown<13>)
-     LUT4:I0->O            2   0.612   0.532  threesamplefilter_op/module2op_41/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_40_fromdown<13>)
-     LUT4:I0->O            1   0.612   0.509  threesamplefilter_op/module2op_40/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_39_fromdown<13>)
-     LUT4:I0->O            2   0.612   0.532  threesamplefilter_op/module2op_39/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_38_fromdown<13>)
-     LUT4:I0->O            1   0.612   0.509  threesamplefilter_op/module2op_38/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_37_fromdown<13>)
-     LUT4:I0->O            2   0.612   0.532  threesamplefilter_op/module2op_37/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_36_fromdown<13>)
-     LUT4:I0->O            1   0.612   0.509  threesamplefilter_op/module2op_36/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_35_fromdown<13>)
-     LUT4:I0->O            2   0.612   0.532  threesamplefilter_op/module2op_35/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_34_fromdown<13>)
-     LUT4:I0->O            1   0.612   0.509  threesamplefilter_op/module2op_34/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_33_fromdown<13>)
-     LUT4:I0->O            2   0.612   0.532  threesamplefilter_op/module2op_33/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_32_fromdown<13>)
-     LUT4:I0->O            1   0.612   0.509  threesamplefilter_op/module2op_32/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_31_fromdown<13>)
-     LUT4:I0->O            2   0.612   0.532  threesamplefilter_op/module2op_31/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_30_fromdown<13>)
-     LUT4:I0->O            1   0.612   0.509  threesamplefilter_op/module2op_30/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_29_fromdown<13>)
-     LUT4:I0->O            2   0.612   0.532  threesamplefilter_op/module2op_29/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_28_fromdown<13>)
-     LUT4:I0->O            1   0.612   0.509  threesamplefilter_op/module2op_28/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_27_fromdown<13>)
-     LUT4:I0->O            2   0.612   0.532  threesamplefilter_op/module2op_27/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_26_fromdown<13>)
-     LUT4:I0->O            1   0.612   0.509  threesamplefilter_op/module2op_26/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_25_fromdown<13>)
-     LUT4:I0->O            2   0.612   0.532  threesamplefilter_op/module2op_25/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_24_fromdown<13>)
-     LUT4:I0->O            1   0.612   0.509  threesamplefilter_op/module2op_24/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_23_fromdown<13>)
-     LUT4:I0->O            2   0.612   0.532  threesamplefilter_op/module2op_23/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_22_fromdown<13>)
-     LUT4:I0->O            1   0.612   0.509  threesamplefilter_op/module2op_22/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_21_fromdown<13>)
-     LUT4:I0->O            2   0.612   0.532  threesamplefilter_op/module2op_21/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_20_fromdown<13>)
-     LUT4:I0->O            1   0.612   0.509  threesamplefilter_op/module2op_20/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_19_fromdown<13>)
-     LUT4:I0->O            2   0.612   0.532  threesamplefilter_op/module2op_19/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_18_fromdown<13>)
-     LUT4:I0->O            1   0.612   0.509  threesamplefilter_op/module2op_18/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_17_fromdown<13>)
-     LUT4:I0->O            2   0.612   0.532  threesamplefilter_op/module2op_17/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_16_fromdown<13>)
-     LUT4:I0->O            1   0.612   0.509  threesamplefilter_op/module2op_16/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_15_fromdown<13>)
-     LUT4:I0->O            2   0.612   0.532  threesamplefilter_op/module2op_15/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_14_fromdown<13>)
-     LUT4:I0->O            1   0.612   0.509  threesamplefilter_op/module2op_14/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_13_fromdown<13>)
-     LUT4:I0->O            2   0.612   0.532  threesamplefilter_op/module2op_13/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_12_fromdown<13>)
-     LUT4:I0->O            1   0.612   0.509  threesamplefilter_op/module2op_12/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_11_fromdown<13>)
-     LUT4:I0->O            2   0.612   0.532  threesamplefilter_op/module2op_11/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_10_fromdown<13>)
-     LUT4:I0->O            1   0.612   0.509  threesamplefilter_op/module2op_10/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_9_fromdown<13>)
-     LUT4:I0->O            2   0.612   0.532  threesamplefilter_op/module2op_9/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_8_fromdown<13>)
-     LUT4:I0->O            1   0.612   0.509  threesamplefilter_op/module2op_8/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_7_fromdown<13>)
-     LUT4:I0->O            2   0.612   0.532  threesamplefilter_op/module2op_7/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_6_fromdown<13>)
-     LUT4:I0->O            1   0.612   0.509  threesamplefilter_op/module2op_6/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_5_fromdown<13>)
-     LUT4:I0->O            2   0.612   0.532  threesamplefilter_op/module2op_5/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_4_fromdown<13>)
-     LUT4:I0->O            1   0.612   0.509  threesamplefilter_op/module2op_4/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_3_fromdown<13>)
-     LUT4:I0->O            2   0.612   0.532  threesamplefilter_op/module2op_3/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_2_fromdown<13>)
-     LUT4:I0->O            1   0.612   0.509  threesamplefilter_op/module2op_2/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_1_fromdown<13>)
-     LUT4:I0->O            2   0.612   0.383  threesamplefilter_op/module2op_1/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module1_term<13>)
-     LUT4:I3->O            1   0.612   0.387  threesamplefilter_op/module1op/adder/FullAdder14/XOR2_1/Mxor_z_Result21 (threesamplefilter_op/N18)
-     LUT4:I2->O            1   0.612   0.357  muxop/mux4_2_inst1/m1 (output_3_OBUF)
+     FD:C->Q              14   0.514   0.919  threesamplefilter_op/module2op_27/D_FF8op/D_FF0/Q (threesamplefilter_op/module2op_27/D_FF8op/D_FF0/Q)
+     LUT2:I1->O            1   0.612   0.000  threesamplefilter_op/module2op_27/Mmult_multoutext_Madd5_lut<1>1 (threesamplefilter_op/module2op_27/Mmult_multoutext_Madd5_lut<1>)
+     MUXCY:S->O            1   0.404   0.000  threesamplefilter_op/module2op_27/Mmult_multoutext_Madd5_cy<1> (threesamplefilter_op/module2op_27/Mmult_multoutext_Madd5_cy<1>)
+     XORCY:CI->O           1   0.699   0.509  threesamplefilter_op/module2op_27/Mmult_multoutext_Madd5_xor<2> (threesamplefilter_op/module2op_27/Mmult_multoutext_Madd_25)
+     LUT2:I0->O            1   0.612   0.000  threesamplefilter_op/module2op_27/Mmult_multoutext_Madd6_lut<2> (threesamplefilter_op/module2op_27/Mmult_multoutext_Madd6_lut<2>)
+     XORCY:LI->O           2   0.458   0.532  threesamplefilter_op/module2op_27/Mmult_multoutext_Madd6_xor<2> (threesamplefilter_op/module2op_27/multoutext<2>)
+     LUT3:I0->O            2   0.612   0.532  threesamplefilter_op/module2op_27/adder/FullAdder2/OR2_1/z1 (threesamplefilter_op/module2op_27/adder/interc<2>)
+     LUT3:I0->O            2   0.612   0.449  threesamplefilter_op/module2op_27/adder/FullAdder3/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_26_fromdown<3>)
+     LUT3:I1->O            2   0.612   0.532  threesamplefilter_op/module2op_26/adder/FullAdder3/OR2_1/z1 (threesamplefilter_op/module2op_26/adder/interc<3>)
+     LUT3:I0->O            2   0.612   0.410  threesamplefilter_op/module2op_26/adder/FullAdder4/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_25_fromdown<4>)
+     LUT3:I2->O            2   0.612   0.410  threesamplefilter_op/module2op_25/adder/FullAdder4/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_23_fromdown<4>)
+     LUT3:I2->O            2   0.612   0.410  threesamplefilter_op/module2op_23/adder/FullAdder4/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_22_fromdown<4>)
+     LUT3:I2->O            2   0.612   0.410  threesamplefilter_op/module2op_22/adder/FullAdder4/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_21_fromdown<4>)
+     LUT3:I2->O            2   0.612   0.410  threesamplefilter_op/module2op_21/adder/FullAdder4/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_20_fromdown<4>)
+     LUT3:I2->O            2   0.612   0.410  threesamplefilter_op/module2op_20/adder/FullAdder4/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_19_fromdown<4>)
+     LUT3:I2->O            2   0.612   0.410  threesamplefilter_op/module2op_19/adder/FullAdder4/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_18_fromdown<4>)
+     LUT3:I2->O            3   0.612   0.520  threesamplefilter_op/module2op_18/adder/FullAdder4/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_17_fromdown<4>)
+     LUT3:I1->O            2   0.612   0.532  threesamplefilter_op/module2op_17/adder/FullAdder4/OR2_1/z1 (threesamplefilter_op/module2op_17/adder/interc<4>)
+     LUT3:I0->O            2   0.612   0.449  threesamplefilter_op/module2op_17/adder/FullAdder5/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_16_fromdown<5>)
+     LUT3:I1->O            2   0.612   0.532  threesamplefilter_op/module2op_16/adder/FullAdder5/OR2_1/z1 (threesamplefilter_op/module2op_16/adder/interc<5>)
+     LUT3:I0->O            2   0.612   0.449  threesamplefilter_op/module2op_16/adder/FullAdder6/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_15_fromdown<6>)
+     LUT3:I1->O            2   0.612   0.532  threesamplefilter_op/module2op_15/adder/FullAdder6/OR2_1/z1 (threesamplefilter_op/module2op_15/adder/interc<6>)
+     LUT3:I0->O            2   0.612   0.449  threesamplefilter_op/module2op_15/adder/FullAdder7/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_14_fromdown<7>)
+     LUT3:I1->O            2   0.612   0.532  threesamplefilter_op/module2op_14/adder/FullAdder7/OR2_1/z1 (threesamplefilter_op/module2op_14/adder/interc<7>)
+     LUT3:I0->O            2   0.612   0.449  threesamplefilter_op/module2op_14/adder/FullAdder8/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_13_fromdown<8>)
+     LUT3:I1->O            2   0.612   0.532  threesamplefilter_op/module2op_13/adder/FullAdder8/OR2_1/z1 (threesamplefilter_op/module2op_13/adder/interc<8>)
+     LUT3:I0->O            2   0.612   0.449  threesamplefilter_op/module2op_13/adder/FullAdder9/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_12_fromdown<9>)
+     LUT3:I1->O            2   0.612   0.532  threesamplefilter_op/module2op_12/adder/FullAdder9/OR2_1/z1 (threesamplefilter_op/module2op_12/adder/interc<9>)
+     LUT3:I0->O            2   0.612   0.410  threesamplefilter_op/module2op_12/adder/FullAdder10/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_11_fromdown<10>)
+     LUT3:I2->O            2   0.612   0.410  threesamplefilter_op/module2op_11/adder/FullAdder10/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_10_fromdown<10>)
+     LUT3:I2->O            2   0.612   0.410  threesamplefilter_op/module2op_10/adder/FullAdder10/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_9_fromdown<10>)
+     LUT4:I2->O            3   0.612   0.603  threesamplefilter_op/module2op_9/adder/FullAdder10/OR2_1/z1 (threesamplefilter_op/module2op_9/adder/interc<10>)
+     LUT4:I0->O            2   0.612   0.449  threesamplefilter_op/module2op_9/adder/FullAdder11/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_7_fromdown<11>)
+     LUT3:I1->O            2   0.612   0.532  threesamplefilter_op/module2op_7/adder/FullAdder11/OR2_1/z1 (threesamplefilter_op/module2op_7/adder/interc<11>)
+     LUT3:I0->O            2   0.612   0.449  threesamplefilter_op/module2op_7/adder/FullAdder12/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_6_fromdown<12>)
+     LUT3:I1->O            2   0.612   0.532  threesamplefilter_op/module2op_6/adder/FullAdder12/OR2_1/z1 (threesamplefilter_op/module2op_6/adder/interc<12>)
+     LUT3:I0->O            3   0.612   0.520  threesamplefilter_op/module2op_6/adder/FullAdder13/XOR2_1/Mxor_z_Result1 (threesamplefilter_op/module2_5_fromdown<13>)
+     LUT3:I1->O            1   0.612   0.426  threesamplefilter_op/module2op_5/adder/FullAdder13/OR2_1/z1 (threesamplefilter_op/module2op_5/adder/interc<13>)
+     LUT4:I1->O            1   0.612   0.509  muxop/mux4_2_inst1/m1_SW0 (N9)
+     LUT4:I0->O            1   0.612   0.000  muxop/mux4_2_inst1/m1_F (N26)
+     MUXF5:I0->O           1   0.278   0.357  muxop/mux4_2_inst1/m1 (output_3_OBUF)
      OBUF:I->O                 3.169          output_3_OBUF (output<3>)
     ----------------------------------------
-    Total                     86.626ns (50.155ns logic, 36.471ns route)
-                                       (57.9% logic, 42.1% route)
+    Total                     45.461ns (27.554ns logic, 17.907ns route)
+                                       (60.6% logic, 39.4% route)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 596 / 4
+  Total number of paths / destination ports: 4 / 4
 -------------------------------------------------------------------------
-Delay:               22.204ns (Levels of Logic = 17)
-  Source:            input<0> (PAD)
+Delay:               5.772ns (Levels of Logic = 3)
+  Source:            out_sw (PAD)
   Destination:       output<3> (PAD)
 
-  Data Path: input<0> to output<3>
+  Data Path: out_sw to output<3>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             2   1.106   0.380  input_0_IBUF (input_0_IBUF)
-     MULT18X18SIO:A0->P0    1   3.251   0.387  threesamplefilter_op/module1op/Mmult_multoutext (threesamplefilter_op/module1op/multoutext<0>)
-     LUT4:I2->O            2   0.612   0.410  threesamplefilter_op/module1op/adder/FullAdder3/OR2_1/z21 (threesamplefilter_op/module1op/adder/FullAdder3/OR2_1/z21)
-     LUT4:I2->O            1   0.612   0.000  threesamplefilter_op/module1op/adder/FullAdder3/OR2_1/z371 (threesamplefilter_op/module1op/adder/FullAdder3/OR2_1/z37)
-     MUXF5:I1->O           1   0.278   0.426  threesamplefilter_op/module1op/adder/FullAdder3/OR2_1/z37_f5 (threesamplefilter_op/module1op/adder/interc<3>)
-     LUT3:I1->O            1   0.612   0.387  threesamplefilter_op/module1op/adder/FullAdder6/OR2_1/z42_SW0_SW0 (N15)
-     LUT3:I2->O            1   0.612   0.387  threesamplefilter_op/module1op/adder/FullAdder6/OR2_1/z42_SW0 (N111)
-     LUT3:I2->O            2   0.612   0.532  threesamplefilter_op/module1op/adder/FullAdder6/OR2_1/z42 (threesamplefilter_op/module1op/adder/interc<6>)
-     LUT3:I0->O            2   0.612   0.410  threesamplefilter_op/module1op/adder/FullAdder8/XOR2_1/Mxor_z_Result11 (threesamplefilter_op/N2)
-     LUT3:I2->O            2   0.612   0.532  threesamplefilter_op/module1op/adder/FullAdder8/OR2_1/z1 (threesamplefilter_op/module1op/adder/interc<8>)
-     LUT3:I0->O            3   0.612   0.481  threesamplefilter_op/module1op/adder/FullAdder10/XOR2_1/Mxor_z_Result11 (threesamplefilter_op/N3)
-     LUT3:I2->O            2   0.612   0.532  threesamplefilter_op/module1op/adder/FullAdder10/OR2_1/z1 (threesamplefilter_op/module1op/adder/interc<10>)
-     LUT3:I0->O            2   0.612   0.410  threesamplefilter_op/module1op/adder/FullAdder12/XOR2_1/Mxor_z_Result11 (threesamplefilter_op/N4)
-     LUT3:I2->O            1   0.612   0.426  threesamplefilter_op/module1op/adder/FullAdder12/OR2_1/z1 (threesamplefilter_op/module1op/adder/interc<12>)
-     LUT4:I1->O            1   0.612   0.387  threesamplefilter_op/module1op/adder/FullAdder14/XOR2_1/Mxor_z_Result21 (threesamplefilter_op/N18)
-     LUT4:I2->O            1   0.612   0.357  muxop/mux4_2_inst1/m1 (output_3_OBUF)
+     IBUF:I->O             4   1.106   0.499  out_sw_IBUF (out_sw_IBUF)
+     MUXF5:S->O            1   0.641   0.357  muxop/mux4_2_inst1/m1 (output_3_OBUF)
      OBUF:I->O                 3.169          output_3_OBUF (output<3>)
     ----------------------------------------
-    Total                     22.204ns (15.760ns logic, 6.444ns route)
-                                       (71.0% logic, 29.0% route)
+    Total                      5.772ns (4.916ns logic, 0.856ns route)
+                                       (85.2% logic, 14.8% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 15.00 secs
-Total CPU time to Xst completion: 14.73 secs
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 9.76 secs
  
 --> 
 
 
-Total memory usage is 608080 kilobytes
+Total memory usage is 554340 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   70 (   0 filtered)

@@ -1,0 +1,24 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri May 12 02:19:11 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clock" LOCATE = SITE "B5" LEVEL 1;
+PIN clock_pin<0> = BEL "clock" PINNAME PAD;
+PIN "clock_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "out_sw" LOCATE = SITE "J3" LEVEL 1;
+COMP "input<0>" LOCATE = SITE "D12" LEVEL 1;
+COMP "input<1>" LOCATE = SITE "C13" LEVEL 1;
+COMP "input<2>" LOCATE = SITE "A13" LEVEL 1;
+COMP "input<3>" LOCATE = SITE "C12" LEVEL 1;
+COMP "input<4>" LOCATE = SITE "C9" LEVEL 1;
+COMP "input<5>" LOCATE = SITE "A10" LEVEL 1;
+COMP "input<6>" LOCATE = SITE "B9" LEVEL 1;
+COMP "input<7>" LOCATE = SITE "A9" LEVEL 1;
+COMP "output<0>" LOCATE = SITE "B7" LEVEL 1;
+COMP "output<1>" LOCATE = SITE "C5" LEVEL 1;
+COMP "output<2>" LOCATE = SITE "B6" LEVEL 1;
+COMP "output<3>" LOCATE = SITE "C6" LEVEL 1;
+NET "clock_BUFGP/IBUFG" BEL "clock_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+
