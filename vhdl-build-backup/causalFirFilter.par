@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-debian-hp::  Tue May 09 15:13:20 2017
+debian-hp::  Tue May 09 15:33:56 2017
 
 par -ol high -w causalFirFilter_tmp.ncd causalFirFilter.ncd 
 
@@ -80,12 +80,12 @@ Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 5
 
 Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
 
-Phase 11  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
+Phase 11  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
 
 Phase 12  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
 
 Total REAL time to Router completion: 6 secs 
-Total CPU time to Router completion: 5 secs 
+Total CPU time to Router completion: 6 secs 
 
 Partition Implementation Status
 -------------------------------

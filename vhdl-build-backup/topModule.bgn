@@ -4,7 +4,7 @@ Loading device for application Rf_Device from file '3s100e.nph' in environment
 /opt/Xilinx/14.7/ISE_DS/ISE/.
    "topModule" is an NCD, version 3.2, device xc3s100e, package cp132, speed -5
 
-Fri May 12 02:19:26 2017
+Fri May 12 06:57:53 2017
 
 /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/bitgen -g UserID:0xADEAFBEE -g DriveDone:yes -g StartupClk:jtagclk -w topModule.ncd topModule.bit 
 

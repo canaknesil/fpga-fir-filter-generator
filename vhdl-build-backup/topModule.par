@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-debian-mac::  Fri May 12 02:19:15 2017
+debian-mac::  Fri May 12 06:57:42 2017
 
 par -ol high -w topModule_tmp.ncd topModule.ncd 
 
@@ -61,7 +61,7 @@ Phase  1  : 4430 unrouted;      REAL time: 3 secs
 
 Phase  2  : 4002 unrouted;      REAL time: 3 secs 
 
-Phase  3  : 796 unrouted;      REAL time: 4 secs 
+Phase  3  : 796 unrouted;      REAL time: 3 secs 
 
 Phase  4  : 812 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
@@ -135,7 +135,7 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 9 secs 
+Total REAL time to PAR completion: 8 secs 
 Total CPU time to PAR completion: 8 secs 
 
 Peak Memory Usage:  543 MB

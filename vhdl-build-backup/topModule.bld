@@ -5,8 +5,7 @@ Command Line: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/ngdbuild
 topModule.ngc
 
 Reading NGO file
-"/home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/topModule.ngc"
-...
+"/home/canaknesil/Documents/Elec491-Project/vhdl-build/topModule.ngc" ...
 Gathering constraint information from source properties...
 Done.
 
@@ -28,7 +27,7 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 395940 kilobytes
+Total memory usage is 395968 kilobytes
 
 Writing NGD file "topModule.ngd" ...
 Total REAL time to NGDBUILD completion:  3 sec

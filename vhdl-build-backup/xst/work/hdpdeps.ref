@@ -1,107 +1,119 @@
-V3 58
-FL /home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/adder8.vhd 2017/05/12.02:18:40 P.20131013
-EN work/adder8 1494544736 \
-      FL /home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/adder8.vhd \
+V3 70
+FL /home/canaknesil/Documents/Elec491-Project/vhdl-build/adder8.vhd 2017/05/12.06:57:09 P.20131013
+EN work/adder8 1494561444 \
+      FL /home/canaknesil/Documents/Elec491-Project/vhdl-build/adder8.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/adder8/Behavioral 1494544737 \
-      FL /home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/adder8.vhd \
-      EN work/adder8 1494544736 CP FullAdder
-FL /home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/and_gate.vhd 2017/05/12.02:18:40 P.20131013
-EN work/and_gate 1494544726 \
-      FL /home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/and_gate.vhd \
+AR work/adder8/Behavioral 1494561445 \
+      FL /home/canaknesil/Documents/Elec491-Project/vhdl-build/adder8.vhd \
+      EN work/adder8 1494561444 CP FullAdder
+FL /home/canaknesil/Documents/Elec491-Project/vhdl-build/and_gate.vhd 2017/05/12.06:57:09 P.20131013
+EN work/and_gate 1494561434 \
+      FL /home/canaknesil/Documents/Elec491-Project/vhdl-build/and_gate.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/and_gate/dataflow 1494544727 \
-      FL /home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/and_gate.vhd \
-      EN work/and_gate 1494544726
-FL /home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/causalFirFilter.vhd 2017/05/12.02:18:40 P.20131013
-EN work/threesamplefilter 1494544746 \
-      FL /home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/causalFirFilter.vhd \
+AR work/and_gate/dataflow 1494561435 \
+      FL /home/canaknesil/Documents/Elec491-Project/vhdl-build/and_gate.vhd \
+      EN work/and_gate 1494561434
+FL /home/canaknesil/Documents/Elec491-Project/vhdl-build/causalFirFilter.vhd 2017/05/12.06:57:09 P.20131013
+EN work/threesamplefilter 1494561454 \
+      FL /home/canaknesil/Documents/Elec491-Project/vhdl-build/causalFirFilter.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/threesamplefilter/Behavioral 1494544747 \
-      FL /home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/causalFirFilter.vhd \
-      EN work/threesamplefilter 1494544746 CP module1 CP module2 CP module3
-FL /home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/d_ff.vhd 2017/05/12.02:18:40 P.20131013
-EN work/D_FF 1494544730 \
-      FL /home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/d_ff.vhd \
+AR work/threesamplefilter/Behavioral 1494561455 \
+      FL /home/canaknesil/Documents/Elec491-Project/vhdl-build/causalFirFilter.vhd \
+      EN work/threesamplefilter 1494561454 CP module1 CP module2 CP module3
+FL /home/canaknesil/Documents/Elec491-Project/vhdl-build/d_ff.vhd 2017/05/12.06:57:09 P.20131013
+EN work/D_FF 1494561438 \
+      FL /home/canaknesil/Documents/Elec491-Project/vhdl-build/d_ff.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/D_FF/Behavioral 1494544731 \
-      FL /home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/d_ff.vhd \
-      EN work/D_FF 1494544730
-FL /home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/d_ff8.vhd 2017/05/12.02:18:40 P.20131013
-EN work/D_FF8 1494544734 \
-      FL /home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/d_ff8.vhd \
+AR work/D_FF/Behavioral 1494561439 \
+      FL /home/canaknesil/Documents/Elec491-Project/vhdl-build/d_ff.vhd \
+      EN work/D_FF 1494561438
+FL /home/canaknesil/Documents/Elec491-Project/vhdl-build/d_ff8.vhd 2017/05/12.06:57:09 P.20131013
+EN work/D_FF8 1494561442 \
+      FL /home/canaknesil/Documents/Elec491-Project/vhdl-build/d_ff8.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/D_FF8/Behavioral 1494544735 \
-      FL /home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/d_ff8.vhd \
-      EN work/D_FF8 1494544734 CP D_FF
-FL /home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/FullAdder.vhd 2017/05/12.02:18:40 P.20131013
-EN work/FullAdder 1494544732 \
-      FL /home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/FullAdder.vhd \
+AR work/D_FF8/Behavioral 1494561443 \
+      FL /home/canaknesil/Documents/Elec491-Project/vhdl-build/d_ff8.vhd \
+      EN work/D_FF8 1494561442 CP D_FF
+FL /home/canaknesil/Documents/Elec491-Project/vhdl-build/FullAdder.vhd 2017/05/12.06:57:09 P.20131013
+EN work/FullAdder 1494561440 \
+      FL /home/canaknesil/Documents/Elec491-Project/vhdl-build/FullAdder.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/FullAdder/FullAdder_struct 1494544733 \
-      FL /home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/FullAdder.vhd \
-      EN work/FullAdder 1494544732 CP xor_gate CP and_gate CP or_gate
-FL /home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/module1.vhd 2017/05/12.02:18:40 P.20131013
-EN work/module1 1494544740 \
-      FL /home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/module1.vhd \
+AR work/FullAdder/FullAdder_struct 1494561441 \
+      FL /home/canaknesil/Documents/Elec491-Project/vhdl-build/FullAdder.vhd \
+      EN work/FullAdder 1494561440 CP xor_gate CP and_gate CP or_gate
+FL /home/canaknesil/Documents/Elec491-Project/vhdl-build/module1.vhd 2017/05/12.06:57:09 P.20131013
+EN work/module1 1494561448 \
+      FL /home/canaknesil/Documents/Elec491-Project/vhdl-build/module1.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/module1/Behavioral 1494544741 \
-      FL /home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/module1.vhd \
-      EN work/module1 1494544740 CP adder8
-FL /home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/module2.vhd 2017/05/12.02:18:40 P.20131013
-EN work/module2 1494544742 \
-      FL /home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/module2.vhd \
+AR work/module1/Behavioral 1494561449 \
+      FL /home/canaknesil/Documents/Elec491-Project/vhdl-build/module1.vhd \
+      EN work/module1 1494561448 CP adder8
+FL /home/canaknesil/Documents/Elec491-Project/vhdl-build/module2.vhd 2017/05/12.06:57:09 P.20131013
+EN work/module2 1494561450 \
+      FL /home/canaknesil/Documents/Elec491-Project/vhdl-build/module2.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/module2/Behavioral 1494544743 \
-      FL /home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/module2.vhd \
-      EN work/module2 1494544742 CP D_FF8 CP adder8
-FL /home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/module3.vhd 2017/05/12.02:18:40 P.20131013
-EN work/module3 1494544744 \
-      FL /home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/module3.vhd \
+AR work/module2/Behavioral 1494561451 \
+      FL /home/canaknesil/Documents/Elec491-Project/vhdl-build/module2.vhd \
+      EN work/module2 1494561450 CP D_FF8 CP adder8
+FL /home/canaknesil/Documents/Elec491-Project/vhdl-build/module3.vhd 2017/05/12.06:57:09 P.20131013
+EN work/module3 1494561452 \
+      FL /home/canaknesil/Documents/Elec491-Project/vhdl-build/module3.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/module3/Behavioral 1494544745 \
-      FL /home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/module3.vhd \
-      EN work/module3 1494544744 CP D_FF8
-FL /home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/multiplier8.vhd 2017/05/12.02:18:40 P.20131013
-EN work/multiplier8 1494544752 \
-      FL /home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/multiplier8.vhd \
+AR work/module3/Behavioral 1494561453 \
+      FL /home/canaknesil/Documents/Elec491-Project/vhdl-build/module3.vhd \
+      EN work/module3 1494561452 CP D_FF8
+FL /home/canaknesil/Documents/Elec491-Project/vhdl-build/multiplier8.vhd 2017/05/12.06:57:09 P.20131013
+EN work/multiplier8 1494561460 \
+      FL /home/canaknesil/Documents/Elec491-Project/vhdl-build/multiplier8.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/multiplier8/Behavioral 1494544753 \
-      FL /home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/multiplier8.vhd \
-      EN work/multiplier8 1494544752
-FL /home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/MUX4_2.vhd 2017/05/12.02:18:40 P.20131013
-EN work/MUX4_2 1494544738 \
-      FL /home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/MUX4_2.vhd \
+AR work/multiplier8/Behavioral 1494561461 \
+      FL /home/canaknesil/Documents/Elec491-Project/vhdl-build/multiplier8.vhd \
+      EN work/multiplier8 1494561460
+FL /home/canaknesil/Documents/Elec491-Project/vhdl-build/MUX4_2.vhd 2017/05/12.06:57:09 P.20131013
+EN work/MUX4_2 1494561446 \
+      FL /home/canaknesil/Documents/Elec491-Project/vhdl-build/MUX4_2.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/MUX4_2/Behavioral 1494544739 \
-      FL /home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/MUX4_2.vhd \
-      EN work/MUX4_2 1494544738
-FL /home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/MUX8_4.vhd 2017/05/12.02:18:40 P.20131013
-EN work/MUX8_4 1494544748 \
-      FL /home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/MUX8_4.vhd \
+AR work/MUX4_2/Behavioral 1494561447 \
+      FL /home/canaknesil/Documents/Elec491-Project/vhdl-build/MUX4_2.vhd \
+      EN work/MUX4_2 1494561446
+FL /home/canaknesil/Documents/Elec491-Project/vhdl-build/MUX8_4.vhd 2017/05/12.06:57:09 P.20131013
+EN work/MUX8_4 1494561456 \
+      FL /home/canaknesil/Documents/Elec491-Project/vhdl-build/MUX8_4.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/MUX8_4/Behavioral 1494544749 \
-      FL /home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/MUX8_4.vhd \
-      EN work/MUX8_4 1494544748 CP MUX4_2
-FL /home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/or_gate.vhd 2017/05/12.02:18:40 P.20131013
-EN work/or_gate 1494544728 \
-      FL /home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/or_gate.vhd \
+AR work/MUX8_4/Behavioral 1494561457 \
+      FL /home/canaknesil/Documents/Elec491-Project/vhdl-build/MUX8_4.vhd \
+      EN work/MUX8_4 1494561456 CP MUX4_2
+FL /home/canaknesil/Documents/Elec491-Project/vhdl-build/or_gate.vhd 2017/05/12.06:57:09 P.20131013
+EN work/or_gate 1494561436 \
+      FL /home/canaknesil/Documents/Elec491-Project/vhdl-build/or_gate.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/or_gate/dataflow 1494544729 \
-      FL /home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/or_gate.vhd \
-      EN work/or_gate 1494544728
-FL /home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/topModule.vhd 2017/05/12.02:18:40 P.20131013
-EN work/topModule 1494544750 \
-      FL /home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/topModule.vhd \
+AR work/or_gate/dataflow 1494561437 \
+      FL /home/canaknesil/Documents/Elec491-Project/vhdl-build/or_gate.vhd \
+      EN work/or_gate 1494561436
+FL /home/canaknesil/Documents/Elec491-Project/vhdl-build/topModule.vhd 2017/05/12.06:57:09 P.20131013
+EN work/topModule 1494561458 \
+      FL /home/canaknesil/Documents/Elec491-Project/vhdl-build/topModule.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/topModule/Behavioral 1494544751 \
-      FL /home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/topModule.vhd \
-      EN work/topModule 1494544750 CP threesamplefilter CP MUX8_4
-FL /home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/xor_gate.vhd 2017/05/12.02:18:40 P.20131013
-EN work/xor_gate 1494544724 \
-      FL /home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/xor_gate.vhd \
+AR work/topModule/Behavioral 1494561459 \
+      FL /home/canaknesil/Documents/Elec491-Project/vhdl-build/topModule.vhd \
+      EN work/topModule 1494561458 CP threesamplefilter CP MUX8_4
+FL /home/canaknesil/Documents/Elec491-Project/vhdl-build/xor_gate.vhd 2017/05/12.06:57:09 P.20131013
+EN work/xor_gate 1494561432 \
+      FL /home/canaknesil/Documents/Elec491-Project/vhdl-build/xor_gate.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/xor_gate/dataflow 1494544725 \
-      FL /home/canaknesil/Documents/elec491/Elec491-Project/vhdl-build/xor_gate.vhd \
-      EN work/xor_gate 1494544724
+AR work/xor_gate/dataflow 1494561433 \
+      FL /home/canaknesil/Documents/Elec491-Project/vhdl-build/xor_gate.vhd \
+      EN work/xor_gate 1494561432
+FL /home/ege/Documents/Elec491-Project/vhdl-build/adder8.vhd 2017/05/09.15:34:41 P.20131013
+FL /home/ege/Documents/Elec491-Project/vhdl-build/and_gate.vhd 2017/05/09.15:34:41 P.20131013
+FL /home/ege/Documents/Elec491-Project/vhdl-build/causalFirFilter.vhd 2017/05/09.15:34:41 P.20131013
+FL /home/ege/Documents/Elec491-Project/vhdl-build/d_ff.vhd 2017/05/09.15:34:41 P.20131013
+FL /home/ege/Documents/Elec491-Project/vhdl-build/d_ff8.vhd 2017/05/09.15:34:41 P.20131013
+FL /home/ege/Documents/Elec491-Project/vhdl-build/FullAdder.vhd 2017/05/09.15:34:41 P.20131013
+FL /home/ege/Documents/Elec491-Project/vhdl-build/module1.vhd 2017/05/09.15:34:41 P.20131013
+FL /home/ege/Documents/Elec491-Project/vhdl-build/module2.vhd 2017/05/09.15:34:41 P.20131013
+FL /home/ege/Documents/Elec491-Project/vhdl-build/module3.vhd 2017/05/09.15:34:41 P.20131013
+FL /home/ege/Documents/Elec491-Project/vhdl-build/multiplier8.vhd 2017/05/09.15:34:41 P.20131013
+FL /home/ege/Documents/Elec491-Project/vhdl-build/or_gate.vhd 2017/05/09.15:34:41 P.20131013
+FL /home/ege/Documents/Elec491-Project/vhdl-build/xor_gate.vhd 2017/05/09.15:34:41 P.20131013
